@@ -1,0 +1,20 @@
+@mixin container-maxwidth() {
+    max-width: 960px;
+    margin: 0 auto;
+
+    @media #{$break-lg} {
+        max-width: 1140px;
+    }
+}
+
+@mixin flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-spaceB() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

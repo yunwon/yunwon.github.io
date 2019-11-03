@@ -1,21 +1,53 @@
 import React, { Component } from "react";
 import Header from "../../components/Header/Header";
 import { NavLink } from "react-router-dom";
+import styles from "./Home.module.scss";
+import Footer from "../../components/Footer/Footer";
+import Easyforms from "../../assets/home/easyforms.png";
+import Toolbox from "../../assets/home/toolbox.png";
 
 export default class Home extends Component {
   render() {
     return (
       <div>
         <Header />
-        <div>
-          Hello, I'm Yun. I'm a web designer + front-end developer based in
-          Auckland, New Zealand. I'm enthusiastic at creating exceptional user
-          experiences with my broad range of skills. Check out my recent work
-          here and say hello if you'd like to know more.
+        <div className={styles.hero}>
+          <p>
+            Hello,{" "}
+            <NavLink to="/about" className={styles.link}>
+              I'm Yun.
+            </NavLink>{" "}
+            I'm a{" "}
+            <NavLink to="/about" className={styles.link}>
+              web designer + front-end developer
+            </NavLink>{" "}
+            based in Auckland, New Zealand. I'm enthusiastic at creating
+            exceptional user experiences with{" "}
+            <NavLink to="/about" className={styles.link}>
+              my broad range of skills.
+            </NavLink>{" "}
+            Check out{" "}
+            <NavLink to="/about" className={styles.link}>
+              my recent work
+            </NavLink>{" "}
+            here and{" "}
+            <NavLink to="/about" className={styles.link}>
+              say hello
+            </NavLink>{" "}
+            if you'd like to know more.
+          </p>
         </div>
-        <div>
-          <NavLink to="/portfoilo">View more work</NavLink>
+        <div className={styles.works}>
+          <div className={styles.images}>
+            <img src={Easyforms} alt="toolbox" />
+            <img src={Easyforms} alt="toolbox" />
+            <img src={Toolbox} alt="toolbox" />
+          </div>
+          <NavLink to="/portfoilo" className={styles.linkToPortfolio}>
+            View more work
+          </NavLink>
         </div>
+        <Footer />
       </div>
     );
   }

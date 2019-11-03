@@ -1,0 +1,26 @@
+@import "../../stylesheets/2-abstracts/abstracts-dir.scss";
+
+.header {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0 1rem;
+
+    .headerInner {
+        @include container-maxwidth();
+        @include flex-center-spaceB();
+        height: 70px;
+        width: 100%;
+
+        .logo {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.25rem;
+
+            @media #{$break-md} {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
