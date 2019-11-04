@@ -1,0 +1,11 @@
+@import "../../stylesheets/2-abstracts/abstracts-dir.scss";
+
+.hero {
+    @include container-maxwidth();
+}
+
+.body {
+    article {
+        @include container-maxwidth();
+    }
+}

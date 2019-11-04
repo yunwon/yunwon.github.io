@@ -6,7 +6,7 @@
     p {
         font-size: 1.75rem;
         line-height: 1.7;
-        padding: calc(1rem + 70px) 1rem 1rem;
+        //padding: calc(1rem + 70px) 1rem 1rem;
         margin: 0;
 
         .link {
@@ -22,13 +22,13 @@
         @media #{$break-sm} {
             font-size: 2.5rem;
             line-height: 1.8;
-            padding: calc(2rem + 70px) 2rem 2rem;
+            //padding: calc(2rem + 70px) 2rem 2rem;
         }
 
         @media #{$break-lg} {
             font-size: 3rem;
             line-height: 1.8;
-            padding: calc(12% + 70px) 0 12% 0;
+            //padding: calc(12% + 70px) 0 12% 0;
         }
     }
 }
