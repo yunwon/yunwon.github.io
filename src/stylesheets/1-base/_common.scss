@@ -32,6 +32,7 @@ button,
 a {
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
 
     &:focus {
         outline: 0;

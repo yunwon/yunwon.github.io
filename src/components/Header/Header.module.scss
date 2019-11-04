@@ -9,7 +9,7 @@
 
     .headerInner {
         @include container-maxwidth();
-        @include flex-center-spaceB();
+        @include flex-center-justify();
         height: 70px;
         width: 100%;
 

@@ -1,0 +1,54 @@
+@import "../../stylesheets/2-abstracts/abstracts-dir.scss";
+
+.footer {
+    background: $black;
+    color: white;
+    padding: 2rem 0;
+
+    @media #{$break-md} {
+        padding: 2.5rem 0;
+    }
+
+    h2 {
+        font-weight: normal !important;
+        margin-top: 0;
+        font-size: 1.875rem;
+
+        a:hover {
+            color: $pink;
+        }
+    }
+
+    .social {
+        a {
+            font-size: 1.375rem;
+            margin-right: 10px;
+
+            svg:hover {
+                color: $pink;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .footerInner {
+        @include container-maxwidth();
+        @include flex-center();
+        text-align: center;
+        flex-direction: column;
+
+        @media #{$break-md} {
+            @include flex-center-justify();
+            text-align: left;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        .copy {
+            margin-top: 2.5em;
+        }
+    }
+}
