@@ -1,4 +1,4 @@
-@import "../../stylesheets/2-abstracts/abstracts-dir.scss";
+@import "../../../stylesheets/2-abstracts/abstracts-dir.scss";
 
 .header {
     background: white;
@@ -6,6 +6,7 @@
     width: 100%;
     top: 0;
     padding: 0 1rem;
+    z-index: 99;
 
     .headerInner {
         @include container-maxwidth();

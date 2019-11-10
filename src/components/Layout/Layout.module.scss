@@ -1,0 +1,14 @@
+@import "../../stylesheets/2-abstracts/abstracts-dir.scss";
+
+.container {
+    padding: calc(1rem + 70px) 1rem 1rem;
+    margin: 0;
+
+    @media #{$break-sm} {
+        padding: calc(2rem + 70px) 2rem 2rem;
+    }
+
+    @media #{$break-md} {
+        padding: calc(4rem + 70px) 0 4rem;
+    }
+}

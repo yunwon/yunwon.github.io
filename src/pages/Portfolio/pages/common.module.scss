@@ -1,0 +1,98 @@
+@import "../../../stylesheets/2-abstracts/abstracts-dir.scss";
+
+.container {}
+
+@mixin bigMargin() {
+    margin: 50px 0 40px 0;
+
+    @media #{$break-md} {
+        margin: 80px 0 50px 0;
+    }
+}
+
+.hero {
+    @include container-maxwidth();
+    @include flex-center();
+    flex-direction: column;
+    margin-bottom: 40px;
+    text-align: center;
+
+    h1 {
+        font-weight: 500;
+        font-size: 3.125rem;
+        margin: 1rem auto;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 1.5rem;
+
+        @media #{$break-sm} {
+            font-size: 1.875rem;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        @include bigShadow();
+        max-width: 990px;
+        margin-top: 1rem;
+        border-radius: 6px;
+
+        @media #{$break-sm} {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.intro {
+    max-width: 990px;
+    margin: 0 auto;
+
+    p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+}
+
+.brief {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    @include bigMargin();
+
+    @media #{$break-sm} {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        font-weight: normal;
+        opacity: 0.8;
+    }
+
+    p {
+        margin: 0.2rem 0;
+    }
+}
+
+.description {
+    @include container-maxwidth();
+
+    @media #{$break-md} {
+        display: flex;
+    }
+
+    .descriptionText {
+        max-width: 580px;
+    }
+
+    img {
+        width: 100%;
+
+        @media #{$break-md} {
+            width: 50%;
+        }
+    }
+}

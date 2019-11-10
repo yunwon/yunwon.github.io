@@ -1,0 +1,48 @@
+@import "../../stylesheets/2-abstracts/abstracts-dir.scss";
+
+.container {}
+
+.hero {
+    @include container-maxwidth();
+    @include flex-center();
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    h1 {
+        font-weight: normal;
+        font-size: 3.125rem;
+        margin: 1rem auto;
+    }
+
+    ul {
+        @media #{$break-sm} {
+            display: flex;
+        }
+
+        li {
+            padding: 0 1em;
+            font-size: 1.25rem;
+            line-height: 1.8;
+            text-align: center;
+
+            @media #{$break-sm} {}
+        }
+
+
+    }
+}
+
+.works {
+    @media #{$break-sm} {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media #{$break-md} {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    img {
+        width: 100%;
+    }
+}
