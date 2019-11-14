@@ -45,17 +45,35 @@ export default class Toolbox extends Component {
               and what they do straight away.
             </p>
           </div>
-          <div className={common.description}>
-            <div className={common.descriptionText}>
-              <h3>Video & Animations</h3>
-              <p>
-                I used a video as a background image of people working on
-                software development to make the site look alive and real. Also
-                I added smooth animations to most of elements to give users nice
-                little entertainments.
-              </p>
+          <div className={common.descriptionWrapper}>
+            <div className={`${common.description} ${common.left}`}>
+              <div className={common.descriptionText}>
+                <h3>Video & Animations</h3>
+                <p>
+                  I used a video as a background image of people working on
+                  software development to make the site look alive and real.
+                  Also I added smooth animations to most of elements to give
+                  users nice little entertainments.
+                </p>
+              </div>
             </div>
-            <img src={ToolboxMain} alt="Toolbox Digital" />
+            <div className={common.image01} />
+          </div>
+          <div className={common.descriptionWrapper}>
+            <div className={common.image02} />
+            <div className={`${common.description} ${common.right}`}>
+              <div className={common.descriptionText}>
+                <h3>Fast and responsive Front-end development</h3>
+                <p>
+                  I created fully responsive design from mobile, tablet to
+                  desktop so user can have the same experience in every devices.
+                  It is built with 'mobile-up' which means I developed it for
+                  mobile size first and added styling for bigger screens using
+                  media queries. With React JS, I created reusable components
+                  which shortened the development time.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </Layout>

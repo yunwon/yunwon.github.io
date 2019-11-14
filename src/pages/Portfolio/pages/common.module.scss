@@ -1,12 +1,27 @@
 @import "../../../stylesheets/2-abstracts/abstracts-dir.scss";
 
-.container {}
 
-@mixin bigMargin() {
-    margin: 50px 0 40px 0;
+@mixin bigMargin($double:false) {
+    margin-top: 50px;
+    margin-bottom: 40px;
 
     @media #{$break-md} {
-        margin: 80px 0 50px 0;
+        @if($double) {
+            margin-top: 80px*2;
+            margin-bottom: 50px*2;
+        }
+
+        @else {
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.body {
+    p {
+        font-size: 1.25rem;
+        line-height: 1.5;
     }
 }
 
@@ -34,7 +49,6 @@
     }
 
     img {
-        width: 100%;
         @include bigShadow();
         max-width: 990px;
         margin-top: 1rem;
@@ -77,22 +91,54 @@
     }
 }
 
-.description {
-    @include container-maxwidth();
+.descriptionWrapper {
+
+    @include bigMargin();
 
     @media #{$break-md} {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
     }
+}
+
+.description {
+    display: flex;
+
+    &.left {
+        justify-content: flex-end;
+    }
+
+    &.right {
+        justify-content: flex-start;
+    }
+
 
     .descriptionText {
         max-width: 580px;
-    }
 
-    img {
-        width: 100%;
-
-        @media #{$break-md} {
-            width: 50%;
+        h3 {
+            font-size: 1.875rem;
+            font-weight: normal;
         }
     }
+
+
+}
+
+.image01 {
+    content: '';
+    background-image: url("../../../assets/portfolio/screen@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 540px;
+}
+
+.image02 {
+    content: '';
+    background-image: url("../../../assets/portfolio/responsive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 540px;
 }
