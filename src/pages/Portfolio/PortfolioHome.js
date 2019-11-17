@@ -22,8 +22,24 @@ export default class PortfolioHome extends Component {
               alt="Easyforms"
             />
           </Link>
-          <img src={require("../../assets/home/toolbox.png")} alt="Toolbox" />
-          <img src={require("../../assets/home/toolbox.png")} alt="Toolbox" />
+          <Link to="/portfolio/wcb">
+            <img src={require("../../assets/home/toolbox.png")} alt="Toolbox" />
+          </Link>
+          <Link to="/portfolio/toolbox">
+            <img src={require("../../assets/home/toolbox.png")} alt="Toolbox" />
+          </Link>
+          <Link to="/portfolio/easyforms">
+            <img
+              src={require("../../assets/home/easyforms.png")}
+              alt="Easyforms"
+            />
+          </Link>
+          <Link to="/portfolio/wcb">
+            <img src={require("../../assets/home/toolbox.png")} alt="Toolbox" />
+          </Link>
+          <Link to="/portfolio/toolbox">
+            <img src={require("../../assets/home/toolbox.png")} alt="Toolbox" />
+          </Link>
         </div>
       </Layout>
     );

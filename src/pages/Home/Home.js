@@ -29,9 +29,9 @@ export default class Home extends Component {
               my recent work
             </NavLink>{" "}
             here and{" "}
-            <NavLink to="/about" className={styles.link}>
+            <a href="#footer" className={styles.link}>
               say hello
-            </NavLink>{" "}
+            </a>{" "}
             if you'd like to know more.
           </p>
         </div>

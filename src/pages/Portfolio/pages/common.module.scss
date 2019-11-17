@@ -50,9 +50,10 @@
 
     img {
         @include bigShadow();
-        max-width: 990px;
         margin-top: 1rem;
         border-radius: 6px;
+        width: 100%;
+        max-width: 990px;
 
         @media #{$break-sm} {
             margin-top: 2rem;
@@ -72,12 +73,12 @@
 
 .brief {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     gap: 1rem;
     @include bigMargin();
 
-    @media #{$break-sm} {
-        grid-template-columns: repeat(4, 1fr);
+    @media #{$break-md} {
+        grid-template-columns: repeat(4, auto);
     }
 
     h4 {
@@ -115,7 +116,11 @@
 
 
     .descriptionText {
-        max-width: 580px;
+        width: 100%;
+
+        @media #{$break-md} {
+            max-width: 580px;
+        }
 
         h3 {
             font-size: 1.875rem;
@@ -128,11 +133,15 @@
 
 .image01 {
     content: '';
-    background-image: url("../../../assets/portfolio/screen@2x.png");
+    background-image: url("../../../assets/portfolio/toolbox.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 540px;
+    height: 300px;
+
+    @media #{$break-md} {
+        height: 500px;
+    }
 }
 
 .image02 {
@@ -140,5 +149,10 @@
     background-image: url("../../../assets/portfolio/responsive.png");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 540px;
+    width: 100%;
+    height: 300px;
+
+    @media #{$break-md} {
+        height: 500px;
+    }
 }

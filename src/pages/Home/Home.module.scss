@@ -2,11 +2,11 @@
 
 .hero {
     @include container-maxwidth();
+    margin-bottom: 4rem;
 
     p {
         font-size: 1.75rem;
         line-height: 1.7;
-        //padding: calc(1rem + 70px) 1rem 1rem;
         margin: 0;
 
         .link {
@@ -19,16 +19,9 @@
             }
         }
 
-        @media #{$break-sm} {
+        @media #{$break-md} {
             font-size: 2.5rem;
             line-height: 1.8;
-            //padding: calc(2rem + 70px) 2rem 2rem;
-        }
-
-        @media #{$break-lg} {
-            font-size: 3rem;
-            line-height: 1.8;
-            //padding: calc(12% + 70px) 0 12% 0;
         }
     }
 }
@@ -38,22 +31,21 @@
     align-items: center;
     flex-direction: column;
 
-    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+    width: 100%;
 
     .images {
         width: 100%;
 
-        @media #{$break-md} {
-            display: flex;
-        }
-
         img {
             width: 100%;
-
-            @media #{$break-md} {
-                flex: auto;
-            }
         }
+
+        @media #{$break-sm} {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
     }
 
     .viewMoreWork {

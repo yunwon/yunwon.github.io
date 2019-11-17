@@ -13,9 +13,14 @@
         font-weight: normal !important;
         margin-top: 0;
         font-size: 1.875rem;
+        margin-bottom: 1em;
 
         a:hover {
             color: $pink;
+        }
+
+        @media #{$break-md} {
+            margin-bottom: 1.5em;
         }
     }
 

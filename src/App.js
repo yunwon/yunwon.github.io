@@ -4,7 +4,10 @@ import "./stylesheets/index.scss";
 import styles from "./App.module.scss";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import Portfolio from "./pages/Portfolio";
+import PortfolioHome from "./pages/Portfolio/PortfolioHome";
+import Toolbox from "./pages/Portfolio/pages/Toolbox";
+import Easyforms from "./pages/Portfolio/pages/Easyforms";
+import WCB from "./pages/Portfolio/pages/WCB";
 
 export default class App extends Component {
   render() {
@@ -14,7 +17,10 @@ export default class App extends Component {
           <div>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/portfolio" component={Portfolio} />
+            <Route exact path="/portfolio" component={PortfolioHome} />
+            <Route path="/portfolio/easyforms" component={Easyforms} />
+            <Route path="/portfolio/toolbox" component={Toolbox} />
+            <Route path="/portfolio/wcb" component={WCB} />
           </div>
         </BrowserRouter>
       </div>
