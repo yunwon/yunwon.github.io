@@ -5,9 +5,9 @@ import styles from "./App.module.scss";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import PortfolioHome from "./pages/Portfolio/PortfolioHome";
-import Toolbox from "./pages/Portfolio/pages/Toolbox";
-import Easyforms from "./pages/Portfolio/pages/Easyforms";
-import WCB from "./pages/Portfolio/pages/WCB";
+import WCB from "./pages/Portfolio/pages/WCB/WCB";
+import Toolbox from "./pages/Portfolio/pages/Toolbox/Toolbox";
+import Easyforms from "./pages/Portfolio/pages/Easyforms/Easyforms";
 
 export default class App extends Component {
   render() {

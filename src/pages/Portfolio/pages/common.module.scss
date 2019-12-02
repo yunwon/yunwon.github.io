@@ -1,158 +1,99 @@
 @import "../../../stylesheets/2-abstracts/abstracts-dir.scss";
 
+@mixin bigMargin($double: false) {
+  margin-top: 50px;
+  margin-bottom: 30px;
 
-@mixin bigMargin($double:false) {
-    margin-top: 50px;
-    margin-bottom: 40px;
-
-    @media #{$break-md} {
-        @if($double) {
-            margin-top: 80px*2;
-            margin-bottom: 50px*2;
-        }
-
-        @else {
-            margin-top: 80px;
-            margin-bottom: 50px;
-        }
+  @media #{$break-md} {
+    @if ($double) {
+      margin-top: 80px * 2;
+      margin-bottom: 50px * 2;
     }
+
+    @else {
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .body {
-    p {
-        font-size: 1.25rem;
-        line-height: 1.5;
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+
+    @media #{$break-sm} {
+      font-size: 1.25rem;
     }
+  }
 }
 
 .hero {
-    @include container-maxwidth();
-    @include flex-center();
-    flex-direction: column;
-    margin-bottom: 40px;
-    text-align: center;
+  @include container-maxwidth();
+  @include flex-center();
+  flex-direction: column;
+  margin-bottom: 40px;
+  text-align: center;
 
-    h1 {
-        font-weight: 500;
-        font-size: 3.125rem;
-        margin: 1rem auto;
+  h1 {
+    font-weight: 500;
+    font-size: 3.125rem;
+    margin: 1rem auto;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    @media #{$break-sm} {
+      font-size: 1.875rem;
     }
+  }
 
-    h2 {
-        font-weight: 500;
-        font-size: 1.5rem;
+  img {
+    @include bigShadow();
+    margin-top: 1rem;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 990px;
 
-        @media #{$break-sm} {
-            font-size: 1.875rem;
-        }
-
+    @media #{$break-sm} {
+      margin-top: 2rem;
     }
-
-    img {
-        @include bigShadow();
-        margin-top: 1rem;
-        border-radius: 6px;
-        width: 100%;
-        max-width: 990px;
-
-        @media #{$break-sm} {
-            margin-top: 2rem;
-        }
-    }
+  }
 }
 
 .intro {
-    max-width: 990px;
-    margin: 0 auto;
+  max-width: 990px;
+  margin: 0 auto;
 
-    p {
-        font-size: 1.25rem;
-        line-height: 1.5;
-    }
-}
+  p {
+    margin: 0;
+  }
 
-.brief {
+  .brief {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 1rem;
+    grid-template-columns: 120px auto;
+    gap: 1.5rem;
     @include bigMargin();
 
-    @media #{$break-md} {
-        grid-template-columns: repeat(4, auto);
+    @media #{$break-sm} {
+      grid-template-columns: repeat(4, auto);
     }
 
-    h4 {
-        font-size: 1.25rem;
-        font-weight: normal;
-        opacity: 0.8;
+    h6 {
+      //font-size: 1.25rem;
+      font-size: 0.8rem;
+      font-weight: bold;
+      opacity: 0.6;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
     }
 
     p {
-        margin: 0.2rem 0;
+      //margin: 0.2rem 0;
+      margin: 0;
     }
-}
-
-.descriptionWrapper {
-
-    @include bigMargin();
-
-    @media #{$break-md} {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-}
-
-.description {
-    display: flex;
-
-    &.left {
-        justify-content: flex-end;
-    }
-
-    &.right {
-        justify-content: flex-start;
-    }
-
-
-    .descriptionText {
-        width: 100%;
-
-        @media #{$break-md} {
-            max-width: 580px;
-        }
-
-        h3 {
-            font-size: 1.875rem;
-            font-weight: normal;
-        }
-    }
-
-
-}
-
-.image01 {
-    content: '';
-    background-image: url("../../../assets/portfolio/toolbox.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 300px;
-
-    @media #{$break-md} {
-        height: 500px;
-    }
-}
-
-.image02 {
-    content: '';
-    background-image: url("../../../assets/portfolio/responsive.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 300px;
-
-    @media #{$break-md} {
-        height: 500px;
-    }
+  }
 }

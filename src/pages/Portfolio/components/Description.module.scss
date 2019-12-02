@@ -1,0 +1,87 @@
+@import "../../../stylesheets/2-abstracts/abstracts-dir.scss";
+
+@mixin bigMargin($double: false) {
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  @media #{$break-md} {
+    @if ($double) {
+      margin-top: 80px * 2;
+      margin-bottom: 50px * 2;
+    }
+
+    @else {
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.container {
+  @include bigMargin(double);
+  text-align: center;
+
+  @media #{$break-md} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    text-align: left;
+  }
+
+  .title_mobile {
+    @media #{$break-md} {
+      display: none;
+    }
+  }
+
+  .title_desktop {
+    display: none;
+
+    @media #{$break-md} {
+      display: block;
+    }
+  }
+
+  .text {
+    width: 100%;
+
+    @media #{$break-md} {
+      max-width: 580px;
+    }
+  }
+
+  .image {
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 300px;
+
+    @media #{$break-md} {
+      height: 500px;
+    }
+  }
+
+  .imgLeft {
+    grid-row: 1/3;
+  }
+
+  .imgRight {
+    grid-row: 1/3;
+    grid-column: 2;
+  }
+
+  .textLeft {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+
+.container_noImage {
+  max-width: 990px;
+  margin: 0 auto;
+  @include bigMargin();
+  margin-bottom: 80px;
+}

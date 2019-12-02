@@ -1,26 +1,23 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styles from "./Home.module.scss";
-import Easyforms from "../../assets/home/easyforms.png";
-import Toolbox from "../../assets/home/toolbox.png";
-import { Layout } from "../../components/Layout/Layout";
+import Easyforms from "src/assets/home/easyforms.png";
+import Toolbox from "src/assets/home/toolbox.png";
+import WCB from "src/assets/home/wcb-thumb.png";
+import { Layout } from "src/components/Layout/Layout";
 
 export default class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <Layout>
         <div className={styles.hero}>
           <p>
-            Hello,{" "}
-            <NavLink to="/about" className={styles.link}>
-              I'm Yun.
-            </NavLink>{" "}
-            I'm a{" "}
-            <NavLink to="/about" className={styles.link}>
-              web designer + front-end developer
-            </NavLink>{" "}
-            based in Auckland, New Zealand. I'm enthusiastic at creating
-            exceptional user experiences with{" "}
+            Hello, I'm Yun. I'm a web designer + front-end developer based in
+            Auckland, New Zealand. I'm enthusiastic at creating exceptional user
+            experiences with{" "}
             <NavLink to="/about" className={styles.link}>
               my broad range of skills.
             </NavLink>{" "}
@@ -37,9 +34,15 @@ export default class Home extends Component {
         </div>
         <div className={styles.works}>
           <div className={styles.images}>
-            <img src={Easyforms} alt="toolbox" />
-            <img src={Easyforms} alt="toolbox" />
-            <img src={Toolbox} alt="toolbox" />
+            <Link to="/portfolio/easyforms">
+              <img src={Easyforms} alt="toolbox" />
+            </Link>
+            <Link to="/portfolio/toolbox">
+              <img src={Toolbox} alt="toolbox" />
+            </Link>
+            <Link to="/portfolio/wcb">
+              <img src={WCB} alt="White Collar Blue" />
+            </Link>
           </div>
           <NavLink to="/portfolio" className={styles.viewMoreWork}>
             View more work

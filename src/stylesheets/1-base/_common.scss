@@ -1,42 +1,42 @@
 @import "../2-abstracts/abstracts-dir";
 
 body {
-    font-family: $font-stack;
-    margin: 0;
-    background: $light-grey;
-    color: $black;
+  font-family: $font-stack;
+  margin: 0;
+  background: $light-grey;
+  color: $black;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    li {
-        list-style: none;
-    }
+  li {
+    list-style: none;
+  }
 }
 
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *:focus {
-    outline: none;
+  outline: none;
 }
 
 button,
 a {
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 
-    &:focus {
-        outline: 0;
-    }
+  &:focus {
+    outline: 0;
+  }
 }
 
 h1,
@@ -45,5 +45,10 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: normal;
 }
