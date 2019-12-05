@@ -4,6 +4,7 @@ import { Layout } from "../../../../components/Layout/Layout";
 import common from "../common.module.scss";
 import ToolboxMain from "src/assets/portfolio/toolbox.png";
 import ToolboxResponsive from "src/assets/portfolio/responsive.png";
+import ToolboxVideo from "src/assets/portfolio/toolbox-video.mp4";
 import Description from "../../components/Description";
 
 export default class Toolbox extends Component {
@@ -36,7 +37,11 @@ export default class Toolbox extends Component {
                 <p>React JS, HTML5, CSS3(SCSS)</p>
               </div>
               <div>
-                <h6>Visit website</h6>
+                <h6>
+                  <a href="https://digital.toolbox.net.nz/" target="_blank">
+                    Visit website
+                  </a>
+                </h6>
               </div>
             </div>
             <p>
@@ -55,7 +60,7 @@ export default class Toolbox extends Component {
                   software development to make the site look alive and real.
                   Also I added smooth animations to most of elements to give
                   users nice little entertainments."
-            bgImage={ToolboxMain}
+            bgVideo={ToolboxVideo}
             imgPosition="right"
           />
           <Description

@@ -34,6 +34,10 @@ a {
   text-decoration: none;
   color: inherit;
 
+  &:hover {
+    color: $pink !important;
+  }
+
   &:focus {
     outline: 0;
   }
@@ -41,7 +45,6 @@ a {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {

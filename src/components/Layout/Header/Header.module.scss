@@ -8,6 +8,10 @@
     padding: 0 1rem;
     z-index: 99;
 
+    @media #{$break-md} {
+        padding: 0 2rem;
+    }
+
     .headerInner {
         @include container-maxwidth();
         @include flex-center-justify();

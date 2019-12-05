@@ -1,13 +1,13 @@
 @import "../../../stylesheets/2-abstracts/abstracts-dir.scss";
 
-@mixin bigMargin($double: false) {
+@mixin bigMargin($bigger: false) {
   margin-top: 50px;
   margin-bottom: 30px;
 
   @media #{$break-md} {
-    @if ($double) {
-      margin-top: 80px * 2;
-      margin-bottom: 50px * 2;
+    @if ($bigger) {
+      margin-top: 80px * 1.5;
+      margin-bottom: 50px * 1.5;
     }
 
     @else {
@@ -18,7 +18,7 @@
 }
 
 .container {
-  @include bigMargin(double);
+  @include bigMargin(bigger);
   text-align: center;
 
   @media #{$break-md} {
@@ -26,6 +26,16 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
     text-align: left;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    @media #{$break-md} {
+      margin-top: 0;
+    }
   }
 
   .title_mobile {
@@ -51,16 +61,17 @@
   }
 
   .image {
-    content: "";
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    width: 100%;
-    height: 300px;
+    object-fit: contain;
 
-    @media #{$break-md} {
-      height: 500px;
+    img {
+      width: 100%;
+      height: 100%;
     }
+  }
+
+  .video {
+    @include bigShadow();
+    border-radius: 4px;
   }
 
   .imgLeft {
@@ -76,6 +87,20 @@
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+
+    @media #{$break-md} {
+      padding-left: 2em;
+    }
+  }
+
+  .textRight {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    @media #{$break-md} {
+      padding-right: 2em;
+    }
   }
 }
 

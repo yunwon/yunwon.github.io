@@ -27,10 +27,24 @@ export default class Description extends Component {
       <div className={styles.container}>
         {/* mobile */}
         <h3 className={styles.title_mobile}>{this.props.title}</h3>
-        <div
+        <div className={imgClass}>
+          {this.props.bgImage ? (
+            <img src={this.props.bgImage} alt={this.props.title} />
+          ) : (
+            <video
+              width="100%"
+              autoPlay="true"
+              loop="true"
+              className={styles.video}
+            >
+              <source src={this.props.bgVideo} type="video/mp4" />
+            </video>
+          )}
+        </div>
+        {/* <div
           className={imgClass}
           style={{ backgroundImage: "url(" + this.props.bgImage + ")" }}
-        />
+        /> */}
         {/* desktop */}
         <div className={textPosition}>
           <div className={styles.text}>
