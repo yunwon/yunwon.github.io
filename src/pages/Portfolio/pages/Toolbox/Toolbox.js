@@ -6,6 +6,7 @@ import ToolboxMain from "src/assets/portfolio/toolbox.png";
 import ToolboxResponsive from "src/assets/portfolio/responsive.png";
 import ToolboxVideo from "src/assets/portfolio/toolbox-video.mp4";
 import Description from "../../components/Description";
+import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
 
 export default class Toolbox extends Component {
   componentDidMount() {
@@ -75,6 +76,7 @@ export default class Toolbox extends Component {
             imgPosition="left"
           />
         </div>
+        <GoToPortfolio />
       </Layout>
     );
   }

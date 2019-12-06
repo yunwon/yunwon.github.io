@@ -36,6 +36,7 @@ export default class Description extends Component {
               autoPlay="true"
               loop="true"
               className={styles.video}
+              controls="true"
             >
               <source src={this.props.bgVideo} type="video/mp4" />
             </video>

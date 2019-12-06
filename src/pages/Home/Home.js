@@ -5,6 +5,7 @@ import Easyforms from "src/assets/home/easyforms.png";
 import Toolbox from "src/assets/home/toolbox.png";
 import WCB from "src/assets/home/wcb-thumb.png";
 import { Layout } from "src/components/Layout/Layout";
+import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
 
 export default class Home extends Component {
   componentDidMount() {
@@ -44,9 +45,7 @@ export default class Home extends Component {
               <img src={WCB} alt="White Collar Blue" />
             </Link>
           </div>
-          <NavLink to="/portfolio" className={styles.viewMoreWork}>
-            View more work
-          </NavLink>
+          <GoToPortfolio />
         </div>
       </Layout>
     );

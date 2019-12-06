@@ -48,21 +48,4 @@
 
     }
 
-    .viewMoreWork {
-        font-size: 1.25rem;
-        text-transform: uppercase;
-        color: $black;
-        margin-top: 1.25rem;
-        border-bottom: 1px solid $black;
-
-        &:hover {
-            color: $pink;
-            border-bottom: 1px solid $pink;
-        }
-
-        @media #{$break-md} {
-            margin-top: 2.5rem;
-        }
-    }
-
 }

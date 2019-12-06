@@ -95,7 +95,6 @@
 
   .textRight {
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
 
     @media #{$break-md} {

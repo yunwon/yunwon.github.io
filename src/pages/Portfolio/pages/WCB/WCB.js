@@ -5,8 +5,12 @@ import WCBMain from "src/assets/portfolio/wcb-main.png";
 import DetailImage from "src/assets/portfolio/detail.png";
 import PeopleImage from "src/assets/portfolio/people-screens.png";
 import Description from "../../components/Description";
+import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
 
 export default class WCB extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <Layout>
@@ -76,6 +80,7 @@ export default class WCB extends Component {
             imgPosition="right"
           />
         </div>
+        <GoToPortfolio />
       </Layout>
     );
   }

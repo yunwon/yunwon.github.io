@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Layout } from "../../../../components/Layout/Layout";
 import common from "../common.module.scss";
-import ToolboxMain from "src/assets/portfolio/toolbox.png";
-import ToolboxResponsive from "src/assets/portfolio/responsive.png";
+import EasyformsMain from "src/assets/portfolio/easyforms-main.png";
+import EasyformsResponsive from "src/assets/portfolio/mobile-all.png";
+import Video from "src/assets/portfolio/easyforms-video.mp4";
 import Description from "../../components/Description";
+import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
 
 export default class Easyforms extends Component {
   componentDidMount() {
@@ -15,61 +17,51 @@ export default class Easyforms extends Component {
       <Layout>
         <div className={common.hero}>
           <h1>Work</h1>
-          <h2>A website for Toolbox Digital</h2>
-          <img src={ToolboxMain} alt="Toolbox Digital" />
+          <h2>A Website redesign for Easyforms</h2>
+          <img src={EasyformsMain} alt="Easyforms website redesign" />
         </div>
         <div className={common.body}>
           <div className={common.intro}>
             <div className={common.brief}>
               <div>
                 <h6>Year</h6>
-                <p>2019</p>
+                <p>2018</p>
               </div>
               <div>
                 <h6>Role</h6>
-                <p>UI design</p>
-                <p>Front-end development</p>
+                <p>UX/UI design</p>
               </div>
               <div>
                 <h6>Software & Technology</h6>
-                <p>Figma</p>
-                <p>React JS, HTML5, CSS3(SCSS)</p>
+                <p>Adobe XD</p>
               </div>
-              <div>
-                <h6>Visit website</h6>
-              </div>
+              <div></div>
             </div>
             <p>
-              Recently I designed and developed a website for Toolbox Digital
-              that is a software development company. The main purpose of the
-              website was to advertise the brand and showcase its recent work. I
-              used the Toolbox brand colours for overall design and put three
-              mains business areas on the landing page and linked them to each
-              relevant portfolio sections, so that users can know what they are
-              and what they do straight away.
+              I participated in a website redesign project for Easyforms,
+              Auckland as an one-off volunteer role. My main approach was to
+              create trendy UI design as well as improve usability by getting
+              rid of verbiage. This work was my first web design work with a
+              real client. In hindsight, There are lots of things that can be
+              improved, but I learned a lot from this.
             </p>
           </div>
           <Description
-            title="Video & Animations"
-            paragraph="I used a video as a background image of people working on
-                  software development to make the site look alive and real.
-                  Also I added smooth animations to most of elements to give
-                  users nice little entertainments."
-            bgImage={ToolboxMain}
+            title="Vivid Colour & Illustations"
+            paragraph="I chose the main colour scheme as vivid gradient of blue and yellow. 
+            Also, I picked and modified some trendy illustrations which catches eyes and 
+            made the website more friendly and fun."
+            bgVideo={Video}
             imgPosition="right"
           />
           <Description
-            title="Fast and responsive Front-end development"
-            paragraph="I created fully responsive design from mobile, tablet to
-            desktop so user can have the same experience in every devices.
-            It is built with 'mobile-up' which means I developed it for
-            mobile size first and added styling for bigger screens using
-            media queries. With React JS, I created reusable components
-            which shortened the development time."
-            bgImage={ToolboxResponsive}
+            title="Responsive Design for Mobile"
+            paragraph="I created mobile first design so that user can easily use the website anywhere."
+            bgImage={EasyformsResponsive}
             imgPosition="left"
           />
         </div>
+        <GoToPortfolio right />
       </Layout>
     );
   }
