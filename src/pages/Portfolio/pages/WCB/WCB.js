@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Layout } from "src/components/Layout/Layout";
 import common from "../common.module.scss";
 import WCBMain from "src/assets/portfolio/wcb-main.png";
@@ -14,13 +15,10 @@ export default class WCB extends Component {
   render() {
     return (
       <Layout>
-        {/* <embed
-          src="../../../assets/portfolio/solar.swf"
-          width="550"
-          height="400"
-        /> */}
         <div className={common.hero}>
-          <h1>Work</h1>
+          <Link to="/portfolio">
+            <h1>Work</h1>
+          </Link>
           <h2>A website redesign for WhiteCollarBlue Australia</h2>
           <img src={WCBMain} alt="White Collar Blue" />
         </div>
@@ -58,24 +56,22 @@ export default class WCB extends Component {
           <Description
             title="Strong user experience"
             paragraph="The main purpose of the website was to cater for both job seekers'
-            and employers' needs. Our team thought both users should be able
-            to find what they need as quick as possible, so I tried to put all
-            the main functions in the 'above the fold' area. In one or two
-            clicks, both users can reach where they want."
+            and employers' needs. Our team decided that both users should be able
+            to find what they need as quick as possible, so I placed the key functions 
+            in the 'above the fold' area. In one or two clicks, both users can instantly reach where they want."
           />
           <Description
             title="Design that boosts brand recognition"
-            paragraph="I used the same colour scheme as WCB's logo, and used blue
-            border of logo as the key design element so that the website
-            design boosts the brand recognition."
+            paragraph="I selected blue as a main colour scheme which is from the logo of WCB. In addition, 
+            I used the blue border as the key design element of the website so that it boosts the brand recognition."
             bgImage={DetailImage}
             imgPosition="left"
           />
           <Description
             title="Images of people"
-            paragraph="I selected lots of images of people which not only make users
-            feel they are actually connecting to other people, but also
-            match the HR company's character."
+            paragraph="I selected lots of images of workers which not only make users
+            feel they are actually connecting to real people, but also
+            supports WCB's identity which is a HR company."
             bgImage={PeopleImage}
             imgPosition="right"
           />

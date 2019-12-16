@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Layout } from "../../../../components/Layout/Layout";
 import common from "../common.module.scss";
 import EasyformsMain from "src/assets/portfolio/easyforms-main.png";
@@ -16,7 +16,9 @@ export default class Easyforms extends Component {
     return (
       <Layout>
         <div className={common.hero}>
-          <h1>Work</h1>
+          <Link to="/portfolio">
+            <h1>Work</h1>
+          </Link>
           <h2>A Website redesign for Easyforms</h2>
           <img src={EasyformsMain} alt="Easyforms website redesign" />
         </div>
@@ -58,7 +60,7 @@ export default class Easyforms extends Component {
           <Description
             title="Responsive Design for Mobile"
             paragraph="In addition to the above work, I designed the mobile user experience for this website. 
-            Here, I focussed on adaptability and ease of use. "
+            Here, I focussed on adaptability and ease of use."
             bgImage={EasyformsResponsive}
             imgPosition="left"
           />
