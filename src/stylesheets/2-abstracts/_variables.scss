@@ -1,0 +1,23 @@
+/* fonts */
+$font-stack: 'futura-pt',
+'Helvetica Neue Light',
+'Helvetica Neue',
+'Helvetica',
+'Arial',
+sans-serif !default;
+
+/* colours */
+$light-grey: #f7f7f7;
+$grey: #afafaf;
+$black: #333333;
+$pink: #d96262;
+
+/* breakpoints */
+$break-xs: "(min-width: 576px)";
+$break-sm: "(min-width: 768px)";
+$break-md: "(min-width: 992px)";
+$break-lg: "(min-width: 1200px)";
+$break-xl: "(min-width: 1691px)";
+$break-xxl: "(min-width: 2561px)";
+
+$headerHeight : 70px

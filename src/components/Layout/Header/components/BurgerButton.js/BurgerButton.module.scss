@@ -1,0 +1,44 @@
+.burgerMenu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    span {
+        display: block;
+        line-height: 0;
+        width: 40px;
+        height: 2px;
+        margin-top: 8px;
+        background-color: black;
+    }
+
+    .line1 {
+        transform-origin: 84% 50%;
+    }
+
+    .line3 {
+        transform-origin: 84% -50%;
+    }
+}
+
+.burgerMenu span {
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.burgerMenu.menuOn .line2 {
+    opacity: 0;
+}
+
+.burgerMenu.menuOn .line1 {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    bottom: 0px;
+}
+
+.burgerMenu.menuOn .line3 {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 0px;
+}

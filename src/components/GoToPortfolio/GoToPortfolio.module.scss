@@ -1,0 +1,33 @@
+@import "../../stylesheets/2-abstracts/abstracts-dir.scss";
+
+.container {
+    @include container-maxwidth();
+    @include flex-center();
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+
+    // &.flexEnd {
+    //     @media #{$break-md} {
+    //         justify-content: flex-end;
+    //     }
+    // }
+
+    // &.flexStart {
+    //     @media #{$break-md} {
+    //         justify-content: flex-start;
+    //     }
+    // }
+
+
+    a {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        color: $black;
+        border-bottom: 1px solid $black;
+
+        &:hover {
+            color: $pink;
+            border-bottom: 1px solid $pink;
+        }
+    }
+}
