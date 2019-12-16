@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import styles from "./BurgerButton.module.scss";
 
-export const BurgerButton = () => {
-  const [buttonChange, setButtonChange] = useState(false);
-
-  const toggle = () => {
-    setButtonChange(buttonChange === true ? false : true);
-  };
-
+export const BurgerButton = ({ click, burgerChangeState }) => {
   const burgerMenuClasses = `${styles.burgerMenu} ${
-    buttonChange === true ? styles.menuOn : null
+    burgerChangeState === true ? styles.menuOn : null
   }`;
 
   return (
-    <div className={burgerMenuClasses} onClick={toggle}>
+    <div className={burgerMenuClasses} onClick={click}>
       <span className={styles.line1}></span>
       <span className={styles.line2}></span>
       <span className={styles.line3}></span>

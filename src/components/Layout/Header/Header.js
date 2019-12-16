@@ -1,19 +1,35 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BurgerButton } from "./components/BurgerButton.js/BurgerButton";
 import styles from "./Header.module.scss";
+import NavMenu from "src/components/Layout/Header/components/NavMenu/NavMenu";
 
-export default class Header extends Component {
-  render() {
-    return (
-      <header className={styles.header}>
+const Header = () => {
+  const [buttonChange, setButtonChange] = useState(false);
+  const [showNavMenu, setShowNavMenu] = useState(false);
+
+  const toggle = () => {
+    setShowNavMenu(showNavMenu === false ? true : false);
+    setButtonChange(buttonChange === false ? true : false);
+  };
+
+  const headerClasses = `${styles.header} ${
+    showNavMenu === true ? styles.menuOn : null
+  }`;
+
+  return (
+    <>
+      <header className={headerClasses}>
         <div className={styles.headerInner}>
           <Link to="/" className={styles.logo}>
             <div>Jeongyun Won</div>
           </Link>
-          <BurgerButton />
+          <BurgerButton click={toggle} burgerChangeState={buttonChange} />
         </div>
+        {showNavMenu ? <NavMenu /> : null}
       </header>
-    );
-  }
-}
+    </>
+  );
+};
+
+export default Header;

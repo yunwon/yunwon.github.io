@@ -23,9 +23,17 @@
             font-weight: bold;
             font-size: 1.25rem;
 
+
             @media #{$break-md} {
                 font-size: 1.5rem;
             }
         }
     }
+
+    &.menuOn {
+        .logo {
+            opacity: 0;
+        }
+    }
+
 }

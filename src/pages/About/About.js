@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Me from "../../assets/about/jeongyunwon.png";
+import CV from "../../assets/about/JeongyunWon_CV.pdf";
 import styles from "./About.module.scss";
 import { Layout } from "../../components/Layout/Layout";
 
 export default class About extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   renderSkills = ({ title, children }) => {
     return (
       <div className={styles.block}>
@@ -25,7 +30,9 @@ export default class About extends Component {
             <img src={Me} alt="Jeongyun Won" />
           </div>
           <div className={styles.heroRight}>
-            <a>Download my CV</a>
+            <a href={CV} download>
+              Download my CV
+            </a>
           </div>
         </div>
         <div className={styles.body}>

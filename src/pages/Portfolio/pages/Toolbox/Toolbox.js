@@ -39,7 +39,7 @@ export default class Toolbox extends Component {
               </div>
               <div>
                 <h6>
-                  <a href="https://digital.toolbox.net.nz/" target="_blank">
+                  <a href="https://digital.toolbox.net.nz/" target="_blank" rel="noopener noreferrer">
                     Visit website
                   </a>
                 </h6>

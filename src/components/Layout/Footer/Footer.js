@@ -21,7 +21,7 @@ export default class Footer extends Component {
                 <FaGithub />
               </a>
               <a
-                href="https://github.com/yunwon"
+                href="https://www.linkedin.com/in/yunwon"
                 target="_blank"
                 rel="noopener noreferrer"
               >

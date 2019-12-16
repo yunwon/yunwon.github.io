@@ -1,0 +1,27 @@
+@import "src/stylesheets/2-abstracts/_abstracts-dir.scss";
+
+
+.container {
+    @include flex-center();
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    height: 100%;
+    background: white;
+    opacity: 0.9;
+
+    .inner {
+        @include flex-center(column);
+        padding-bottom: 140px;
+
+        a {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin: 1rem 0;
+        }
+    }
+
+}

@@ -27,7 +27,12 @@ export default class Home extends Component {
               my recent work
             </NavLink>{" "}
             here and{" "}
-            <a href="#footer" className={styles.link}>
+            <a
+              href="https://www.linkedin.com/in/yunwon/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
               say hello
             </a>{" "}
             if you'd like to know more.
