@@ -39,24 +39,26 @@ export default class Easyforms extends Component {
             </div>
             <p>
               I participated in a website redesign project for Easyforms,
-              Auckland as an one-off volunteer role. My main approach was to
-              create trendy UI design as well as improve usability by getting
-              rid of verbiage. This work was my first web design work with a
-              real client. In hindsight, There are lots of things that can be
-              improved, but I learned a lot from this.
+              Auckland as an one-off volunteer role. My approach focussed on
+              creating trendy UI design and improving usability, by reducing
+              verbiage. This project was my first web design work with an
+              outside client. Looking back, this project was a valuable learning
+              experience that greatly developed my creative and technical
+              skillset.
             </p>
           </div>
           <Description
-            title="Vivid Colour & Illustations"
-            paragraph="I chose the main colour scheme as vivid gradient of blue and yellow. 
-            Also, I picked and modified some trendy illustrations which catches eyes and 
-            made the website more friendly and fun."
+            title="Bold Choices, Designer Focus"
+            paragraph="For the main colour scheme, I chose a striking contrast of blue and yellow. 
+            Additionally, I selected new graphics and design elements that would improve click-through and retention rates. 
+            My ultimate goal was to improve this website's accessibility, engagement and visual appeal."
             bgVideo={Video}
             imgPosition="right"
           />
           <Description
             title="Responsive Design for Mobile"
-            paragraph="I created mobile first design so that user can easily use the website anywhere."
+            paragraph="In addition to the above work, I designed the mobile user experience for this website. 
+            Here, I focussed on adaptability and ease of use. "
             bgImage={EasyformsResponsive}
             imgPosition="left"
           />
