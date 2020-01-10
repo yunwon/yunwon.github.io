@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 import Me from "../../assets/about/jeongyunwon.png";
 import CV from "../../assets/about/JeongyunWon_CV.pdf";
 import styles from "./About.module.scss";
@@ -12,29 +13,33 @@ export default class About extends Component {
 
   renderSkills = ({ title, children }) => {
     return (
-      <div className={styles.block}>
-        <div className={styles.title}>
-          <h2>{title}</h2>
+      <Fade cascade bottom distance="3rem">
+        <div className={styles.block}>
+          <div className={styles.title}>
+            <h2>{title}</h2>
+          </div>
+          <div className={styles.contents}>{children}</div>
         </div>
-        <div className={styles.contents}>{children}</div>
-      </div>
+      </Fade>
     );
   };
 
   render() {
     return (
       <Layout>
-        <div className={styles.hero}>
-          <div className={styles.heroLeft}>
-            <h1>About Me</h1>
-            <img src={Me} alt="Jeongyun Won" />
+        <Fade top cascade distance="3rem">
+          <div className={styles.hero}>
+            <div className={styles.heroLeft}>
+              <h1>About Me</h1>
+              <img src={Me} alt="Jeongyun Won" />
+            </div>
+            <div className={styles.heroRight}>
+              <a href={CV} download>
+                Download my CV
+              </a>
+            </div>
           </div>
-          <div className={styles.heroRight}>
-            <a href={CV} download>
-              Download my CV
-            </a>
-          </div>
-        </div>
+        </Fade>
         <div className={styles.body}>
           <article>
             <this.renderSkills title={`I can do`}>
@@ -58,7 +63,7 @@ export default class About extends Component {
                     <ul>
                       <li>HTML, CSS(SCSS)</li>
                       <li>Responsive Design, </li>
-                      <li>React JS, Javascript</li>
+                      <li>React JS, React Native, Javascript</li>
                       <li>
                         <a>See my works in Github</a>
                       </li>
@@ -117,7 +122,7 @@ export default class About extends Component {
                 <ul>
                   <li>Reading books</li>
                   <li>Drawing</li>
-                  <li>Playing Ukulele</li>
+                  <li>Playing board games</li>
                 </ul>
               </div>
             </this.renderSkills>

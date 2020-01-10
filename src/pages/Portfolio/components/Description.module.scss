@@ -19,24 +19,32 @@
 
 .container {
   @include bigMargin(bigger);
-  text-align: center;
+  //text-align: center;
+  text-align: left;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
 
   @media #{$break-md} {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
     text-align: left;
-  }
 
-  h3 {
-    margin-top: 0;
-  }
+    h3 {
+      margin-bottom: 1rem;
+    }
 
-  p {
-    @media #{$break-md} {
+    p {
       margin-top: 0;
     }
   }
+
+
+
+
 
   .title_mobile {
     @media #{$break-md} {

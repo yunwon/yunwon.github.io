@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 import { Layout } from "../../../../components/Layout/Layout";
 import common from "../common.module.scss";
 import EasyformsMain from "src/assets/portfolio/easyforms-main.png";
@@ -15,40 +16,44 @@ export default class Easyforms extends Component {
   render() {
     return (
       <Layout>
-        <div className={common.hero}>
-          <Link to="/portfolio">
-            <h1>Work</h1>
-          </Link>
-          <h2>A Website redesign for Easyforms</h2>
-          <img src={EasyformsMain} alt="Easyforms website redesign" />
-        </div>
-        <div className={common.body}>
-          <div className={common.intro}>
-            <div className={common.brief}>
-              <div>
-                <h6>Year</h6>
-                <p>2018</p>
-              </div>
-              <div>
-                <h6>Role</h6>
-                <p>UX/UI design</p>
-              </div>
-              <div>
-                <h6>Software & Technology</h6>
-                <p>Adobe XD</p>
-              </div>
-              <div></div>
-            </div>
-            <p>
-              I participated in a website redesign project for Easyforms,
-              Auckland as an one-off volunteer role. My approach focussed on
-              creating trendy UI design and improving usability, by reducing
-              verbiage. This project was my first web design work with an
-              outside client. Looking back, this project was a valuable learning
-              experience that greatly developed my creative and technical
-              skillset.
-            </p>
+        <Fade top cascade distance="3rem">
+          <div className={common.hero}>
+            <Link to="/portfolio">
+              <h1>Work</h1>
+            </Link>
+            <h2>A Website redesign for Easyforms</h2>
+            <img src={EasyformsMain} alt="Easyforms website redesign" />
           </div>
+        </Fade>
+        <div className={common.body}>
+          <Fade bottom cascade distance="3rem">
+            <div className={common.intro}>
+              <div className={common.brief}>
+                <div>
+                  <h6>Year</h6>
+                  <p>2018</p>
+                </div>
+                <div>
+                  <h6>Role</h6>
+                  <p>UX/UI design</p>
+                </div>
+                <div>
+                  <h6>Software & Technology</h6>
+                  <p>Adobe XD</p>
+                </div>
+                <div></div>
+              </div>
+              <p>
+                I participated in a website redesign project for Easyforms,
+                Auckland as an one-off volunteer role. My approach focussed on
+                creating trendy UI design and improving usability, by reducing
+                verbiage. This project was my first web design work with an
+                outside client. Looking back, this project was a valuable
+                learning experience that greatly developed my creative and
+                technical skillset.
+              </p>
+            </div>
+          </Fade>
           <Description
             title="Bold Choices, Designer Focus"
             paragraph="For the main colour scheme, I chose a striking contrast of blue and yellow. 
@@ -65,7 +70,7 @@ export default class Easyforms extends Component {
             imgPosition="left"
           />
         </div>
-        <GoToPortfolio right />
+        <GoToPortfolio />
       </Layout>
     );
   }

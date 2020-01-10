@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { Layout } from "src/components/Layout/Layout";
 import common from "../common.module.scss";
@@ -15,63 +16,73 @@ export default class WCB extends Component {
   render() {
     return (
       <Layout>
-        <div className={common.hero}>
-          <Link to="/portfolio">
-            <h1>Work</h1>
-          </Link>
-          <h2>A website redesign for WhiteCollarBlue Australia</h2>
-          <img src={WCBMain} alt="White Collar Blue" />
-        </div>
-        <div className={common.body}>
-          <div className={common.intro}>
-            <div className={common.brief}>
-              <div>
-                <h6>Year</h6>
-                <p>2019</p>
-              </div>
-              <div>
-                <h6>Role</h6>
-                <div>
-                  <p>UX/UI design</p>
-                  <p>Front-end development</p>
-                </div>
-              </div>
-              <div>
-                <h6>Software & Technology</h6>
-                <div>
-                  <p>UXPin</p>
-                  <p>React JS, HTML5, CSS3(SCSS)</p>
-                </div>
-              </div>
-              <a>
-                <h6>Visit website</h6>
-              </a>
-            </div>
-            <p>
-              WhiteCollarBlue is a HR company based in Sydney, Australia. With
-              my broad range of skills, I could participated in UX/UI design and
-              front-end development.
-            </p>
+        <Fade top cascade distance="3rem">
+          <div className={common.hero}>
+            <Link to="/portfolio">
+              <h1>Work</h1>
+            </Link>
+            <h2>A website redesign for WhiteCollarBlue Australia</h2>
+            <img src={WCBMain} alt="White Collar Blue" />
           </div>
+        </Fade>
+        <div className={common.body}>
+          <Fade bottom cascade distance="3rem">
+            <div className={common.intro}>
+              <div className={common.brief}>
+                <div>
+                  <h6>Year</h6>
+                  <p>2019</p>
+                </div>
+                <div>
+                  <h6>Role</h6>
+                  <div>
+                    <p>UX/UI design</p>
+                    <p>Front-end development</p>
+                  </div>
+                </div>
+                <div>
+                  <h6>Software & Technology</h6>
+                  <div>
+                    <p>UXPin</p>
+                    <p>React JS, HTML5, CSS3(SCSS)</p>
+                  </div>
+                </div>
+                <a
+                  href="https://whitecollarblue.com.au/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h6>Visit website</h6>
+                </a>
+              </div>
+              <p>
+                In 2019 I worked for WhiteCollarBlue, an HR company based in
+                Sydney, Australia. In this role, I participated in front-end
+                development projects and UX/UI Design. This job was done
+                remotely, involving regular communication and conferencing.
+              </p>
+            </div>
+          </Fade>
           <Description
             title="Strong user experience"
-            paragraph="The main purpose of the website was to cater for both job seekers'
-            and employers' needs. Our team decided that both users should be able
-            to find what they need as quick as possible, so I placed the key functions 
-            in the 'above the fold' area. In one or two clicks, both users can instantly reach where they want."
+            paragraph="My work for WhiteCollarBlue focussed on enhancing user convenience and accessibility. 
+            Catering to job seekers and employers, I worked to streamline navigation and visitor experience.
+            As a result of my work I significantly improved ease-of-use and access, reducing complicated 
+            navigation to a one- or two-click process."
           />
           <Description
             title="Design that boosts brand recognition"
-            paragraph="I selected blue as a main colour scheme which is from the logo of WCB. In addition, 
-            I used the blue border as the key design element of the website so that it boosts the brand recognition."
+            paragraph="To improve WhiteCollarBlue's brand recognition, I incorporated design elements from 
+            their logo into the website itself."
             bgImage={DetailImage}
             imgPosition="left"
           />
           <Description
-            title="Images of people"
-            paragraph="I selected lots of images of workers which not only make users
-            feel they are actually connecting to real people, but also
-            supports WCB's identity which is a HR company."
+            title="Human Resources, Human Imagery"
+            paragraph="To better reflect WhiteCollarBlue's role as an HR and employment-facilitator, 
+            I redesigned their website to incorporate more people-focussed elements. Graphics, logos 
+            and backgrounds now work together to emphasise real people and connect visitors with the 
+            core philosophy of WCB."
             bgImage={PeopleImage}
             imgPosition="right"
           />

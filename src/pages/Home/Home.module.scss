@@ -2,7 +2,11 @@
 
 .hero {
     @include container-maxwidth();
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
+
+    @media #{$break-md} {
+        margin-bottom: 4rem;
+    }
 
     p {
         font-size: 1.75rem;
@@ -39,6 +43,8 @@
 
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         @media #{$break-sm} {
