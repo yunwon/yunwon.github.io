@@ -8,6 +8,8 @@ import EasyformsResponsive from "src/assets/portfolio/mobile-all.png";
 import Video from "src/assets/portfolio/easyforms-video.mp4";
 import Description from "../../components/Description";
 import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default class Easyforms extends Component {
   componentDidMount() {
@@ -22,7 +24,11 @@ export default class Easyforms extends Component {
               <h1>Work</h1>
             </Link>
             <h2>A Website redesign for Easyforms</h2>
-            <img src={EasyformsMain} alt="Easyforms website redesign" />
+            <LazyLoadImage
+              alt="Easyforms website redesign"
+              effect="blur"
+              src={EasyformsMain}
+            />
           </div>
         </Fade>
         <div className={common.body}>

@@ -3,6 +3,8 @@ import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { Layout } from "../../components/Layout/Layout";
 import styles from "./PortfolioHome.module.scss";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default class PortfolioHome extends Component {
   componentDidMount() {
@@ -46,25 +48,28 @@ export default class PortfolioHome extends Component {
           <div className={styles.works}>
             {this.state.webDesign ? (
               <Link to="/portfolio/easyforms">
-                <img
-                  src={require("../../assets/home/easyforms.png")}
+                <LazyLoadImage
                   alt="Easyforms"
+                  effect="blur"
+                  src={require("../../assets/home/easyforms.png")}
                 />
               </Link>
             ) : null}
             {this.state.webDesign || this.state.frontEnd ? (
               <Link to="/portfolio/toolbox">
-                <img
-                  src={require("../../assets/home/toolbox.png")}
+                <LazyLoadImage
                   alt="Toolbox"
+                  effect="blur"
+                  src={require("../../assets/home/toolbox.png")}
                 />
               </Link>
             ) : null}
             {this.state.webDesign || this.state.frontEnd ? (
               <Link to="/portfolio/wcb">
-                <img
+                <LazyLoadImage
+                  alt="White Collar Blue"
+                  effect="blur"
                   src={require("../../assets/home/wcb-thumb.png")}
-                  alt="Toolbox"
                 />
               </Link>
             ) : null}

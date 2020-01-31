@@ -8,6 +8,8 @@ import DetailImage from "src/assets/portfolio/detail.png";
 import PeopleImage from "src/assets/portfolio/people-screens.png";
 import Description from "../../components/Description";
 import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default class WCB extends Component {
   componentDidMount() {
@@ -22,7 +24,11 @@ export default class WCB extends Component {
               <h1>Work</h1>
             </Link>
             <h2>A website redesign for WhiteCollarBlue Australia</h2>
-            <img src={WCBMain} alt="White Collar Blue" />
+            <LazyLoadImage
+              alt="White Collar Blue"
+              effect="blur"
+              src={WCBMain}
+            />
           </div>
         </Fade>
         <div className={common.body}>

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import classNames from "classnames";
 import styles from "./Description.module.scss";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default class Description extends Component {
   // without image
@@ -31,7 +33,12 @@ export default class Description extends Component {
           <h3 className={styles.title_mobile}>{this.props.title}</h3>
           <div className={imgClass}>
             {this.props.bgImage ? (
-              <img src={this.props.bgImage} alt={this.props.title} />
+              // <img src={this.props.bgImage} alt={this.props.title} />
+              <LazyLoadImage
+                alt={this.props.bgImage}
+                effect="blur"
+                src={this.props.title}
+              />
             ) : (
               <video
                 width="100%"

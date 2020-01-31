@@ -8,6 +8,8 @@ import ToolboxResponsive from "src/assets/portfolio/responsive.png";
 import ToolboxVideo from "src/assets/portfolio/toolbox-video.mp4";
 import Description from "../../components/Description";
 import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default class Toolbox extends Component {
   componentDidMount() {
@@ -22,7 +24,11 @@ export default class Toolbox extends Component {
               <h1>Work</h1>
             </Link>
             <h2>A website for Toolbox Digital</h2>
-            <img src={ToolboxMain} alt="Toolbox Digital" />
+            <LazyLoadImage
+              alt="Toolbox Digital"
+              effect="blur"
+              src={ToolboxMain}
+            />
           </div>
         </Fade>
         <div className={common.body}>
