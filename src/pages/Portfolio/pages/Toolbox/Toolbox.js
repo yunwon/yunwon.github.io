@@ -55,6 +55,7 @@ export default class Toolbox extends Component {
                       href="https://digital.toolbox.net.nz/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={common.visit}
                     >
                       Visit website
                     </a>

@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { Layout } from "../../components/Layout/Layout";
 import styles from "./PortfolioHome.module.scss";
+import Portfoilo from "../../assets/portfolio/portfolio_JeongyunWon_2012-2018.pdf";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
@@ -60,18 +61,10 @@ export default class PortfolioHome extends Component {
                     alt="Easyforms"
                     effect="blur"
                     src={require("../../assets/home/easyforms.png")}
+                    className={styles.image}
                   />
                 </Link>
               </>
-            ) : null}
-            {this.state.graphicDesign ? (
-              <Link to="/portfolio/solar-system">
-                <LazyLoadImage
-                  alt="Solar System"
-                  effect="blur"
-                  src={require("../../assets/portfolio/solarSystemMain.png")}
-                />
-              </Link>
             ) : null}
             {this.state.webDesign || this.state.frontEnd ? (
               <Link to="/portfolio/toolbox">
@@ -79,6 +72,7 @@ export default class PortfolioHome extends Component {
                   alt="Toolbox"
                   effect="blur"
                   src={require("../../assets/home/toolbox.png")}
+                  className={styles.image}
                 />
               </Link>
             ) : null}
@@ -88,8 +82,18 @@ export default class PortfolioHome extends Component {
                   alt="White Collar Blue"
                   effect="blur"
                   src={require("../../assets/home/wcb-thumb.png")}
+                  className={styles.image}
                 />
               </Link>
+            ) : null}
+            {this.state.graphicDesign ? (
+              <a className={styles.textDiv} href={Portfoilo} download>
+                <h2>
+                  Download my works
+                  <br />
+                  before 2017
+                </h2>
+              </a>
             ) : null}
           </div>
         </Fade>

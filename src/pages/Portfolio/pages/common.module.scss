@@ -92,6 +92,16 @@
     p {
       margin: 0;
     }
+
+    .visit {
+      border-bottom: 1px solid $grey;
+
+      &:hover {
+        color: $pink;
+        border-bottom: 1px solid $pink;
+        text-decoration: none !important;
+      }
+    }
   }
 }
 

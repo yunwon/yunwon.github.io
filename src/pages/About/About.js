@@ -61,11 +61,18 @@ export default class About extends Component {
                   <h3>Front-end Develepment</h3>
                   <div className={styles.description}>
                     <ul>
-                      <li>HTML, CSS(SCSS)</li>
-                      <li>Responsive Design, </li>
-                      <li>React JS, React Native, Javascript</li>
+                      <li>HTML5, CSS3(SCSS)</li>
+                      <li>Responsive Design</li>
+                      <li>React JS, React Native, jQuery, Javascript</li>
+                      <li>WordPress(Divi)</li>
                       <li>
-                        <a>See my works in Github</a>
+                        <a
+                          href="https://github.com/yunwon"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          See my works in Github
+                        </a>
                       </li>
                     </ul>
                   </div>

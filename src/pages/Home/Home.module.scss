@@ -1,57 +1,59 @@
 @import "../../stylesheets/2-abstracts/abstracts-dir.scss";
 
 .hero {
-    @include container-maxwidth();
-    margin-bottom: 1rem;
+  @include container-maxwidth();
+  margin-bottom: 1rem;
+
+  @media #{$break-md} {
+    margin-bottom: 4rem;
+  }
+
+  p {
+    font-size: 1.75rem;
+    line-height: 1.7;
+    margin: 0;
+
+    .link {
+      color: $pink;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
 
     @media #{$break-md} {
-        margin-bottom: 4rem;
+      font-size: 2.5rem;
+      line-height: 1.8;
     }
-
-    p {
-        font-size: 1.75rem;
-        line-height: 1.7;
-        margin: 0;
-
-        .link {
-            color: $pink;
-            cursor: pointer;
-
-            &:hover {
-                text-decoration: underline;
-                cursor: pointer;
-            }
-        }
-
-        @media #{$break-md} {
-            font-size: 2.5rem;
-            line-height: 1.8;
-        }
-    }
+  }
 }
 
 .works {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+
+  .images {
     width: 100%;
 
-    .images {
-        width: 100%;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        @media #{$break-sm} {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
+    @media #{$break-sm} {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media #{$break-md} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }

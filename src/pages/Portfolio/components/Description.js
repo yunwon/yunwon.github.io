@@ -34,9 +34,9 @@ export default class Description extends Component {
           <div className={imgClass}>
             {this.props.bgImage ? (
               <LazyLoadImage
-                alt={this.props.bgImage}
+                alt={this.props.title}
                 effect="blur"
-                src={this.props.title}
+                src={this.props.bgImage}
               />
             ) : (
               <video
