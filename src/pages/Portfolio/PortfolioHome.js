@@ -37,12 +37,19 @@ export default class PortfolioHome extends Component {
       frontEnd: true
     });
   };
+  handleAll = () => {
+    this.setState({
+      webDesign: true,
+      graphicDesign: true,
+      frontEnd: true
+    });
+  };
   render() {
     return (
       <Layout>
         <Fade top cascade distance="3rem">
           <div className={styles.hero}>
-            <Link to="/portfolio">
+            <Link to="/portfolio" onClick={this.handleAll}>
               <h1>Work</h1>
             </Link>
             <ul>
@@ -87,13 +94,23 @@ export default class PortfolioHome extends Component {
               </Link>
             ) : null}
             {this.state.graphicDesign ? (
-              <a className={styles.textDiv} href={Portfoilo} download>
-                <h2>
-                  Download my works
-                  <br />
-                  before 2017
-                </h2>
-              </a>
+              <>
+                <Link to="/portfolio/solar-system">
+                  <LazyLoadImage
+                    alt="Easyforms"
+                    effect="blur"
+                    src={require("../../assets/portfolio/solarSystemMain.png")}
+                    className={styles.image}
+                  />
+                </Link>
+                <a className={styles.textDiv} href={Portfoilo} download>
+                  <h2>
+                    Download my works
+                    <br />
+                    before 2017
+                  </h2>
+                </a>
+              </>
             ) : null}
           </div>
         </Fade>

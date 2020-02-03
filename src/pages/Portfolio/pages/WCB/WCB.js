@@ -57,6 +57,7 @@ export default class WCB extends Component {
                   href="https://whitecollarblue.com.au/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className={common.visit}
                 >
                   <h6>Visit website</h6>
                 </a>
