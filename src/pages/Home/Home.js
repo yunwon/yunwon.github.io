@@ -7,6 +7,7 @@ import Toolbox from "src/assets/home/toolbox.png";
 import WCB from "src/assets/home/wcb-thumb.png";
 import { Layout } from "src/components/Layout/Layout";
 import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
+import SolarSystem from "src/assets/portfolio/solarSystemMain.png";
 
 export default class Home extends Component {
   componentDidMount() {
@@ -44,6 +45,9 @@ export default class Home extends Component {
         <div className={styles.works}>
           <Fade bottom distance="3rem">
             <div className={styles.images}>
+              <Link to="/portfolio/solar-system">
+                <img src={SolarSystem} alt="The Solar System" />
+              </Link>
               <Link to="/portfolio/easyforms">
                 <img src={Easyforms} alt="toolbox" />
               </Link>

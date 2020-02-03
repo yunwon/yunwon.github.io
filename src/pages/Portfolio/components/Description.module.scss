@@ -8,9 +8,7 @@
     @if ($bigger) {
       margin-top: 80px * 1.5;
       margin-bottom: 50px * 1.5;
-    }
-
-    @else {
+    } @else {
       margin-top: 80px;
       margin-bottom: 50px;
     }
@@ -19,7 +17,6 @@
 
 .container {
   @include bigMargin(bigger);
-  //text-align: center;
   text-align: left;
 
   h3 {
@@ -41,10 +38,6 @@
       margin-top: 0;
     }
   }
-
-
-
-
 
   .title_mobile {
     @media #{$break-md} {

@@ -8,9 +8,7 @@
     @if ($double) {
       margin-top: 80px * 2;
       margin-bottom: 50px * 2;
-    }
-
-    @else {
+    } @else {
       margin-top: 80px;
       margin-bottom: 50px;
     }
@@ -50,7 +48,8 @@
     }
   }
 
-  img {
+  img,
+  video {
     @include bigShadow();
     margin-top: 1rem;
     border-radius: 6px;
@@ -93,5 +92,13 @@
     p {
       margin: 0;
     }
+  }
+}
+
+.swf {
+  width: 100%;
+  height: 300px;
+  @media #{$break-sm} {
+    height: 600px;
   }
 }

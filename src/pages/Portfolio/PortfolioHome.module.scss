@@ -1,47 +1,48 @@
 @import "../../stylesheets/2-abstracts/abstracts-dir.scss";
 
-.container {}
+.container {
+}
 
 .hero {
-    @include container-maxwidth();
-    @include flex-center();
-    flex-direction: column;
-    margin-bottom: 40px;
+  @include container-maxwidth();
+  @include flex-center();
+  flex-direction: column;
+  margin-bottom: 40px;
 
-    h1 {
-        font-weight: normal;
-        font-size: 3.125rem;
-        margin: 1rem auto;
+  h1 {
+    font-weight: normal;
+    font-size: 3.125rem;
+    margin: 1rem auto;
+  }
+
+  ul {
+    @media #{$break-sm} {
+      display: flex;
     }
 
-    ul {
-        @media #{$break-sm} {
-            display: flex;
-        }
-
-        li {
-            padding: 0 1em;
-            font-size: 1.25rem;
-            line-height: 1.8;
-            text-align: center;
-            cursor: pointer;
-        }
-
-
+    li {
+      padding: 0 1em;
+      font-size: 1.25rem;
+      line-height: 1.8;
+      text-align: center;
+      cursor: pointer;
     }
+  }
 }
 
 .works {
-    @media #{$break-sm} {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  @media #{$break-sm} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    @media #{$break-md} {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  @media #{$break-md} {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

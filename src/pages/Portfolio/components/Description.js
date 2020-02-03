@@ -33,7 +33,6 @@ export default class Description extends Component {
           <h3 className={styles.title_mobile}>{this.props.title}</h3>
           <div className={imgClass}>
             {this.props.bgImage ? (
-              // <img src={this.props.bgImage} alt={this.props.title} />
               <LazyLoadImage
                 alt={this.props.bgImage}
                 effect="blur"

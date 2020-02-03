@@ -22,6 +22,13 @@ export default class PortfolioHome extends Component {
       frontEnd: false
     });
   };
+  handleGraphicDesign = () => {
+    this.setState({
+      webDesign: false,
+      graphicDesign: true,
+      frontEnd: false
+    });
+  };
   handleFrontEnd = () => {
     this.setState({
       webDesign: false,
@@ -39,19 +46,30 @@ export default class PortfolioHome extends Component {
             </Link>
             <ul>
               <li onClick={this.handleWebDesign}>Web design</li>
-              <li>Graphic design</li>
+              <li onClick={this.handleGraphicDesign}>Graphic design</li>
               <li onClick={this.handleFrontEnd}>Front-end development</li>
             </ul>
           </div>
         </Fade>
         <Fade bottom distance="3rem">
           <div className={styles.works}>
-            {this.state.webDesign ? (
-              <Link to="/portfolio/easyforms">
+            {this.state.webDesign || this.state.graphicDesign ? (
+              <>
+                <Link to="/portfolio/easyforms">
+                  <LazyLoadImage
+                    alt="Easyforms"
+                    effect="blur"
+                    src={require("../../assets/home/easyforms.png")}
+                  />
+                </Link>
+              </>
+            ) : null}
+            {this.state.graphicDesign ? (
+              <Link to="/portfolio/solar-system">
                 <LazyLoadImage
-                  alt="Easyforms"
+                  alt="Solar System"
                   effect="blur"
-                  src={require("../../assets/home/easyforms.png")}
+                  src={require("../../assets/portfolio/solarSystemMain.png")}
                 />
               </Link>
             ) : null}
