@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5027b74b89d0c25df62d77e491dd8d3c",
+    "revision": "75768c07b8946e58f87506f9ffd089e5",
     "url": "/index.html"
   },
   {
-    "revision": "abbeb979d87ce105935d",
-    "url": "/static/css/main.b2ae9bff.chunk.css"
+    "revision": "a967957ba17fc96614e8",
+    "url": "/static/css/2.27fdde94.chunk.css"
   },
   {
-    "revision": "3d7f97904841de43338b",
-    "url": "/static/js/2.62be487f.chunk.js"
+    "revision": "74a598cc101af154fec9",
+    "url": "/static/css/main.a9cfe98b.chunk.css"
   },
   {
-    "revision": "abbeb979d87ce105935d",
-    "url": "/static/js/main.967d96f9.chunk.js"
+    "revision": "a967957ba17fc96614e8",
+    "url": "/static/js/2.3155ef53.chunk.js"
+  },
+  {
+    "revision": "74a598cc101af154fec9",
+    "url": "/static/js/main.fba319d9.chunk.js"
   },
   {
     "revision": "a00c1c5cf5a278e86527",
     "url": "/static/js/runtime-main.22fc3320.js"
   },
   {
-    "revision": "6efe6363220cde821c9629b95d22f479",
-    "url": "/static/media/JeongyunWon_CV.6efe6363.pdf"
+    "revision": "e7872972c17e5656352d27d38e584efe",
+    "url": "/static/media/JeongyunWon_CV.e7872972.pdf"
   },
   {
     "revision": "5bea483d149f3738d424e8fd285868e2",
@@ -44,12 +48,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jeongyunwon.72fdec33.png"
   },
   {
-    "revision": "fa7215ec92d10d6a10d59f327381dd51",
-    "url": "/static/media/mobile-all.fa7215ec.png"
+    "revision": "adc6011f409af8a60cc8474f5c8a39c1",
+    "url": "/static/media/mobile-all.adc6011f.png"
   },
   {
     "revision": "19fc816d716d3261670024328e81b434",
     "url": "/static/media/people-screens.19fc816d.png"
+  },
+  {
+    "revision": "08a6bff669f9b7bb457eef126b7b1432",
+    "url": "/static/media/portfolio_JeongyunWon_2012-2018.08a6bff6.pdf"
   },
   {
     "revision": "239932082a8f295ffb6fc191982f287d",
