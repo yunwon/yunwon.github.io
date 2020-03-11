@@ -53,14 +53,16 @@ export default class WCB extends Component {
                     <p>React JS, HTML5, CSS3(SCSS)</p>
                   </div>
                 </div>
-                <a
-                  href="https://whitecollarblue.com.au/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={common.visit}
-                >
-                  <h6>Visit website</h6>
-                </a>
+                <h6>
+                  <a
+                    href="https://whitecollarblue.com.au/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={common.visit}
+                  >
+                    Visit website
+                  </a>
+                </h6>
               </div>
               <p>
                 In 2019 I worked for WhiteCollarBlue, an HR company based in

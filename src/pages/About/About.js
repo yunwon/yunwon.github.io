@@ -43,9 +43,12 @@ export default class About extends Component {
         <div className={styles.body}>
           <article>
             <this.renderSkills title={`I can do`}>
-              <div className={styles.contents_flex}>
+              <div
+                className={styles.contents_flex}
+                style={{ marginTop: "0.5rem" }}
+              >
                 <div className={styles.contents_left}>
-                  <h3>Web/Graphic design</h3>
+                  <h4>Web/Graphic design</h4>
                   <div className={styles.description}>
                     <ul>
                       <li>UI design</li>
@@ -58,13 +61,15 @@ export default class About extends Component {
                   </div>
                 </div>
                 <div className={styles.contents_right}>
-                  <h3>Front-end Develepment</h3>
+                  <h4>Front-end Develepment</h4>
                   <div className={styles.description}>
                     <ul>
                       <li>HTML5, CSS3(SCSS)</li>
                       <li>Responsive Design</li>
                       <li>React JS, React Native, jQuery, Javascript</li>
-                      <li>WordPress(Divi)</li>
+                      <li>
+                        WordPress (Have experiences in Divi / WooCommerce)
+                      </li>
                       <li>
                         <a
                           href="https://github.com/yunwon"
@@ -88,34 +93,49 @@ export default class About extends Component {
                 </ul>
               </div>
             </this.renderSkills>
-            <this.renderSkills title={`I am currently working at`}>
+            <this.renderSkills title={`I've been working at`}>
               <div className={styles.description}>
-                <p className={styles.year}>
-                  <i>Aug 2018 - present</i>
-                </p>
-                <p>
-                  <b>Toolbox Digital in Auckland, NZ</b>
-                </p>
-                <p>as a web/graphic designer and front-end developer</p>
+                <div style={{ marginBottom: "2.5rem" }}>
+                  <p className={styles.year}>
+                    <strong>Dec 2019 - present</strong>
+                  </p>
+                  <p>
+                    <b>Freelancing</b>
+                    <br />
+                    as a web/graphic designer and front-end developer
+                  </p>
+                </div>
+                <div>
+                  <p className={styles.year}>
+                    <strong>Aug 2018 - Nov 2019</strong>
+                  </p>
+                  <p>
+                    <b>Toolbox Digital in Auckland, NZ</b>
+                    <br />
+                    as a web/graphic designer and front-end developer
+                  </p>
+                </div>
               </div>
             </this.renderSkills>
             <this.renderSkills title={`I studied at`}>
               <div className={styles.description}>
-                <div style={{ marginBottom: "2rem" }}>
+                <div style={{ marginBottom: "2.5rem" }}>
                   <p className={styles.year}>
-                    <i>Mar 2017 - Feb 2018</i>
+                    <strong>Mar 2017 - Feb 2018</strong>
                   </p>
-                  <p>Tasman International Academies in New Zealand</p>
                   <p>
+                    Tasman International Academies in New Zealand
+                    <br />
                     <b>Graduate diploma in IT Multimedia</b>
                   </p>
                 </div>
                 <div>
                   <p className={styles.year}>
-                    <i>Mar 2008 - Feb 2014</i>
+                    <strong>Mar 2008 - Feb 2014</strong>
                   </p>
-                  <p>Kookmin University in South Korea</p>
                   <p>
+                    Kookmin University in South Korea
+                    <br />
                     <b>
                       Bachelor’s degree in Visual communication Design / Fine
                       Art

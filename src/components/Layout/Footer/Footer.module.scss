@@ -9,32 +9,42 @@
         padding: 2.5rem 0;
     }
 
-    h2 {
-        font-weight: normal !important;
-        margin-top: 0;
-        font-size: 1.875rem;
-        margin-bottom: 1em;
-
-        a:hover {
-            color: $pink;
-        }
-
+    .contact {
         @media #{$break-md} {
-            margin-bottom: 1.5em;
+            display: flex;
         }
-    }
 
-    .social {
-        a {
-            font-size: 1.375rem;
-            margin-right: 10px;
+        h2 {
+            font-weight: normal !important;
+            margin-top: 0;
+            font-size: 1.875rem;
 
-            svg:hover {
+            a:hover {
                 color: $pink;
             }
 
-            &:last-child {
-                margin-right: 0;
+            opacity: 0.9;
+        }
+
+        .social {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+
+            @media #{$break-md} {
+                margin-bottom: 0;
+            }
+
+            a {
+                font-size: 1.375rem;
+                margin-right: 10px;
+
+                svg:hover {
+                    color: $pink;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -53,7 +63,7 @@
         }
 
         .copy {
-            margin-top: 2.5em;
+            opacity: 0.9;
         }
     }
 }

@@ -65,12 +65,14 @@
                 h2 {
                     margin-bottom: 2rem;
                     font-size: 1.875rem;
+                    font-weight: bold;
                 }
 
                 @media #{$break-md} {}
             }
 
             .contents {
+
                 .contents_flex {
                     .contents_left {
                         margin-bottom: 2rem;
@@ -87,8 +89,9 @@
                     }
                 }
 
-                h3 {
+                h4 {
                     margin-bottom: 1rem;
+                    font-weight: bold;
                 }
 
 
@@ -109,9 +112,9 @@
 
                     .year {
                         color: $black;
-                        opacity: 0.7;
+                        opacity: 0.4;
                         font-size: 1rem;
-                        margin-bottom: 1.25rem;
+                        margin-bottom: 0.8rem;
                     }
                 }
             }
