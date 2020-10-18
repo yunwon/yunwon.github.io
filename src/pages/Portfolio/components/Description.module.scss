@@ -27,7 +27,7 @@
   @media #{$break-md} {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    column-gap: 3rem;
     text-align: left;
 
     h3 {
@@ -71,8 +71,9 @@
   }
 
   .video {
-    @include bigShadow();
+    @include smallShadow();
     border-radius: 4px;
+    object-fit: contain;
   }
 
   .imgLeft {
@@ -109,4 +110,21 @@
   margin: 0 auto;
   @include bigMargin();
   margin-bottom: 80px;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  @media #{$break-md} {
+    text-align: left;
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-top: 0;
+    }
+  }
 }

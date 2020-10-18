@@ -66,9 +66,9 @@ export default class WCB extends Component {
               </div>
               <p>
                 In 2019 I worked for WhiteCollarBlue, an HR company based in
-                Sydney, Australia. In this role, I participated in front-end
-                development projects and UX/UI Design. This job was done
-                remotely, involving regular communication and conferencing.
+                Sydney, Australia. In this role, I participated in UX/UI Design
+                and front-end development. This job was done remotely, involving
+                regular communication and conferencing.
               </p>
             </div>
           </Fade>
