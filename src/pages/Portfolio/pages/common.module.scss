@@ -21,7 +21,7 @@
     line-height: 1.5;
 
     @media #{$break-sm} {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
     }
   }
 }
@@ -111,4 +111,54 @@
   @media #{$break-sm} {
     height: 600px;
   }
+}
+
+.imageCenterContainer {
+    gap: 16px;
+    @include bigMargin();
+    max-width: 990px;
+    margin: 0 auto;
+    text-align: left;
+  
+    h3 {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+  
+    @media #{$break-md} {
+      h3 {
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        margin-top: 0;
+      }
+    }
+  
+    .title_mobile {
+      // @media #{$break-md} {
+      //   display: none;
+      // }
+    }
+  
+    .title_desktop {
+      display: none;
+  
+      // @media #{$break-md} {
+      //   display: block;
+      // }
+    }
+  
+    .image {
+      object-fit: contain;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    span {
+      img {
+        width: 100%;
+      }
+    }
 }

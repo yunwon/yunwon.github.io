@@ -14,34 +14,34 @@ export default class PortfolioHome extends Component {
   state = {
     webDesign: true,
     graphicDesign: true,
-    frontEnd: true
+    frontEnd: true,
   };
   handleWebDesign = () => {
     this.setState({
       webDesign: true,
       graphicDesign: false,
-      frontEnd: false
+      frontEnd: false,
     });
   };
   handleGraphicDesign = () => {
     this.setState({
       webDesign: false,
       graphicDesign: true,
-      frontEnd: false
+      frontEnd: false,
     });
   };
   handleFrontEnd = () => {
     this.setState({
       webDesign: false,
       graphicDesign: false,
-      frontEnd: true
+      frontEnd: true,
     });
   };
   handleAll = () => {
     this.setState({
       webDesign: true,
       graphicDesign: true,
-      frontEnd: true
+      frontEnd: true,
     });
   };
   render() {
@@ -61,17 +61,15 @@ export default class PortfolioHome extends Component {
         </Fade>
         <Fade bottom distance="3rem">
           <div className={styles.works}>
-            {this.state.webDesign || this.state.graphicDesign ? (
-              <>
-                <Link to="/portfolio/easyforms">
-                  <LazyLoadImage
-                    alt="Easyforms"
-                    effect="blur"
-                    src={require("../../assets/home/easyforms.png")}
-                    className={styles.image}
-                  />
-                </Link>
-              </>
+            {this.state.webDesign || this.state.frontEnd ? (
+              <Link to="/portfolio/hep">
+                <LazyLoadImage
+                  alt="History of Egypt Podcast"
+                  effect="blur"
+                  src={require("../../assets/home/hep-thumb.png")}
+                  className={styles.image}
+                />
+              </Link>
             ) : null}
             {this.state.webDesign || this.state.frontEnd ? (
               <Link to="/portfolio/toolbox">
@@ -92,6 +90,18 @@ export default class PortfolioHome extends Component {
                   className={styles.image}
                 />
               </Link>
+            ) : null}
+            {this.state.webDesign || this.state.graphicDesign ? (
+              <>
+                <Link to="/portfolio/easyforms">
+                  <LazyLoadImage
+                    alt="Easyforms"
+                    effect="blur"
+                    src={require("../../assets/home/easyforms.png")}
+                    className={styles.image}
+                  />
+                </Link>
+              </>
             ) : null}
             {this.state.graphicDesign ? (
               <>

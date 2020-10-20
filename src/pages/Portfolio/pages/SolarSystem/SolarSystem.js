@@ -17,7 +17,7 @@ export default class SolarSystem extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false
+      showModal: false,
     };
   }
 
@@ -73,12 +73,12 @@ export default class SolarSystem extends Component {
                 </div>
                 <div>
                   <div>
-                    <h6
+                    {/* <h6
                       onClick={() => this.handleShow()}
                       style={{ cursor: "pointer" }}
                     >
                       <span className={common.visit}>View webpage</span>
-                    </h6>
+                    </h6> */}
                   </div>
                   <Modal
                     show={this.state.showModal}

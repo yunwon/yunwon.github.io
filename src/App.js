@@ -9,6 +9,7 @@ import WCB from "./pages/Portfolio/pages/WCB/WCB";
 import Toolbox from "./pages/Portfolio/pages/Toolbox/Toolbox";
 import Easyforms from "./pages/Portfolio/pages/Easyforms/Easyforms";
 import SolarSystem from "./pages/Portfolio/pages/SolarSystem/SolarSystem";
+import HEP from "./pages/Portfolio/pages/HEP/HEP";
 
 export default class App extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class App extends Component {
             <Route path="/portfolio/toolbox" component={Toolbox} />
             <Route path="/portfolio/wcb" component={WCB} />
             <Route path="/portfolio/solar-system" component={SolarSystem} />
+            <Route path="/portfolio/hep" component={HEP} />
           </div>
         </BrowserRouter>
       </div>

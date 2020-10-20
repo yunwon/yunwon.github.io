@@ -5,6 +5,7 @@ import styles from "./Home.module.scss";
 import Easyforms from "src/assets/home/easyforms.png";
 import Toolbox from "src/assets/home/toolbox.png";
 import WCB from "src/assets/home/wcb-thumb.png";
+import HEP from "src/assets/home/hep-thumb.png";
 import { Layout } from "src/components/Layout/Layout";
 import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
 
@@ -44,11 +45,11 @@ export default class Home extends Component {
         <div className={styles.works}>
           <Fade bottom distance="3rem">
             <div className={styles.images}>
-              <Link to="/portfolio/easyforms">
-                <img src={Easyforms} alt="toolbox" />
-              </Link>
               <Link to="/portfolio/toolbox">
                 <img src={Toolbox} alt="toolbox" />
+              </Link>
+              <Link to="/portfolio/hep">
+                <img src={HEP} alt="History of Egypt Podcast" />
               </Link>
               <Link to="/portfolio/wcb">
                 <img src={WCB} alt="White Collar Blue" />
