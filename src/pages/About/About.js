@@ -54,9 +54,9 @@ export default class About extends Component {
                       <li>UI design</li>
                       <li>UX design</li>
                       <li>Graphic Design</li>
-                      <li>
+                      {/* <li>
                         <Link to="/portfolio">See my design works</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -64,13 +64,14 @@ export default class About extends Component {
                   <h4>Front-end Develepment</h4>
                   <div className={styles.description}>
                     <ul>
-                      <li>HTML5, CSS3(SCSS)</li>
+                      <li>HTML5, CSS3 (SASS/SCSS)</li>
                       <li>Responsive Design</li>
-                      <li>React JS, React Native, jQuery, Javascript</li>
+                      <li>Javascript (React JS / React Native /jQuery) </li>
                       <li>
-                        WordPress (Have experiences in Divi / WooCommerce)
+                        WordPress <br />
+                        (Have experiences in Divi / WooCommerce / Elementor)
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           href="https://github.com/yunwon"
                           target="_blank"
@@ -78,7 +79,7 @@ export default class About extends Component {
                         >
                           See my works in Github
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -87,7 +88,7 @@ export default class About extends Component {
             <this.renderSkills title={`Softwares that \nI use are`}>
               <div className={styles.description}>
                 <ul>
-                  <li>Adobe XD, Illustrator, Photoshop</li>
+                  <li>Adobe XD, Illustrator, Photoshop, InDesign</li>
                   <li>UX Pin / Figma</li>
                   <li>Github / VSCode</li>
                 </ul>
@@ -147,9 +148,10 @@ export default class About extends Component {
             <this.renderSkills title={`When I'm not working, I'm...`}>
               <div className={styles.description}>
                 <ul>
-                  <li>Reading books</li>
                   <li>Drawing</li>
-                  <li>Playing board games</li>
+                  <li>Reading books</li>
+                  <li>Playing video games</li>
+                  <li>Cooking</li>
                 </ul>
               </div>
             </this.renderSkills>
