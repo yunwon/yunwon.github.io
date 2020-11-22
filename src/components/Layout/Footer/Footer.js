@@ -45,7 +45,7 @@ export default class Footer extends Component {
           </div>
 
           <div className={styles.copy}>
-            &copy; Jeongyun Won 2019 all rights reserved
+            Design & Code by <strong>Jeongyun Won 2020</strong>
           </div>
         </div>
       </footer>
