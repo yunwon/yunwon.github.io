@@ -56,6 +56,9 @@ export default class PortfolioHome extends Component {
               <li onClick={this.handleWebDesign}>Web design</li>
               <li onClick={this.handleGraphicDesign}>Graphic design</li>
               <li onClick={this.handleFrontEnd}>Front-end development</li>
+              <li>
+                <Link to="/portfolio/dailyui">Daily UI</Link>
+              </li>
             </ul>
           </div>
         </Fade>

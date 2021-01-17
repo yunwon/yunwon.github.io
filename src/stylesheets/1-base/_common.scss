@@ -6,6 +6,8 @@ body {
   margin: 0;
   background: $light-grey;
   color: $black;
+  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 }
 
 ul {
@@ -34,6 +36,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  border: none;
 
   &:hover {
     color: $pink !important;
@@ -60,4 +63,9 @@ h3 {
 
 p {
   line-height: 1.8rem;
+}
+
+/* input 기본 스타일 초기화 */
+input {
+  border: none;
 }

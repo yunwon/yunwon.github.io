@@ -1,0 +1,152 @@
+@import "../../../../../stylesheets/2-abstracts/abstracts-dir";
+
+
+$green: #185F25;
+$yellow: #F7B161;
+$bgColor: #FAEDD5;
+
+@mixin font-style {
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75rem;
+    @media #{$break-md} {
+        font-size: 1rem;
+    }
+}
+
+.background {
+    height: 100vh;
+    background-color: $bgColor;
+    @media #{$break-md} {
+        @include flex-center;
+    }
+}
+.container {
+    /* Display & Box Model */
+    @include container-maxwidth();
+    width: 100%;
+
+    /* Colour */
+    color: $green;
+
+    /* Text */
+    a {
+        &:hover {
+            color: $green !important;
+        } 
+    }
+}
+.leftDiv {
+    /* Positioning */
+    position: relative;
+
+    /* Display & Box Model */
+    background-image: url("../../../../../assets/portfolio/daily-ui/001/bg-image.jpg");
+    width: 100%;
+    height: 320px;
+    padding: 20px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+    .logo {
+        width: 200px;
+    }
+    @media #{$break-md} {
+        /* Display & Box Model */
+        height: 80vh;
+        width: 60%;
+        padding: 60px;
+        border-radius: 30px;
+    }
+}
+.rightDiv {
+    /* Positioning */
+    position: absolute;
+    top: 150px;
+    order: 1;
+
+    /* Display & Box Model */
+    background-color: $yellow;
+    border-radius: 30px;
+    padding: 40px 20px 30px 20px;
+    margin: 0 1rem;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+
+    @media #{$break-md} {
+        /* Positioning */
+        transform: translateY(-50%);
+        top: 50%;
+        left: 40%;
+
+        /* Display & Box Model */
+        width: 60%;
+        padding: 3.75rem 3.75rem 3.125rem;
+        max-width: 650px;
+    }
+    h1 {
+        font-size: 26px;
+        color: $green;
+        font-weight: 700;
+        @media #{$break-md} {
+            font-size: 48px;
+        }
+    }
+    .closeBtn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        @media #{$break-md} {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
+    }
+    .formContainer {
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+    }
+    .form {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .textInputs input{
+            width: 100%;
+            margin: 0 0 8px;
+            padding: 0.875rem 1.5rem;
+            border-radius: 50px;
+            background-color: $bgColor;
+            @include font-style();
+            color: $green;
+        }
+        .textInputs input::placeholder {
+            @include font-style();
+            text-transform: uppercase;
+            color: $yellow;
+        }
+        .tnc {
+            margin-top: 15px;
+            input {
+                margin-right: 6px;
+            }
+            @include font-style();
+        }
+        .signup {
+            padding: 10px 30px;
+            border-radius: 50px;
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16);
+            background-color: $green;
+            color: $bgColor !important;
+            text-transform: uppercase;
+            margin: 16px auto 0 auto;
+            &:hover {
+                box-shadow:inset 0 0 0 99999px rgba(0,0,0,0.2);
+            }
+        }
+        .signIn {
+            margin: 16px auto 0 auto;
+            a {
+                text-decoration: underline;
+            }
+            @include font-style();
+        }
+    }
+}
