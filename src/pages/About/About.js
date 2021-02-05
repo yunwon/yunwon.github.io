@@ -54,9 +54,6 @@ export default class About extends Component {
                       <li>UI design</li>
                       <li>UX design</li>
                       <li>Graphic Design</li>
-                      {/* <li>
-                        <Link to="/portfolio">See my design works</Link>
-                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -71,15 +68,6 @@ export default class About extends Component {
                         WordPress <br />
                         (Have experiences in Divi / WooCommerce / Elementor)
                       </li>
-                      {/* <li>
-                        <a
-                          href="https://github.com/yunwon"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          See my works in Github
-                        </a>
-                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -149,9 +137,8 @@ export default class About extends Component {
               <div className={styles.description}>
                 <ul>
                   <li>Drawing</li>
-                  <li>Reading books</li>
-                  <li>Playing video games</li>
                   <li>Cooking</li>
+                  <li>Playing video games</li>
                 </ul>
               </div>
             </this.renderSkills>

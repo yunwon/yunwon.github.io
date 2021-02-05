@@ -94,6 +94,16 @@ export default class PortfolioHome extends Component {
                 />
               </Link>
             ) : null}
+            {this.state.webDesign || this.state.frontEnd ? (
+              <Link to="/portfolio/dailyui/day1">
+                <LazyLoadImage
+                  alt="DailyUI day 001"
+                  effect="blur"
+                  src={require("../../assets/portfolio/daily-ui/001/dailyUI001.jpg")}
+                  className={styles.image}
+                />
+              </Link>
+            ) : null}
             {this.state.webDesign || this.state.graphicDesign ? (
               <>
                 <Link to="/portfolio/easyforms">

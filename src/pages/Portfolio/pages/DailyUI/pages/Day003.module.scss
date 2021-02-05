@@ -1,0 +1,128 @@
+@import "../../../../../stylesheets/2-abstracts/abstracts-dir";
+
+
+$pink: #FFEFEF;
+$red: #D75A46;
+
+@mixin font-style {
+    font-family: bebas-neue-rounded, sans-serif;
+    font-size: 0.75rem;
+    @media #{$break-md} {
+        font-size: 1rem;
+    }
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../../../../../assets/portfolio/daily-ui/003/bg.png");
+    background-repeat: repeat-x;
+
+    @include font-style();
+    color: $red;
+}
+
+.container {
+    /* Display & Box Model */
+    @include container-maxwidth();
+    width: 100%;
+    padding: 0 1rem;
+    @media #{$break-lg} {
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        padding: 1.5rem 0;
+        @media #{$break-lg} {
+            padding: 2rem 0;
+        }
+
+        .logo {
+            width: 140px;
+            height: auto;
+            @media #{$break-md} {
+                width: 200px;
+            }
+        }
+        .menu {
+            img {
+                cursor: pointer;
+                @media #{$break-md} {
+                    display: none;
+                }
+            }
+            ul {
+                display: none;
+                @media #{$break-md} {
+                    display: flex;
+                }
+                li {
+                    font-size: 1.5rem;
+                    padding: 0 1rem;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        @media #{$break-md} {
+            flex-direction: row;
+        }
+        img {
+            order: 2;
+            width: 100%;
+            margin-top: -20%;
+            @media #{$break-md} {
+                order: 1;
+                width: 60%;
+                margin-top: -10%;
+                margin-left: -10%;
+                margin-right: 5%;
+            }
+        }
+        .title {
+            order: 1;
+            z-index: 1;
+            margin-top: 20px;
+            h1 {
+                margin-bottom: 0.5rem;
+            }
+            button {
+                margin-top: 20px;
+                padding: 0.625rem 1.5rem;
+                background-color: $red;
+                color: #ffffff;
+                font-size: 1.5rem;
+                border-radius: 50px;
+                &:hover {
+                    color: #ffffff !important;
+                }
+            }
+            @media #{$break-md} {
+                order: 2;
+                margin-top: 12%;
+                width: 50%;
+                h1 {
+                    font-size: 4.5rem;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+                button {
+                    margin-top: 30px;
+                }
+            }
+        }
+        }
+    }

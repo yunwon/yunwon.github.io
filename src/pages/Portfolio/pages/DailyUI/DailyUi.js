@@ -6,7 +6,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { Layout } from "src/components/Layout/Layout";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Popup from "reactjs-popup";
-import Image from "../../../../assets/portfolio/daily-ui/002/dailyUI002-large.jpg";
+import Image from "../../../../assets/portfolio/daily-ui/002/dailyUI002.png";
 import dailyUiStyles from "./DailyUi.module.scss";
 import "reactjs-popup/dist/index.css";
 
@@ -57,6 +57,14 @@ export default class DailyUi extends Component {
                 )}
               </Popup>
             </div>
+            <Link to="/portfolio/dailyui/day3">
+              <LazyLoadImage
+                alt="DailyUI003"
+                effect="blur"
+                src={require("../../../../assets/portfolio/daily-ui/003/dailyui003.png")}
+                className={styles.image}
+              />
+            </Link>
           </div>
         </Fade>
       </Layout>

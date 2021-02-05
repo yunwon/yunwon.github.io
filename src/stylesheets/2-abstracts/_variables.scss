@@ -1,5 +1,14 @@
 /* fonts */
-$font-stack: 'futura-pt',
+$font-stack:
+'granville',
+'Helvetica Neue Light',
+'Helvetica Neue',
+'Helvetica',
+'Arial',
+sans-serif !default;
+
+$paragraph-font:
+'Roboto',
 'Helvetica Neue Light',
 'Helvetica Neue',
 'Helvetica',
@@ -9,6 +18,7 @@ sans-serif !default;
 /* colours */
 $light-grey: #f7f7f7;
 $grey: #afafaf;
+$dark-grey: #414042;
 $black: #333333;
 $pink: #d96262;
 

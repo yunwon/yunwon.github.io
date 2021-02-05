@@ -18,6 +18,7 @@ $bgColor: #FAEDD5;
 .background {
     height: 100vh;
     background-color: $bgColor;
+    @include font-style();
     @media #{$break-md} {
         @include flex-center;
     }
@@ -94,6 +95,7 @@ $bgColor: #FAEDD5;
         position: absolute;
         top: 1rem;
         right: 1rem;
+        cursor: pointer;
         @media #{$break-md} {
             top: 2.5rem;
             right: 2.5rem;
@@ -147,6 +149,7 @@ $bgColor: #FAEDD5;
                 text-decoration: underline;
             }
             @include font-style();
+            color: $green !important;
         }
     }
 }

@@ -55,6 +55,9 @@
 
   .text {
     width: 100%;
+    strong {
+      font-family: $font-stack;
+    }
 
     @media #{$break-md} {
       max-width: 580px;

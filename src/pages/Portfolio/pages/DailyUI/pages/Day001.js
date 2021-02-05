@@ -3,8 +3,6 @@ import Fade from "react-reveal/Fade";
 import styles from "./Day001.module.scss";
 import logo from "../../../../../assets/portfolio/daily-ui/001/logo.png";
 import close from "../../../../../assets/portfolio/daily-ui/001/close.png";
-import { Layout } from "src/components/Layout/Layout";
-import { Link } from "react-router-dom";
 
 export default class Day001 extends Component {
   render() {
@@ -18,9 +16,12 @@ export default class Day001 extends Component {
             </div>
             {/* form */}
             <div className={styles.rightDiv}>
-              <Link to="/portfolio/dailyui" className={styles.closeBtn}>
-                <img src={close} alt="close" />
-              </Link>
+              <img
+                src={close}
+                alt="close"
+                onClick={() => this.props.history.goBack()}
+                className={styles.closeBtn}
+              />
               <div style={{ clear: "both" }} />
               <div className={styles.formContainer}>
                 <h1>Sign up for the full experience.</h1>

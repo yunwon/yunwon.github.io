@@ -12,6 +12,7 @@ import SolarSystem from "./pages/Portfolio/pages/SolarSystem/SolarSystem";
 import HEP from "./pages/Portfolio/pages/HEP/HEP";
 import DailyUi from "./pages/Portfolio/pages/DailyUI/DailyUi";
 import Day001 from "./pages/Portfolio/pages/DailyUI/pages/Day001";
+import Day003 from "./pages/Portfolio/pages/DailyUI/pages/Day003";
 
 export default class App extends Component {
   render() {
@@ -29,6 +30,7 @@ export default class App extends Component {
             <Route path="/portfolio/hep" component={HEP} />
             <Route exact path="/portfolio/dailyui" component={DailyUi} />
             <Route path="/portfolio/dailyui/day1" component={Day001} />
+            <Route path="/portfolio/dailyui/day3" component={Day003} />
           </div>
         </BrowserRouter>
       </div>

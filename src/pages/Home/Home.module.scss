@@ -9,6 +9,7 @@
   }
 
   p {
+    font-family: $font-stack;
     font-size: 1.75rem;
     line-height: 1.7;
     margin: 0;
@@ -16,6 +17,7 @@
     .link {
       color: $pink;
       cursor: pointer;
+      font-weight: 600;
 
       &:hover {
         text-decoration: underline;

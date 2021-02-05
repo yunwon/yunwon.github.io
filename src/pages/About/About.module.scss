@@ -29,6 +29,10 @@
         margin: 1rem auto;
     }
 
+    img {
+        border-radius: 10px;
+    }
+
     .heroRight {
 
         margin-top: 1rem;
@@ -98,11 +102,11 @@
                 .description {
                     border-left: 1px solid $black;
                     padding-left: 1rem;
-                    font-size: 1.125rem;
 
                     li {
                         margin-top: 0;
                         margin-bottom: 1rem;
+                        font-family: $paragraph-font;
 
                         a {
                             color: $pink;

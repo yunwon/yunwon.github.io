@@ -22,6 +22,7 @@
 
     @media #{$break-sm} {
       font-size: 1.125rem;
+      line-height: 1.6;
     }
   }
 }
@@ -34,13 +35,13 @@
   text-align: center;
 
   h1 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 3.125rem;
     margin: 1rem auto;
   }
 
   h2 {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
 
     @media #{$break-sm} {
@@ -81,15 +82,17 @@
     }
 
     h6 {
-      font-size: 0.8rem;
+      font-size: 1.125rem;
       font-weight: bold;
-      color: $grey;
+      color: #333333;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 0.5rem;
     }
 
     p {
+      //font-family: $font-stack;
+      font-size: 1.125rem;
       margin: 0;
     }
 

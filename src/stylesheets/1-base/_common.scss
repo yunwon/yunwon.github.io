@@ -8,6 +8,7 @@ body {
   color: $black;
   -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
   -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
+  width: 100%;
 }
 
 ul {
@@ -58,11 +59,14 @@ h6 {
 
 h3 {
   font-size: 1.875rem;
-  //font-weight: 600 !important;
+  font-weight: 600;
 }
 
 p {
   line-height: 1.8rem;
+  font-family: $paragraph-font;
+  color: $dark-grey !important;
+  font-size: 1rem;
 }
 
 /* input 기본 스타일 초기화 */
