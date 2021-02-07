@@ -57,7 +57,7 @@ export default class PortfolioHome extends Component {
               <li onClick={this.handleGraphicDesign}>Graphic design</li>
               <li onClick={this.handleFrontEnd}>Front-end development</li>
               <li>
-                <Link to="/portfolio/dailyui">Daily UI</Link>
+                <Link to="/portfolio/dailyui">#Daily UI Challenge</Link>
               </li>
             </ul>
           </div>
@@ -95,11 +95,11 @@ export default class PortfolioHome extends Component {
               </Link>
             ) : null}
             {this.state.webDesign || this.state.frontEnd ? (
-              <Link to="/portfolio/dailyui/day1">
+              <Link to="/portfolio/dailyui">
                 <LazyLoadImage
                   alt="DailyUI day 001"
                   effect="blur"
-                  src={require("../../assets/portfolio/daily-ui/001/dailyUI001.jpg")}
+                  src={require("../../assets/portfolio/daily-ui/003/dailyui003.png")}
                   className={styles.image}
                 />
               </Link>

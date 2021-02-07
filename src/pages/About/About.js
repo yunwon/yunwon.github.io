@@ -63,7 +63,7 @@ export default class About extends Component {
                     <ul>
                       <li>HTML5, CSS3 (SASS/SCSS)</li>
                       <li>Responsive Design</li>
-                      <li>Javascript (React JS / React Native /jQuery) </li>
+                      <li>Javascript (React JS / React Native / jQuery) </li>
                       <li>
                         WordPress <br />
                         (Have experiences in Divi / WooCommerce / Elementor)
@@ -76,7 +76,7 @@ export default class About extends Component {
             <this.renderSkills title={`Softwares that \nI use are`}>
               <div className={styles.description}>
                 <ul>
-                  <li>Adobe XD, Illustrator, Photoshop, InDesign</li>
+                  <li>Adobe XD, Illustrator, Photoshop</li>
                   <li>UX Pin / Figma</li>
                   <li>Github / VSCode</li>
                 </ul>
@@ -138,6 +138,7 @@ export default class About extends Component {
                 <ul>
                   <li>Drawing</li>
                   <li>Cooking</li>
+                  <li>Gardening</li>
                   <li>Playing video games</li>
                 </ul>
               </div>
