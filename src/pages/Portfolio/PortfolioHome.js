@@ -6,6 +6,7 @@ import styles from "./PortfolioHome.module.scss";
 import Portfoilo from "../../assets/portfolio/portfolio_JeongyunWon_2012-2018.pdf";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { FaGithub } from "react-icons/fa";
 
 export default class PortfolioHome extends Component {
   componentDidMount() {
@@ -103,6 +104,21 @@ export default class PortfolioHome extends Component {
                   className={styles.image}
                 />
               </Link>
+            ) : null}
+            {this.state.frontEnd ? (
+              <>
+                <a
+                  className={styles.visitGithub}
+                  href="https://github.com/yunwon"
+                  target="_blank"
+                >
+                  <div className={styles.icon}>
+                    <FaGithub />
+                  </div>
+                  <br />
+                  <h2>Visit my Github</h2>
+                </a>
+              </>
             ) : null}
             {this.state.webDesign || this.state.graphicDesign ? (
               <>

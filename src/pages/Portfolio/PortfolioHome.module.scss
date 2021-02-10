@@ -1,5 +1,23 @@
 @import "../../stylesheets/2-abstracts/abstracts-dir.scss";
 
+@mixin textDiv {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  @include flex-center();
+  text-align: center;
+  background-color: $grey;
+  opacity: 0.8;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+  object-fit: cover;
+  @media #{$break-md} {
+    min-height: 400px;
+  }
+}
+
 .hero {
   @include container-maxwidth();
   @include flex-center();
@@ -40,20 +58,16 @@
     cursor: pointer;
   }
   .textDiv {
-    display: block;
-    width: 100%;
-    height: 100%;
-    min-height: 300px;
-    @include flex-center();
-    text-align: center;
-    background-color: $black;
-    opacity: 0.8;
-    padding: 1rem;
-    color: white;
-    cursor: pointer;
-    object-fit: cover;
-    @media #{$break-md} {
-      min-height: 400px;
+    @include textDiv();
+  }
+  .visitGithub {
+    @include textDiv();
+    background-color: #24292e;
+    .icon {
+      svg {
+        font-size: 48px;
+      }
+      margin-right: 0.5rem;
     }
   }
 
