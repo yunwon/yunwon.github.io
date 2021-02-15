@@ -81,7 +81,7 @@ export default class Toolbox extends Component {
           />
           <Description
             title="Fast and responsive Front-end development with React JS and SCSS"
-            paragraph="I created cross-platform compatability, with responsive design elements between mobile, 
+            paragraph="I created cross-platform compatibility, with responsive design elements between mobile, 
             tablet and desktop. Using React JS and SCSS, I created reusable components and rules that improved 
             development time significantly and will faciliate future processes."
             bgImage={ToolboxResponsive}
