@@ -65,6 +65,14 @@ export default class DailyUi extends Component {
                 className={styles.image}
               />
             </Link>
+            {/* <Link to="/portfolio/dailyui/day4"> */}
+            <LazyLoadImage
+              alt="DailyUI004"
+              effect="blur"
+              src={require("../../../../assets/portfolio/daily-ui/004/dailyUI004.png")}
+              className={styles.image}
+            />
+            {/* </Link> */}
           </div>
         </Fade>
       </Layout>
