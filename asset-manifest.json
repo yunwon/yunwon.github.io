@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.6025cdf3.chunk.css",
-    "main.js": "/static/js/main.00597764.chunk.js",
-    "main.js.map": "/static/js/main.00597764.chunk.js.map",
+    "main.css": "/static/css/main.09c27d8f.chunk.css",
+    "main.js": "/static/js/main.cd0b29f4.chunk.js",
+    "main.js.map": "/static/js/main.cd0b29f4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.22fc3320.js",
     "runtime-main.js.map": "/static/js/runtime-main.22fc3320.js.map",
     "static/css/2.482fead5.chunk.css": "/static/css/2.482fead5.chunk.css",
-    "static/js/2.a82fc2a6.chunk.js": "/static/js/2.a82fc2a6.chunk.js",
-    "static/js/2.a82fc2a6.chunk.js.map": "/static/js/2.a82fc2a6.chunk.js.map",
+    "static/js/2.16ff120e.chunk.js": "/static/js/2.16ff120e.chunk.js",
+    "static/js/2.16ff120e.chunk.js.map": "/static/js/2.16ff120e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a9c201aa75c67e61fc047ce0174c42f6.js": "/precache-manifest.a9c201aa75c67e61fc047ce0174c42f6.js",
+    "precache-manifest.270b0426e4d423bb59090fc0359ffb1a.js": "/precache-manifest.270b0426e4d423bb59090fc0359ffb1a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.482fead5.chunk.css.map": "/static/css/2.482fead5.chunk.css.map",
-    "static/css/main.6025cdf3.chunk.css.map": "/static/css/main.6025cdf3.chunk.css.map",
+    "static/css/main.09c27d8f.chunk.css.map": "/static/css/main.09c27d8f.chunk.css.map",
     "static/media/JeongyunWon_CV.pdf": "/static/media/JeongyunWon_CV.3a3b6955.pdf",
     "static/media/Day001.module.scss": "/static/media/bg-image.e0f509ef.jpg",
+    "static/media/Day004.module.scss": "/static/media/bg.389095af.png",
     "static/media/Day003.module.scss": "/static/media/bg.ef2a071e.png",
     "static/media/dailyUI001.jpg": "/static/media/dailyUI001.58ed71b1.jpg",
     "static/media/dailyUI002.png": "/static/media/dailyUI002.969e776d.png",
+    "static/media/dailyUI004.png": "/static/media/dailyUI004.260a2cbf.png",
     "static/media/dailyui003.png": "/static/media/dailyui003.50252612.png",
     "static/media/detail.png": "/static/media/detail.5bea483d.png",
     "static/media/donut.png": "/static/media/donut.f298bfd7.png",
@@ -46,8 +48,8 @@
   "entrypoints": [
     "static/js/runtime-main.22fc3320.js",
     "static/css/2.482fead5.chunk.css",
-    "static/js/2.a82fc2a6.chunk.js",
-    "static/css/main.6025cdf3.chunk.css",
-    "static/js/main.00597764.chunk.js"
+    "static/js/2.16ff120e.chunk.js",
+    "static/css/main.09c27d8f.chunk.css",
+    "static/js/main.cd0b29f4.chunk.js"
   ]
 }
