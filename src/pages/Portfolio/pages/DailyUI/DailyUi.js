@@ -16,7 +16,7 @@ export default class DailyUi extends Component {
       <Layout>
         <Fade top cascade distance="3rem">
           <div className={styles.hero}>
-            <Link to="/portfolio" onClick={this.handleAll}>
+            <Link to="/portfolio/dailyui" onClick={this.handleAll}>
               <h1>#Daily UI Challenge</h1>
             </Link>
           </div>

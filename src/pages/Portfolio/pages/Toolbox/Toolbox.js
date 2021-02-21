@@ -63,11 +63,10 @@ export default class Toolbox extends Component {
                 </div>
               </div>
               <p>
-                Since 2019 I have been the lead graphic designer and front-end
-                developer for Toolbox Digital Ltd. My work focusses on building
-                Toolbox's website and designing its branding. In this role I
-                took charge of the project, building the website and visuals
-                single-handedly.
+                From 2018 to 2019, I was a lead web designer and front-end
+                developer for Toolbox Digital Ltd. Toolbox needed a complete
+                redesign for its website. In this role I took charge of the
+                project, building the visuals and front-end single-handedly.
               </p>
             </div>
           </Fade>

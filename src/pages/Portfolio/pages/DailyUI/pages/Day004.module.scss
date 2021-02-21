@@ -1,0 +1,38 @@
+@import "../../../../../stylesheets/2-abstracts/abstracts-dir";
+
+
+$blue: #247F94;
+$orange: #F49550;
+$lightBlue: #D2EAF0;
+
+@mixin font-style {
+    font-family: museo-sans-rounded, sans-serif;
+}
+
+.orange {
+    color: $orange;
+}
+
+.background {
+    @include font-style();
+    background-image: url("../../../../../assets/portfolio/daily-ui/004/bg.png");
+}
+.container {
+    padding: 40px 1rem;
+    @include container-maxwidth();
+}
+.title {
+    color: #ffffff;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0.875rem;
+    }
+    h6, p {
+        font-size: 0.875rem;
+        line-height: 1rem;
+    }
+}
+.formContainer {
+    
+}

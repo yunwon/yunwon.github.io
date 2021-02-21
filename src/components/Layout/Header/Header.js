@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { BurgerButton } from "./components/BurgerButton.js/BurgerButton";
+import { BurgerButton } from "./components/BurgerButton/BurgerButton";
 import styles from "./Header.module.scss";
 import NavMenu from "src/components/Layout/Header/components/NavMenu/NavMenu";
 
