@@ -91,7 +91,7 @@ export default class About extends Component {
                   <p>
                     <b>Freelancing</b>
                     <br />
-                    as a web/graphic designer and front-end developer
+                    as a UX/UI designer and front-end developer
                   </p>
                 </div>
                 <div>
@@ -101,7 +101,7 @@ export default class About extends Component {
                   <p>
                     <b>Toolbox Digital in Auckland, NZ</b>
                     <br />
-                    as a web/graphic designer and front-end developer
+                    as a UX/UI designer and front-end developer
                   </p>
                 </div>
               </div>
