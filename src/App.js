@@ -22,17 +22,21 @@ export default class App extends Component {
         <BrowserRouter>
           <div>
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
+            <Route exact path="/about" component={About} />
             <Route exact path="/portfolio" component={PortfolioHome} />
-            <Route path="/portfolio/easyforms" component={Easyforms} />
-            <Route path="/portfolio/toolbox" component={Toolbox} />
-            <Route path="/portfolio/wcb" component={WCB} />
-            <Route path="/portfolio/solar-system" component={SolarSystem} />
-            <Route path="/portfolio/hep" component={HEP} />
+            <Route exact path="/portfolio/easyforms" component={Easyforms} />
+            <Route exact path="/portfolio/toolbox" component={Toolbox} />
+            <Route exact path="/portfolio/wcb" component={WCB} />
+            <Route
+              exact
+              path="/portfolio/solar-system"
+              component={SolarSystem}
+            />
+            <Route exact path="/portfolio/hep" component={HEP} />
             <Route exact path="/portfolio/dailyui" component={DailyUi} />
-            <Route path="/portfolio/dailyui/day1" component={Day001} />
-            <Route path="/portfolio/dailyui/day3" component={Day003} />
-            <Route path="/portfolio/dailyui/day4" component={Day004} />
+            <Route exact path="/portfolio/dailyui/day1" component={Day001} />
+            <Route exact path="/portfolio/dailyui/day3" component={Day003} />
+            <Route exact path="/portfolio/dailyui/day4" component={Day004} />
           </div>
         </BrowserRouter>
       </div>
