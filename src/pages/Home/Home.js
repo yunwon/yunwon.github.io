@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import styles from "./Home.module.scss";
-import Easyforms from "src/assets/home/easyforms.png";
 import Toolbox from "src/assets/home/toolbox.png";
 import WCB from "src/assets/home/wcb-thumb.png";
 import HEP from "src/assets/home/hep-thumb.png";

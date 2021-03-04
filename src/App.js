@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./stylesheets/index.scss";
 import styles from "./App.module.scss";
 import Home from "./pages/Home/Home";
@@ -20,24 +20,44 @@ export default class App extends Component {
     return (
       <div className={styles.container}>
         <BrowserRouter>
-          <div>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/portfolio" component={PortfolioHome} />
-            <Route exact path="/portfolio/easyforms" component={Easyforms} />
-            <Route exact path="/portfolio/toolbox" component={Toolbox} />
-            <Route exact path="/portfolio/wcb" component={WCB} />
-            <Route
-              exact
-              path="/portfolio/solar-system"
-              component={SolarSystem}
-            />
-            <Route exact path="/portfolio/hep" component={HEP} />
-            <Route exact path="/portfolio/dailyui" component={DailyUi} />
-            <Route exact path="/portfolio/dailyui/day1" component={Day001} />
-            <Route exact path="/portfolio/dailyui/day3" component={Day003} />
-            <Route exact path="/portfolio/dailyui/day4" component={Day004} />
-          </div>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route exact path="/portfolio">
+              <PortfolioHome />
+            </Route>
+            <Route path="/portfolio/easyforms">
+              <Easyforms />
+            </Route>
+            <Route path="/portfolio/toolbox">
+              <Toolbox />
+            </Route>
+            <Route path="/portfolio/wcb">
+              <WCB />
+            </Route>
+            <Route path="/portfolio/solar-system">
+              <SolarSystem />
+            </Route>
+            <Route path="/portfolio/hep">
+              <HEP />
+            </Route>
+            <Route exact path="/portfolio/dailyui">
+              <DailyUi />
+            </Route>
+            <Route path="/portfolio/dailyui/day1">
+              <Day001 />
+            </Route>
+            <Route path="/portfolio/dailyui/day3">
+              <Day003 />
+            </Route>
+            <Route path="/portfolio/dailyui/day4">
+              <Day004 />
+            </Route>
+          </Switch>
         </BrowserRouter>
       </div>
     );
