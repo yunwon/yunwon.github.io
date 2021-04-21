@@ -6,7 +6,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Layout } from 'src/components/Layout/Layout';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Popup from 'reactjs-popup';
-import Image from '../../../../assets/portfolio/daily-ui/002/dailyUI002.png';
+import largeImg002 from '../../../../assets/portfolio/daily-ui/002/dailyUI002.png';
+import largeImg006 from '../../../../assets/portfolio/daily-ui/006/dailyUI006.jpg';
 import dailyUiStyles from './DailyUi.module.scss';
 import 'reactjs-popup/dist/index.css';
 
@@ -51,7 +52,7 @@ export default class DailyUi extends Component {
 											&times;
 										</button>
 										<div className={dailyUiStyles.content}>
-											<img src={Image} alt="Day002" />
+											<img src={largeImg002} alt="Day002" />
 										</div>
 									</div>
 								)}
@@ -79,6 +80,31 @@ export default class DailyUi extends Component {
 							src={require('../../../../assets/portfolio/daily-ui/005/dailyUI005.jpg')}
 							className={styles.image}
 						/>
+
+						<Popup
+							trigger={
+								<LazyLoadImage
+									alt="DailyUI006"
+									effect="blur"
+									src={require('../../../../assets/portfolio/daily-ui/006/dailyUI006.jpg')}
+									className={styles.image}
+								/>
+							}
+							modal
+							nested
+							position="center center"
+						>
+							{(close) => (
+								<div className={dailyUiStyles.modal}>
+									<button className={dailyUiStyles.close} onClick={close}>
+										&times;
+									</button>
+									<div className={dailyUiStyles.content}>
+										<img src={largeImg006} alt="Day006" />
+									</div>
+								</div>
+							)}
+						</Popup>
 					</div>
 				</Fade>
 			</Layout>
