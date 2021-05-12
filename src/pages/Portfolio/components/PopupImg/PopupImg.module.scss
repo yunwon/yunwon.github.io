@@ -1,0 +1,19 @@
+@import '../../../../stylesheets/2-abstracts/abstracts-dir';
+
+.close {
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	display: block;
+	padding: 2px 5px;
+	line-height: 20px;
+	right: 0px;
+	top: -30px;
+	font-size: 48px;
+	background: none;
+	border-radius: 18px;
+	@media #{$break-md} {
+		right: -30px;
+		top: -30px;
+	}
+}

@@ -5,11 +5,9 @@ import styles from '../../PortfolioHome.module.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Layout } from 'src/components/Layout/Layout';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import Popup from 'reactjs-popup';
-import largeImg002 from '../../../../assets/portfolio/daily-ui/002/dailyUI002.png';
-import largeImg006 from '../../../../assets/portfolio/daily-ui/006/dailyUI006.jpg';
 import dailyUiStyles from './DailyUi.module.scss';
 import 'reactjs-popup/dist/index.css';
+import PopupImg from '../../components/PopupImg/PopupImg.js';
 
 export default class DailyUi extends Component {
 	render() {
@@ -32,32 +30,7 @@ export default class DailyUi extends Component {
 								className={styles.image}
 							/>
 						</Link>
-						<div>
-							<Popup
-								trigger={
-									<LazyLoadImage
-										alt="DailyUI002"
-										effect="blur"
-										src={require('../../../../assets/portfolio/daily-ui/002/dailyUI002.png')}
-										className={styles.image}
-									/>
-								}
-								modal
-								nested
-								position="center center"
-							>
-								{(close) => (
-									<div className={dailyUiStyles.modal}>
-										<button className={dailyUiStyles.close} onClick={close}>
-											&times;
-										</button>
-										<div className={dailyUiStyles.content}>
-											<img src={largeImg002} alt="Day002" />
-										</div>
-									</div>
-								)}
-							</Popup>
-						</div>
+						<PopupImg dayNumber="002" />
 						<Link to="/portfolio/dailyui/day3">
 							<LazyLoadImage
 								alt="DailyUI003"
@@ -66,45 +39,20 @@ export default class DailyUi extends Component {
 								className={styles.image}
 							/>
 						</Link>
-						{/* <Link to="/portfolio/dailyui/day4"> */}
 						<LazyLoadImage
 							alt="DailyUI004"
 							effect="blur"
 							src={require('../../../../assets/portfolio/daily-ui/004/dailyUI004.png')}
 							className={styles.image}
 						/>
-						{/* </Link> */}
 						<LazyLoadImage
 							alt="DailyUI005"
 							effect="blur"
 							src={require('../../../../assets/portfolio/daily-ui/005/dailyUI005.jpg')}
 							className={styles.image}
 						/>
-
-						<Popup
-							trigger={
-								<LazyLoadImage
-									alt="DailyUI006"
-									effect="blur"
-									src={require('../../../../assets/portfolio/daily-ui/006/dailyUI006.jpg')}
-									className={styles.image}
-								/>
-							}
-							modal
-							nested
-							position="center center"
-						>
-							{(close) => (
-								<div className={dailyUiStyles.modal}>
-									<button className={dailyUiStyles.close} onClick={close}>
-										&times;
-									</button>
-									<div className={dailyUiStyles.content}>
-										<img src={largeImg006} alt="Day006" />
-									</div>
-								</div>
-							)}
-						</Popup>
+						<PopupImg dayNumber="006" />
+						<PopupImg dayNumber="007" />
 					</div>
 				</Fade>
 			</Layout>
