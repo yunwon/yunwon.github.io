@@ -53,6 +53,7 @@ export default class DailyUi extends Component {
 						/>
 						<PopupImg dayNumber="006" />
 						<PopupImg dayNumber="007" />
+						<PopupImg dayNumber="008" />
 					</div>
 				</Fade>
 			</Layout>

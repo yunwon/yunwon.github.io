@@ -8,7 +8,7 @@ const PopupImg = ({ dayNumber }) => {
 		<Popup
 			trigger={
 				<LazyLoadImage
-					alt={`DailyUi ${dayNumber}`}
+					alt={`DailyUI ${dayNumber}`}
 					effect="blur"
 					src={require(`../../../../assets/portfolio/daily-ui/${dayNumber}/dailyUI${dayNumber}.jpg`)}
 				/>
@@ -25,7 +25,7 @@ const PopupImg = ({ dayNumber }) => {
 					<div>
 						<img
 							src={require(`../../../../assets/portfolio/daily-ui/${dayNumber}/dailyUI${dayNumber}-large.jpg`)}
-							alt={`DailyUi ${dayNumber}`}
+							alt={`DailyUI ${dayNumber}`}
 						/>
 					</div>
 				</div>
