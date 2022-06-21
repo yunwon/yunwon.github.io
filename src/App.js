@@ -7,13 +7,15 @@ import About from "./pages/About/About";
 import PortfolioHome from "./pages/Portfolio/PortfolioHome";
 import WCB from "./pages/Portfolio/pages/WCB/WCB";
 import Toolbox from "./pages/Portfolio/pages/Toolbox/Toolbox";
-import Easyforms from "./pages/Portfolio/pages/Easyforms/Easyforms";
+import Easyforms from "./pages/Portfolio/pages/Bouqo/Bouqo";
 import SolarSystem from "./pages/Portfolio/pages/SolarSystem/SolarSystem";
 import HEP from "./pages/Portfolio/pages/HEP/HEP";
 import DailyUi from "./pages/Portfolio/pages/DailyUI/DailyUi";
 import Day001 from "./pages/Portfolio/pages/DailyUI/pages/Day001";
 import Day003 from "./pages/Portfolio/pages/DailyUI/pages/Day003";
 import Day004 from "./pages/Portfolio/pages/DailyUI/pages/Day004";
+import Bouqo from "./pages/Portfolio/pages/Bouqo/Bouqo";
+import IngramMicro from "./pages/Portfolio/pages/IngramMicro/IngramMicro";
 
 export default class App extends Component {
   render() {
@@ -44,6 +46,12 @@ export default class App extends Component {
             </Route>
             <Route path="/portfolio/hep">
               <HEP />
+            </Route>
+            <Route path="/portfolio/bouqo">
+              <Bouqo />
+            </Route>
+            <Route path="/portfolio/aim">
+              <IngramMicro />
             </Route>
             <Route exact path="/portfolio/dailyui">
               <DailyUi />

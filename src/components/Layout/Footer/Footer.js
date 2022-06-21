@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import styles from "./Footer.module.scss";
 
 export default class Footer extends Component {
@@ -34,18 +34,11 @@ export default class Footer extends Component {
               >
                 <FaFacebook />
               </a>
-              <a
-                href="https://www.instagram.com/wonjeongyun/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram />
-              </a>
             </div>
           </div>
 
           <div className={styles.copy}>
-            Design & Code by <strong>Jeongyun Won 2020</strong>
+            Design & Code by <strong>Jeongyun Won 2022</strong>
           </div>
         </div>
       </footer>

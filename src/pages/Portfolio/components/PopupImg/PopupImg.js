@@ -3,7 +3,7 @@ import styles from './PopupImg.module.scss';
 import Popup from 'reactjs-popup';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const PopupImg = ({ dayNumber }) => {
+const DailyUIPopupImg = ({ dayNumber }) => {
 	return (
 		<Popup
 			trigger={
@@ -15,7 +15,7 @@ const PopupImg = ({ dayNumber }) => {
 			}
 			modal
 			nested
-			position="center center"
+			position="top center"
 		>
 			{(close) => (
 				<div>
@@ -26,6 +26,7 @@ const PopupImg = ({ dayNumber }) => {
 						<img
 							src={require(`../../../../assets/portfolio/daily-ui/${dayNumber}/dailyUI${dayNumber}-large.jpg`)}
 							alt={`DailyUI ${dayNumber}`}
+							className={styles.image}
 						/>
 					</div>
 				</div>
@@ -34,4 +35,42 @@ const PopupImg = ({ dayNumber }) => {
 	);
 };
 
-export default PopupImg;
+const PopupImg = ({ thumbUrl, imageUrl, name, description, website }) => {
+	return (
+		<Popup
+			trigger={
+				<LazyLoadImage
+					alt={name}
+					effect="blur"
+					src={require(`../../../../assets/${thumbUrl}`)}
+				/>
+			}
+			modal
+			nested
+			position="top center"
+		>
+			{(close) => (
+				<div>
+					<button className={styles.close} onClick={close}>
+						&times;
+					</button>
+					<div>
+						<img
+							src={require(`../../../../assets/${imageUrl}`)}
+							alt={name}
+							className={styles.image}
+						/>
+						{description && 
+						<div className={styles.description}>
+							<h3>{name}</h3>
+							<p>{description}</p>
+							{website && <a href={website} target="_blank" rel="noopener">Visit website</a> }
+						</div>
+					}
+					</div>
+				</div>
+			)}
+		</Popup>
+	);
+};
+export { DailyUIPopupImg, PopupImg };

@@ -3,7 +3,7 @@
 .container {
   @include container-maxwidth();
   @include flex-center();
-  margin-top: 1.25rem;
+  margin-top: 3rem;
   margin-bottom: 1.25rem;
 
   a {

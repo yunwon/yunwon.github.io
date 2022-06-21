@@ -48,12 +48,12 @@ export default class About extends Component {
                 style={{ marginTop: "0.5rem" }}
               >
                 <div className={styles.contents_left}>
-                  <h4>Web/Graphic design</h4>
+                  <h4>Graphic/Web design</h4>
                   <div className={styles.description}>
                     <ul>
+                      <li>Graphic Design</li>
                       <li>UI design</li>
                       <li>UX design</li>
-                      <li>Graphic Design</li>
                     </ul>
                   </div>
                 </div>
@@ -63,7 +63,8 @@ export default class About extends Component {
                     <ul>
                       <li>HTML5, CSS3 (SASS/SCSS)</li>
                       <li>Responsive Design</li>
-                      <li>Javascript (React JS / React Native / jQuery) </li>
+                      <li>Javascript (React JS / Next JS / TypeScript / jQuery)</li>
+                      <li>Bootstrap, Tailwind CSS</li>
                       <li>
                         WordPress <br />
                         (Have experiences in Divi / WooCommerce / Elementor)
@@ -76,14 +77,24 @@ export default class About extends Component {
             <this.renderSkills title={`Softwares that \nI use are`}>
               <div className={styles.description}>
                 <ul>
-                  <li>Adobe XD, Illustrator, Photoshop</li>
-                  <li>UX Pin / Figma</li>
+                  <li>Adobe XD, Illustrator, Photoshop, Indesign, After Effect</li>
+                  <li>Figma</li>
                   <li>Github / VSCode</li>
                 </ul>
               </div>
             </this.renderSkills>
             <this.renderSkills title={`I've been working at`}>
               <div className={styles.description}>
+                <div style={{ marginBottom: "2.5rem" }}>
+                  <p className={styles.year}>
+                    <strong>May 2021 - present</strong>
+                  </p>
+                  <p>
+                    <b>Ingram Micro (Agency Ingram Micro)</b>
+                    <br />
+                    Graphic designer
+                  </p>
+                </div>
                 <div style={{ marginBottom: "2.5rem" }}>
                   <p className={styles.year}>
                     <strong>Dec 2019 - present</strong>
@@ -138,7 +149,6 @@ export default class About extends Component {
                 <ul>
                   <li>Drawing</li>
                   <li>Cooking</li>
-                  <li>Gardening</li>
                   <li>Playing video games</li>
                 </ul>
               </div>

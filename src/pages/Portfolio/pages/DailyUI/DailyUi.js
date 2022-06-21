@@ -7,7 +7,7 @@ import { Layout } from 'src/components/Layout/Layout';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import dailyUiStyles from './DailyUi.module.scss';
 import 'reactjs-popup/dist/index.css';
-import PopupImg from '../../components/PopupImg/PopupImg.js';
+import { DailyUIPopupImg } from '../../components/PopupImg/PopupImg.js';
 
 export default class DailyUi extends Component {
 	render() {
@@ -30,7 +30,7 @@ export default class DailyUi extends Component {
 								className={styles.image}
 							/>
 						</Link>
-						<PopupImg dayNumber="002" />
+						<DailyUIPopupImg dayNumber="002" />
 						<Link to="/portfolio/dailyui/day3">
 							<LazyLoadImage
 								alt="DailyUI003"
@@ -51,9 +51,9 @@ export default class DailyUi extends Component {
 							src={require('../../../../assets/portfolio/daily-ui/005/dailyUI005.jpg')}
 							className={styles.image}
 						/>
-						<PopupImg dayNumber="006" />
-						<PopupImg dayNumber="007" />
-						<PopupImg dayNumber="008" />
+						<DailyUIPopupImg dayNumber="006" />
+						<DailyUIPopupImg dayNumber="007" />
+						<DailyUIPopupImg dayNumber="008" />
 					</div>
 				</Fade>
 			</Layout>

@@ -65,6 +65,26 @@ export default class PortfolioHome extends Component {
         </Fade>
         <Fade bottom distance="3rem">
           <div className={styles.works}>
+          {this.state.webDesign || this.state.graphicDesign || this.state.frontEnd ? (
+              <Link to="/portfolio/aim">
+                <LazyLoadImage
+                  alt="Agency Ingram Micro"
+                  effect="blur"
+                  src={require("../../assets/home/ingram-thumb.jpg")}
+                  className={styles.image}
+                />
+              </Link>
+            ) : null}
+          {this.state.webDesign || this.state.frontEnd ? (
+              <Link to="/portfolio/bouqo">
+                <LazyLoadImage
+                  alt="Bouqo"
+                  effect="blur"
+                  src={require("../../assets/home/bouqo-thumb.jpg")}
+                  className={styles.image}
+                />
+              </Link>
+            ) : null}
             {this.state.webDesign || this.state.frontEnd ? (
               <Link to="/portfolio/hep">
                 <LazyLoadImage
@@ -95,31 +115,6 @@ export default class PortfolioHome extends Component {
                 />
               </Link>
             ) : null}
-            {this.state.webDesign || this.state.frontEnd ? (
-              <Link to="/portfolio/dailyui">
-                <LazyLoadImage
-                  alt="DailyUI day 001"
-                  effect="blur"
-                  src={require("../../assets/portfolio/daily-ui/003/dailyui003.png")}
-                  className={styles.image}
-                />
-              </Link>
-            ) : null}
-            {this.state.frontEnd ? (
-              <>
-                <a
-                  className={styles.visitGithub}
-                  href="https://github.com/yunwon"
-                  target="_blank"
-                >
-                  <div className={styles.icon}>
-                    <FaGithub />
-                  </div>
-                  <br />
-                  <h2>Visit my Github</h2>
-                </a>
-              </>
-            ) : null}
             {this.state.webDesign || this.state.graphicDesign ? (
               <>
                 <Link to="/portfolio/easyforms">
@@ -130,25 +125,6 @@ export default class PortfolioHome extends Component {
                     className={styles.image}
                   />
                 </Link>
-              </>
-            ) : null}
-            {this.state.graphicDesign ? (
-              <>
-                <Link to="/portfolio/solar-system">
-                  <LazyLoadImage
-                    alt="Easyforms"
-                    effect="blur"
-                    src={require("../../assets/portfolio/solarSystemMain.png")}
-                    className={styles.image}
-                  />
-                </Link>
-                <a className={styles.textDiv} href={Portfoilo} download>
-                  <h2>
-                    Download my works
-                    <br />
-                    before 2017
-                  </h2>
-                </a>
               </>
             ) : null}
           </div>
