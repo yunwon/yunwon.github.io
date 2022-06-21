@@ -38,6 +38,16 @@ export default class IngramMicro extends Component {
 							description={"On existing microsite of Microsoft Surface, I updated design and code for some pages. My design focussed on deliverying clear message about what Surface and Ingram Micro can offer, using clean and modern layout."}
 							website={"https://ingramnz.com/sites/microsoft/surface-home.html"}
 						/>
+						<PopupImg
+							name="Microsoft eDM design"
+							thumbUrl={"portfolio/aim/edm-ms-thumb.jpg"}
+							imageUrl={"portfolio/aim/edm-ms-large.jpg"}
+						/>
+						<PopupImg
+							name="Dell eDM design"
+							thumbUrl={"portfolio/aim/edm-dell-thumb.jpg"}
+							imageUrl={"portfolio/aim/edm-dell-large.jpg"}
+						/>
 					</div>
 				</Fade>
 				<GoToPortfolio />

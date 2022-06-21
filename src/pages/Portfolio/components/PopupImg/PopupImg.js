@@ -60,10 +60,10 @@ const PopupImg = ({ thumbUrl, imageUrl, name, description, website }) => {
 							alt={name}
 							className={styles.image}
 						/>
-						{description && 
+						{name && 
 						<div className={styles.description}>
 							<h3>{name}</h3>
-							<p>{description}</p>
+							{description &&<p>{description}</p>}
 							{website && <a href={website} target="_blank" rel="noopener">Visit website</a> }
 						</div>
 					}

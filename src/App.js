@@ -7,7 +7,7 @@ import About from "./pages/About/About";
 import PortfolioHome from "./pages/Portfolio/PortfolioHome";
 import WCB from "./pages/Portfolio/pages/WCB/WCB";
 import Toolbox from "./pages/Portfolio/pages/Toolbox/Toolbox";
-import Easyforms from "./pages/Portfolio/pages/Bouqo/Bouqo";
+import Easyforms from "./pages/Portfolio/pages/Easyforms/Easyforms";
 import SolarSystem from "./pages/Portfolio/pages/SolarSystem/SolarSystem";
 import HEP from "./pages/Portfolio/pages/HEP/HEP";
 import DailyUi from "./pages/Portfolio/pages/DailyUI/DailyUi";
