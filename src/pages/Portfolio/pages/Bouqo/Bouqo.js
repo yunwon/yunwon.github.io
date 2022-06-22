@@ -58,9 +58,10 @@ export default class Bouqo extends Component {
 								</div>
 							</div>
 							<p>
-								I lead a website redesign project for Bouqo.co.nz., a flower delivery service in Auckland. 
-								I upgraded the whole site with fun element like animated tags and engaging layout, following the existing brand identity. 
-								I also added the CTA button on the top navigation and on the footer on every page, which increased click-through rate by more than 20%. For front-end development, I used SCSS to make the CSS as non-repetitive as possible, on exsiting Vue JS project.
+								I led a website redesign project for Bouqo.co.nz., a flower delivery service in Auckland. 
+								I upgraded the whole site with elements aimed at increasing user engagement, such as animated tags, modified layouts, and a more consistent application of the brand identity. 
+								I increased the number of CTA elements in the website's navigation and footer areas. This increased customer click-through rates significantly (as reported by the owner).
+								For this front-end development project I used SCSS to improve CSS modularity and reduce repetition in the code. This included modifying and updating the pre-existing Vue JS project, an approach with which I am now proficient.
 							</p>
 						</div>
 					</Fade>

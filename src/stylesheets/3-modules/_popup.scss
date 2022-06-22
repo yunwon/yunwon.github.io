@@ -3,10 +3,12 @@
 .popup-content {
     width: 96% !important;
     max-width: 900px;
+    max-height: 90vh;
     overflow-y: scroll;
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
+      max-width: 900px;
     }
     @media #{$break-md} {
         width: 60% !important;

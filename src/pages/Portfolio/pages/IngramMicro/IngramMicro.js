@@ -28,14 +28,14 @@ export default class IngramMicro extends Component {
 							name="Agency Ingram Micro website"
 							thumbUrl={"portfolio/aim/aim-thumb.jpg"}
 							imageUrl={"portfolio/aim/aim-large.jpg"}
-							description={"In Agency Ingram Micro, I was requested to upgrade existing website. Since we were planning to launch a whole new website, we needed one that's temporary but look nice. I updated main look and feel with an abstract graphic with animation and bold message on it, which was generic but engaging at the same time, without losing AIM's identity."}
+							description={"In Agency Ingram Micro, I was requested to upgrade the existing website. This involved creating a temporary website that could replace the original during a major upgrade and launch. In this project, I updated the primary aesthetic elements, with abstract graphics, animations, and bold typography. My design principle focussed on maintaining AIM's identity, while creating a functional but engaging website."}
 							website={"https://ingramnz.com/aim/"}
 						/>
 						<PopupImg
 							name="Microsoft Surface | Ingram Micro microsite"
 							thumbUrl={"portfolio/aim/microsoft-thumb.jpg"}
 							imageUrl={"portfolio/aim/microsoft-large.jpg"}
-							description={"On existing microsite of Microsoft Surface, I updated design and code for some pages. My design focussed on deliverying clear message about what Surface and Ingram Micro can offer, using clean and modern layout."}
+							description={"In this project, I modified and updated pre-existing web pages relating to the Microsoft Surface microsite. My approach emphasised clear messaging elements, highlighting Surface and Ingram Micro's marketing and product message. My design principle focussed on clean and modernised layouts to improve clarity and customer engagement, while retaining the brand guidelines."}
 							website={"https://ingramnz.com/sites/microsoft/surface-home.html"}
 						/>
 						<PopupImg

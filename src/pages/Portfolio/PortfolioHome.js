@@ -6,7 +6,6 @@ import styles from './PortfolioHome.module.scss';
 import Portfoilo from '../../assets/portfolio/portfolio_JeongyunWon_2012-2018.pdf';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { FaGithub } from 'react-icons/fa';
 
 export default class PortfolioHome extends Component {
 	componentDidMount() {
