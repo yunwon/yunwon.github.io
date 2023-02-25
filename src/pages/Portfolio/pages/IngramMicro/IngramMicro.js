@@ -39,12 +39,12 @@ export default class IngramMicro extends Component {
 							website={"https://ingramnz.com/sites/microsoft/surface-home.html"}
 						/>
 						<PopupImg
-							name="Microsoft eDM design"
+							name="Digital design for Microsoft promotions"
 							thumbUrl={"portfolio/aim/edm-ms-thumb.jpg"}
 							imageUrl={"portfolio/aim/edm-ms-large.jpg"}
 						/>
 						<PopupImg
-							name="Dell eDM design"
+							name="Digital design for a Dell promotion"
 							thumbUrl={"portfolio/aim/edm-dell-thumb.jpg"}
 							imageUrl={"portfolio/aim/edm-dell-large.jpg"}
 						/>

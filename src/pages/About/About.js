@@ -92,17 +92,19 @@ export default class About extends Component {
                   <p>
                     <b>Ingram Micro (Agency Ingram Micro)</b>
                     <br />
-                    Graphic designer
+                    Graphic designer<br/>
+                    <small><i>Creating artwork for digital campaigns. UX/UI design and building front-end for EDM and websites</i></small>
                   </p>
                 </div>
                 <div style={{ marginBottom: "2.5rem" }}>
                   <p className={styles.year}>
-                    <strong>Dec 2019 - present</strong>
+                    <strong>Dec 2019 - Aug 2022</strong>
                   </p>
                   <p>
                     <b>Freelancing</b>
                     <br />
-                    as a UX/UI designer and front-end developer
+                    as a graphic/UX/UI designer and front-end developer<br/>
+                    <small><i>Main Client: Bouqo, History of Egypt Podcast</i></small>
                   </p>
                 </div>
                 <div>
