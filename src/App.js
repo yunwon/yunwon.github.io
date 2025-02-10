@@ -16,6 +16,7 @@ import Day003 from "./pages/Portfolio/pages/DailyUI/pages/Day003";
 import Day004 from "./pages/Portfolio/pages/DailyUI/pages/Day004";
 import Bouqo from "./pages/Portfolio/pages/Bouqo/Bouqo";
 import IngramMicro from "./pages/Portfolio/pages/IngramMicro/IngramMicro";
+import ApplePortal from "./pages/Portfolio/pages/ApplePortal/ApplePortal";
 
 export default class App extends Component {
   render() {
@@ -52,6 +53,9 @@ export default class App extends Component {
             </Route>
             <Route path="/portfolio/aim">
               <IngramMicro />
+            </Route>
+            <Route path="/portfolio/ingram-micro-apple-portal">
+              <ApplePortal />
             </Route>
             <Route exact path="/portfolio/dailyui">
               <DailyUi />

@@ -26,6 +26,7 @@ export default class Description extends Component {
         </div>
       );
     }
+
     return (
       <Fade bottom cascade distance="3rem">
         <div className={styles.container}>

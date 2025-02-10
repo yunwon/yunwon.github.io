@@ -22,7 +22,7 @@ const Header = () => {
       <header className={headerClasses}>
         <div className={styles.headerInner}>
           <Link to="/" className={styles.logo}>
-            <div>Jeongyun Won</div>
+            <div>Yun Won</div>
           </Link>
           <BurgerButton click={toggle} burgerChangeState={buttonChange} />
         </div>

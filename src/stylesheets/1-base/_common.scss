@@ -11,15 +11,6 @@ body {
   width: 100%;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-
-  li {
-    list-style: none;
-  }
-}
-
 *,
 *:before,
 *:after {
@@ -49,10 +40,10 @@ a {
 h1,
 h2,
 h3,
-h4,
-h5,
+// h4,
+// h5,
 h6 {
-  margin: 0;
+  //margin: 0;
   letter-spacing: -0.5px;
 }
 
@@ -61,10 +52,13 @@ h3 {
   font-weight: 600;
 }
 
-p {
-  line-height: 1.8rem;
+h4, h5, h6, p {
   font-family: $paragraph-font;
   color: $dark-grey !important;
+}
+
+p {
+  line-height: 1.8rem;
   font-size: 1rem;
 }
 

@@ -22,7 +22,7 @@
 }
 
 @mixin smallShadow() {
-  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.16);
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.10);
 }
 
 @mixin bigShadow() {
@@ -34,4 +34,16 @@
   transition-timing-function: ease-out;
   -webkit-transition: 0.25s;
   -webkit-transition-timing-function: ease-out;
+}
+
+@mixin marginY ($big: false) {
+  margin: 1rem 0;
+
+  @media #{$break-md} {
+    @if ($big) {
+      margin: 50px 0;
+    } @else {
+      margin: 1.5rem 0;
+    }
+  }
 }

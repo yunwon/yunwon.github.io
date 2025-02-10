@@ -31,11 +31,14 @@
   }
 
   ul {
+    margin: 0;
+    padding: 0;
     @media #{$break-sm} {
       display: flex;
     }
 
     li {
+      list-style: none;
       padding: 0 1em;
       font-size: 1.25rem;
       line-height: 1.8;

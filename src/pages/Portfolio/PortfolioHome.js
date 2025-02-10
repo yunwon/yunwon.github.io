@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 import { Layout } from '../../components/Layout/Layout';
 import styles from './PortfolioHome.module.scss';
-import Portfoilo from '../../assets/portfolio/portfolio_JeongyunWon_2012-2018.pdf';
+import Portfolio from '../../assets/portfolio/portfolio_JeongyunWon_2012-2018.pdf';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -65,8 +65,8 @@ export default class PortfolioHome extends Component {
 				<Fade bottom distance="3rem">
 					<div className={styles.works}>
 						{this.state.webDesign ||
-						this.state.graphicDesign ||
-						this.state.frontEnd ? (
+							this.state.graphicDesign ||
+							this.state.frontEnd ? (
 							<Link to="/portfolio/aim">
 								<LazyLoadImage
 									alt="Agency Ingram Micro"
@@ -148,7 +148,7 @@ export default class PortfolioHome extends Component {
 										className={styles.image}
 									/>
 								</Link>
-								<a className={styles.textDiv} href={Portfoilo} download>
+								<a className={styles.textDiv} href={Portfolio} download>
 									<h2>
 										Download my works
 										<br />
