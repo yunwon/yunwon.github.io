@@ -19,7 +19,7 @@ export default class Home extends Component {
         <div className={styles.hero}>
           <Fade top distance="3rem">
             <p>
-              Hello, I'm Yun. I'm a UX/UI designer and front-end developer based in the UK. I'm enthusiastic at creating exceptional
+              Hello, I'm Yun. I'm a web designer and front-end developer based in the UK. I'm enthusiastic at creating exceptional
               user experiences with{" "}
               <NavLink to="/about" className={styles.link}>
                 my broad range of skills.

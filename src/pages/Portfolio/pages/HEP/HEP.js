@@ -11,6 +11,7 @@ import Description from '../../components/Description/Description';
 import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import classNames from 'classnames';
 
 export default class HEP extends Component {
 	componentDidMount() {
@@ -79,11 +80,20 @@ export default class HEP extends Component {
 						</div>
 					</Fade>
 					<Fade bottom cascade distance="3rem">
-						<Description
-							title="Before"
-							paragraph={[
-								'In tackling the redesign of this website, I had to improve three key metrics. These were:',
-								<ol>
+						<div className={classNames(common.paragraph, common.grid)}>
+							<div>
+								<h3>Before</h3>
+								<figure className={common.body__imgWrapper}>
+									<img
+										alt="History of Egypt Podcast - before"
+										src={HEPOld}
+										loading="lazy"
+										className={classNames(common.body__img, common.noShadow)}
+									/>
+									<figcaption>Before</figcaption>
+								</figure>
+								<p>In tackling the redesign of this website, I had to improve three key metrics. These were:</p>
+								<ul>
 									<li>
 										Increasing user engagement with the website and its
 										features.
@@ -96,53 +106,43 @@ export default class HEP extends Component {
 										Increase website income, by improving click through rates to
 										Patreon and PayPal donation services.
 									</li>
-								</ol>
-							]}
-							bgImage={HEPOld}
-							imgPosition="left"
-						/>
-						<br />
-						<div className={common.imageCenterContainer}>
-							<h3>After</h3>
-							<LazyLoadImage
-								alt="Responsive"
-								effect="blur"
-								src={HEPResponsive}
-							/>
+								</ul>
+							</div>
 						</div>
-						<Description
-							paragraph={[
-								<strong>UX / UI design</strong>,
-								<br />,
-								'To increase user engagement, I added new quick access features including call \
-                to action buttons, playlist and gallery features, and one-click access to third-part \
-                services (Apple, Spotify, Google, etc).',
-								<br />,
-								<br />,
-								'Secondly, I improved the website navigation features. I added new playlist functions \
-                and reorganised the existing blog posts, categorising more than 180 entries, for easier access.',
-								<br />,
-								<br />,
-								"Thirdly, I improved the website's merchant facilities. I added one-click solutions for \
-                Patreon, PayPal and the online shop, and new banner features to visually engage visitors. \
-                As a result of my work, the client has reported much higher sales of merchandise and increased \
-                donations and Patreon subscriptions.",
-								<br />,
-								<br />,
-								"Finally, I created a new branding scheme. Bold colours of blue and beige, representing the \
-                landscape of ancient Egypt (the river Nile and deserts, particularly). I added background \
-                illustrations and design features including ancient artefacts, to unify the website's identity \
-                and improve its theming.",
-								<br />,
-								<br />,
-								<strong>Development</strong>,
-								<br />,
-								'To support the new design, I migrated the website from Wordpress plan and built it \
-                on new hosting services from scratch, using Elementor.'
-							]}
-							bgImage={HEPNew}
-							imgPosition="right"
-						/>
+					</Fade>
+					<Fade bottom cascade distance="3rem">
+						<div className={classNames(common.paragraph, common.grid)}>
+							<div>
+								<h3>After</h3>
+								<figure className={common.body__imgWrapper}>
+									<img
+										alt="History of Egypt Podcast - after"
+										src={HEPResponsive}
+										loading="lazy"
+										className={classNames(common.body__img, common.noShadow)}
+									/>
+								</figure>
+								<br />
+								<h4>UX / UI design</h4>
+								<p>To increase user engagement, I added new quick access features including call to action buttons, playlist and gallery features, and one-click access to third-part services (Apple, Spotify, Google, etc).</p>
+								<p>Secondly, I improved the website navigation features. I added new playlist functions and reorganised the existing blog posts, categorising more than 180 entries, for easier access.
+								</p>
+								<p>Thirdly, I improved the website's merchant facilities. I added one-click solutions for Patreon, PayPal and the online shop, and new banner features to visually engage visitors. As a result of my work, the client has reported much higher sales of merchandise and increased donations and Patreon subscriptions.
+								</p>
+								<p>Finally, I created a new branding scheme. Bold colours of blue and beige, representing the landscape of ancient Egypt (the river Nile and deserts, particularly). I added background illustrations and design features including ancient artefacts, to unify the website's identity and improve its theming.
+								</p>
+								<figure className={common.body__imgWrapper}>
+									<img
+										alt="History of Egypt Podcast - after"
+										src={HEPNew}
+										loading="lazy"
+										className={classNames(common.body__img, common.noShadow)}
+									/>
+								</figure>
+								<h4>Development</h4>
+								<p>To support the new design, I migrated the website from Wordpress plan and built it on new hosting services from scratch, using Elementor.</p>
+							</div>
+						</div>
 					</Fade>
 				</div>
 				<GoToPortfolio />

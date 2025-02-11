@@ -70,10 +70,8 @@ export default class Bouqo extends Component {
 					<div>
 						<Fade bottom cascade distance="3rem">
 							<div className={classNames(common.paragraph, common.grid)}>
-
 								<div>
 									<h3>Problems</h3>
-
 									<figure className={common.body__imgWrapper}>
 										<img
 											alt="Ingram Micro and Apple CTO site - before"
