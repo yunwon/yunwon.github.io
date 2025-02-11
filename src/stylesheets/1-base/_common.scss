@@ -41,18 +41,23 @@ h1,
 h2,
 h3,
 // h4,
-// h5,
+h5,
 h6 {
   //margin: 0;
   letter-spacing: -0.5px;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.875rem;
-  font-weight: 600;
 }
 
-h4, h5, h6, p {
+h5 {
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+}
+
+h4, h6, p {
   font-family: $paragraph-font;
   color: $dark-grey !important;
 }

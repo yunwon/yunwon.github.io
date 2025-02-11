@@ -103,14 +103,20 @@
                     border-left: 1px solid $black;
                     padding-left: 1rem;
 
-                    li {
-                        margin-top: 0;
-                        margin-bottom: 1rem;
-                        font-family: $paragraph-font;
+                    ul {
+                        margin: 0;
+                        padding: 0;
 
-                        a {
-                            color: $pink;
-                            text-decoration: underline;
+                        li {
+                            margin-top: 0;
+                            list-style: none;
+                            margin-bottom: 1rem;
+                            font-family: $paragraph-font;
+    
+                            a {
+                                color: $pink;
+                                text-decoration: underline;
+                            }
                         }
                     }
 
