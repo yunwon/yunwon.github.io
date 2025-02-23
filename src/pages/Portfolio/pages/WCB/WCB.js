@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Layout } from 'src/components/Layout/Layout';
 import common from '../common.module.scss';
 import WCBMain from 'src/assets/portfolio/wcb/wcb-main.png';
-import DetailImage from 'src/assets/portfolio/wcb/wcb_logo-screen.jpg';
+import DetailImage from 'src/assets/portfolio/wcb/wcb_logo-screen.webp';
 import PeopleImage from 'src/assets/portfolio/wcb/people-screens.png';
 import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import { LazyLoadImage } from 'react-lazy-load-image-component';

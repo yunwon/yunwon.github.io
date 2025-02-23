@@ -63,6 +63,18 @@ export default class PortfolioHome extends Component {
 				</Fade>
 				<Fade bottom distance="3rem">
 					<div className={styles.works}>
+						{this.state.webDesign ||
+							this.state.graphicDesign ||
+							this.state.frontEnd ? (
+							<Link to="/portfolio/aim">
+								<LazyLoadImage
+									alt="Agency Ingram Micro"
+									effect="blur"
+									src={require('../../assets/portfolio/ingram-micro/IngramMicro_HP_01.webp')}
+									className={styles.image}
+								/>
+							</Link>
+						) : null}
 						{this.state.webDesign || this.state.frontEnd ? (
 							<>
 								<Link to="/portfolio/ingram-micro-apple-portal">
@@ -114,18 +126,6 @@ export default class PortfolioHome extends Component {
 									/>
 								</Link>
 							</>
-						) : null}
-						{this.state.webDesign ||
-							this.state.graphicDesign ||
-							this.state.frontEnd ? (
-							<Link to="/portfolio/aim">
-								<LazyLoadImage
-									alt="Agency Ingram Micro"
-									effect="blur"
-									src={require('../../assets/home/ingram-thumb.jpg')}
-									className={styles.image}
-								/>
-							</Link>
 						) : null}
 						{this.state.graphicDesign ? (
 							<>

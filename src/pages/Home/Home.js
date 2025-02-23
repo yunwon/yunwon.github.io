@@ -7,6 +7,7 @@ import CTO from "src/assets/home/cto_thumb.webp";
 import { Layout } from "src/components/Layout/Layout";
 import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
 import WCB from "src/assets/home/wcb-thumb.png";
+import HP01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_01.webp';
 
 export default class Home extends Component {
   componentDidMount() {
@@ -43,14 +44,14 @@ export default class Home extends Component {
         <div className={styles.works}>
           <Fade bottom distance="3rem">
             <div className={styles.images}>
+              <Link to="/portfolio/aim">
+                <img src={HP01} alt="Ingram Micro Digital Campaigns" />
+              </Link>
               <Link to="/portfolio/ingram-micro-apple-portal">
                 <img src={CTO} alt="Ingram Micro Apple Portal" />
               </Link>
               <Link to="/portfolio/bouqo">
                 <img src={Bouqo} alt="Bouqo" />
-              </Link>
-              <Link to="/portfolio/wcb">
-                <img src={WCB} alt="White Collar Blue" />
               </Link>
             </div>
           </Fade>
