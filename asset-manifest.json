@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.76e06523.css",
-    "main.js": "/static/js/main.257f5eb0.js",
+    "main.js": "/static/js/main.18581ee3.js",
     "static/media/apple-portal-homepage.mov": "/static/media/apple-portal-homepage.e614c5d355ea7f665c7a.mov",
     "static/media/recording.mp4": "/static/media/recording.2ef95250cd70e0e6065c.mp4",
     "static/media/easyforms-video.mp4": "/static/media/easyforms-video.b26e57e3c6cfd17fffde.mp4",
@@ -17,7 +17,6 @@
     "static/media/cto_wireframe.jpg": "/static/media/cto_wireframe.00fe3e4de9dd11d0a8d8.jpg",
     "static/media/hep-main.png": "/static/media/hep-main.a38e5ce380b34363ce71.png",
     "static/media/hep-old.png": "/static/media/hep-old.45385907fd6238f8d5d8.png",
-    "static/media/wcb_logo-screen-1.png": "/static/media/wcb_logo-screen-1.a8a8d7fa550f092142f3.png",
     "static/media/dailyUI006-large.jpg": "/static/media/dailyUI006-large.84fc337d8b17519c18d7.jpg",
     "static/media/dailyUI006.jpg": "/static/media/dailyUI006.84fc337d8b17519c18d7.jpg",
     "static/media/dailyUI002-large.jpg": "/static/media/dailyUI002-large.de55fda2c10c0d4c0c9f.jpg",
@@ -31,16 +30,15 @@
     "static/media/hep-new02.png": "/static/media/hep-new02.1826e0ec9f631649f187.png",
     "static/media/responsive.png": "/static/media/responsive.f0c99a67ec678df153f3.png",
     "static/media/hep-responsive.png": "/static/media/hep-responsive.6eba857330734eeed941.png",
-    "static/media/wcb_logo-screen.png": "/static/media/wcb_logo-screen.a0a36de973d02c102182.png",
-    "static/media/detail.png": "/static/media/detail.92ffbba0b3a5e27e32c6.png",
+    "static/media/wcb_logo-screen.png": "/static/media/wcb_logo-screen.bb6a1ee9f27f9b795062.png",
     "static/media/toolbox.png": "/static/media/toolbox.98eb5e22b0f2e409fa6c.png",
     "static/media/dailyUI008-large.jpg": "/static/media/dailyUI008-large.7d36ead6387842123c93.jpg",
     "static/media/easyforms-main.png": "/static/media/easyforms-main.46ca894eed82bee3851f.png",
     "static/media/mobile-all.png": "/static/media/mobile-all.5402e883f49d31da6afa.png",
-    "static/media/wcb_logo-screen.jpg": "/static/media/wcb_logo-screen.65c868b027d2b6617fa7.jpg",
+    "static/media/IngramMicro_HP_02.webp": "/static/media/IngramMicro_HP_02.b3aa90608c1e3206b49f.webp",
     "static/media/dailyUI002.jpg": "/static/media/dailyUI002.28015aa34c5d50b2b8b0.jpg",
     "static/media/bouqo-main.webp": "/static/media/bouqo-main.79f61ede767367ee12fd.webp",
-    "static/media/wcb_logo-screen.pdf": "/static/media/wcb_logo-screen.0cbb64da66eb4cd32057.pdf",
+    "static/media/IngramMicro_HP_01.webp": "/static/media/IngramMicro_HP_01.82d33670ee6c7b57d75b.webp",
     "static/media/dailyUI007-large.jpg": "/static/media/dailyUI007-large.dc6504d4e82abec87b2d.jpg",
     "static/media/dailyUI007.jpg": "/static/media/dailyUI007.dc6504d4e82abec87b2d.jpg",
     "static/media/microsoft-large.jpg": "/static/media/microsoft-large.76be93324d694b66b8b4.jpg",
@@ -52,6 +50,7 @@
     "static/media/cto_home-all.webp": "/static/media/cto_home-all.e14ce8753c2f81a20452.webp",
     "static/media/microsoft-thumb.png": "/static/media/microsoft-thumb.8b4363dd712ff54edfde.png",
     "static/media/wcb-thumb.png": "/static/media/wcb-thumb.2b4bcd4c7d552a7de8b4.png",
+    "static/media/IngramMicro_Microsoft_01.webp": "/static/media/IngramMicro_Microsoft_01.49a24bd95cbb0d0be854.webp",
     "static/media/edm-dell-thumb.jpg": "/static/media/edm-dell-thumb.500d3dfe08069d97e82c.jpg",
     "static/media/ingramnz-CTO_home--before@2x.webp": "/static/media/ingramnz-CTO_home--before@2x.b7e850b5806f8aa71754.webp",
     "static/media/hep-old01.png": "/static/media/hep-old01.1970fd7812233d158e57.png",
@@ -68,15 +67,16 @@
     "static/media/solarSystemMain.png": "/static/media/solarSystemMain.8d94ba4f26a002dc2d04.png",
     "static/media/cto_style-guide.webp": "/static/media/cto_style-guide.7d376ccfd4a77dcb63cb.webp",
     "static/media/cto_thumb.webp": "/static/media/cto_thumb.690fd1f4cfc267992f94.webp",
+    "static/media/wcb_logo-screen.webp": "/static/media/wcb_logo-screen.42cb018cdd7f64393a14.webp",
     "static/media/dailyui003.webp": "/static/media/dailyui003.343e1c461627f006bc4c.webp",
     "static/media/easyforms.png": "/static/media/easyforms.7c54d221cf9d54bf7bc3.png",
     "index.html": "/index.html",
     "static/media/menuIcon.svg": "/static/media/menuIcon.3fc7127903b5de0c9f6bbd3065f2c8cb.svg",
     "main.76e06523.css.map": "/static/css/main.76e06523.css.map",
-    "main.257f5eb0.js.map": "/static/js/main.257f5eb0.js.map"
+    "main.18581ee3.js.map": "/static/js/main.18581ee3.js.map"
   },
   "entrypoints": [
     "static/css/main.76e06523.css",
-    "static/js/main.257f5eb0.js"
+    "static/js/main.18581ee3.js"
   ]
 }
