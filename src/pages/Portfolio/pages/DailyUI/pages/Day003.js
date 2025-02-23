@@ -35,7 +35,9 @@ export default class Day003 extends Component {
           </header>
           <div className={styles.hero}>
             <Fade top cascade distance="3rem">
-              <img src={donut} alt="donut" />
+              <div className={styles.heroImage}>
+                <img src={donut} alt="donut" />
+              </div>
               <div className={styles.title}>
                 <h1>The joy of Getting Best Donut</h1>
                 <p>

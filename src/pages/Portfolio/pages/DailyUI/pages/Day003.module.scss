@@ -13,23 +13,21 @@ $red: #D75A46;
 }
 
 .background {
-    width: 100vw;
-    height: 100vh;
-
     background-image: url("../../../../../assets/portfolio/daily-ui/003/bg.png");
-    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
 
     @include font-style();
     color: $red;
 }
 
 .container {
-    /* Display & Box Model */
     @include container-maxwidth();
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 1.25rem 2.5rem;
     @media #{$break-lg} {
-        padding: 0;
+        padding: 0 0 2.5rem;
     }
 
     header {
@@ -58,11 +56,16 @@ $red: #D75A46;
                 }
             }
             ul {
+                margin: 0;
+                padding: 0;
                 display: none;
                 @media #{$break-md} {
                     display: flex;
                 }
                 li {
+                    margin-top: 0;
+                    list-style: none;
+                
                     font-size: 1.5rem;
                     padding: 0 1rem;
                     &:last-child {
@@ -78,24 +81,29 @@ $red: #D75A46;
         @media #{$break-md} {
             flex-direction: row;
         }
-        img {
-            order: 2;
-            width: 100%;
-            margin-top: -20%;
+        .heroImage {
             @media #{$break-md} {
-                order: 1;
-                width: 60%;
-                margin-top: -10%;
-                margin-left: -10%;
-                margin-right: 5%;
+                width: 55%;
+            }
+            img {
+                order: 2;
+                width: 100%;
+                margin-top: -20%;
+                @media #{$break-md} {
+                    order: 1;
+                    margin-left: -5%;
+                }
             }
         }
+        
         .title {
             order: 1;
             z-index: 1;
             margin-top: 20px;
             h1 {
                 margin-bottom: 0.5rem;
+                font-weight: normal;
+                line-height: 1.1;
             }
             button {
                 margin-top: 20px;
@@ -111,16 +119,13 @@ $red: #D75A46;
             @media #{$break-md} {
                 order: 2;
                 margin-top: 12%;
-                width: 50%;
+                width: 45%;
                 h1 {
                     font-size: 4.5rem;
                     margin-bottom: 1rem;
                 }
                 p {
                     font-size: 1rem;
-                }
-                button {
-                    margin-top: 30px;
                 }
             }
         }

@@ -35,7 +35,7 @@ export default class DailyUi extends Component {
 							<LazyLoadImage
 								alt="DailyUI003"
 								effect="blur"
-								src={require('../../../../assets/portfolio/daily-ui/003/dailyui003.png')}
+								src={require('../../../../assets/portfolio/daily-ui/003/dailyui003.webp')}
 								className={styles.image}
 							/>
 						</Link>
