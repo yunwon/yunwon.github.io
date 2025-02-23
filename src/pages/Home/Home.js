@@ -3,11 +3,10 @@ import { NavLink, Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import styles from "./Home.module.scss";
 import Bouqo from "src/assets/portfolio/bouqo-thumb.jpg";
-import AIM from "src/assets/home/ingram-thumb.jpg"
-import HEP from "src/assets/home/hep-thumb.png";
 import CTO from "src/assets/home/cto_thumb.webp";
 import { Layout } from "src/components/Layout/Layout";
 import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
+import WCB from "src/assets/home/wcb-thumb.png";
 
 export default class Home extends Component {
   componentDidMount() {
@@ -19,7 +18,7 @@ export default class Home extends Component {
         <div className={styles.hero}>
           <Fade top distance="3rem">
             <p>
-              Hello, I'm Yun. I'm a web designer and front-end developer based in the UK. I'm enthusiastic at creating exceptional
+              Hello, I'm Yun. I'm a web designer and front-end developer based in the UK. I'm enthusiastic about creating exceptional
               user experiences with{" "}
               <NavLink to="/about" className={styles.link}>
                 my broad range of skills.
@@ -50,8 +49,8 @@ export default class Home extends Component {
               <Link to="/portfolio/bouqo">
                 <img src={Bouqo} alt="Bouqo" />
               </Link>
-              <Link to="/portfolio/hep">
-                <img src={HEP} alt="History of Egypt Podcast" />
+              <Link to="/portfolio/wcb">
+                <img src={WCB} alt="White Collar Blue" />
               </Link>
             </div>
           </Fade>

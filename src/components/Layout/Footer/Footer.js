@@ -9,7 +9,7 @@ export default class Footer extends Component {
         <div className={styles.footerInner}>
           <div className={styles.contact}>
             <h2>
-              <a href="mailto:jeongyunw@gmail.com">Email me</a> or Find me in
+              <a href="mailto:yunwonnz@gmail.com">Email me</a> or Find me in
               elsewhere &mdash;&nbsp;
             </h2>
             <div className={styles.social}>

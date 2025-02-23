@@ -120,6 +120,20 @@
                         }
                     }
 
+                    ul.subList {
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                        
+                        li {
+                            margin-bottom: 8px;
+                            line-height: normal;
+                            list-style-type: disc;
+                            font-size: 0.9375rem;
+                            // font-size: 1rem;
+                            // opacity: 0.75;
+                        }
+                    }
+
                     .year {
                         color: $black;
                         opacity: 0.4;
@@ -127,9 +141,10 @@
                         margin-bottom: 0.8rem;
                     }
                 }
+
+                
             }
         }
 
-        .iCanDo {}
     }
 }

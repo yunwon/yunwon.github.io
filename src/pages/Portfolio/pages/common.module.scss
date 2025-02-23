@@ -38,6 +38,9 @@
     }
 
   }
+  .paragraphRelaxed {
+    margin: 4rem 0;
+  }
 
   h4 {
     margin-bottom: 0.25rem;
@@ -69,6 +72,7 @@
     width: 100%;
     border-radius: $imageBorderRadius;
     @include smallShadow();
+    margin: 0 auto;
   }
   figcaption {
     margin-top: 1.25rem;
@@ -78,6 +82,15 @@
     color: $dark-grey;
   }
 }
+
+video {
+  @include smallShadow();
+  margin-top: 1rem;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 990px;
+}
+
 }
 
 .hero {

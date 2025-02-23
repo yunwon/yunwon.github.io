@@ -3,7 +3,6 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 import { Layout } from '../../components/Layout/Layout';
 import styles from './PortfolioHome.module.scss';
-import Portfolio from '../../assets/portfolio/portfolio_JeongyunWon_2012-2018.pdf';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -64,6 +63,58 @@ export default class PortfolioHome extends Component {
 				</Fade>
 				<Fade bottom distance="3rem">
 					<div className={styles.works}>
+						{this.state.webDesign || this.state.frontEnd ? (
+							<>
+								<Link to="/portfolio/ingram-micro-apple-portal">
+									<LazyLoadImage
+										alt="Ingram Micro Apple Portal"
+										effect="blur"
+										src={require('../../assets/home/cto_thumb.webp')}
+										className={styles.image}
+									/>
+								</Link>
+								<Link to="/portfolio/bouqo">
+									<LazyLoadImage
+										alt="Bouqo"
+										effect="blur"
+										src={require('../../assets/home/bouqo-thumb.jpg')}
+										className={styles.image}
+									/>
+								</Link>
+								<Link to="/portfolio/hep">
+									<LazyLoadImage
+										alt="History of Egypt Podcast"
+										effect="blur"
+										src={require('../../assets/home/hep-thumb.png')}
+										className={styles.image}
+									/>
+								</Link>
+								<Link to="/portfolio/dailyui">
+									<LazyLoadImage
+										alt="DailyUI day 001"
+										effect="blur"
+										src={require('../../assets/portfolio/daily-ui/002/dailyUI002.jpg')}
+										className={styles.image}
+									/>
+								</Link>
+								<Link to="/portfolio/toolbox">
+									<LazyLoadImage
+										alt="Toolbox"
+										effect="blur"
+										src={require('../../assets/home/toolbox.png')}
+										className={styles.image}
+									/>
+								</Link>
+								<Link to="/portfolio/wcb">
+									<LazyLoadImage
+										alt="White Collar Blue"
+										effect="blur"
+										src={require('../../assets/home/wcb-thumb.png')}
+										className={styles.image}
+									/>
+								</Link>
+							</>
+						) : null}
 						{this.state.webDesign ||
 							this.state.graphicDesign ||
 							this.state.frontEnd ? (
@@ -76,68 +127,6 @@ export default class PortfolioHome extends Component {
 								/>
 							</Link>
 						) : null}
-						{this.state.webDesign || this.state.frontEnd ? (
-							<>
-								<Link to="/portfolio/bouqo">
-									<LazyLoadImage
-										alt="Bouqo"
-										effect="blur"
-										src={require('../../assets/home/bouqo-thumb.jpg')}
-										className={styles.image}
-									/>
-								</Link>
-								<Link to="/portfolio/dailyui">
-									<LazyLoadImage
-										alt="DailyUI day 001"
-										effect="blur"
-										src={require('../../assets/portfolio/daily-ui/003/dailyui003.png')}
-										className={styles.image}
-									/>
-								</Link>
-							</>
-						) : null}
-						{this.state.webDesign || this.state.frontEnd ? (
-							<Link to="/portfolio/hep">
-								<LazyLoadImage
-									alt="History of Egypt Podcast"
-									effect="blur"
-									src={require('../../assets/home/hep-thumb.png')}
-									className={styles.image}
-								/>
-							</Link>
-						) : null}
-						{this.state.webDesign || this.state.frontEnd ? (
-							<Link to="/portfolio/toolbox">
-								<LazyLoadImage
-									alt="Toolbox"
-									effect="blur"
-									src={require('../../assets/home/toolbox.png')}
-									className={styles.image}
-								/>
-							</Link>
-						) : null}
-						{this.state.webDesign || this.state.frontEnd ? (
-							<Link to="/portfolio/wcb">
-								<LazyLoadImage
-									alt="White Collar Blue"
-									effect="blur"
-									src={require('../../assets/home/wcb-thumb.png')}
-									className={styles.image}
-								/>
-							</Link>
-						) : null}
-						{this.state.webDesign || this.state.graphicDesign ? (
-							<>
-								<Link to="/portfolio/easyforms">
-									<LazyLoadImage
-										alt="Easyforms"
-										effect="blur"
-										src={require('../../assets/home/easyforms.png')}
-										className={styles.image}
-									/>
-								</Link>
-							</>
-						) : null}
 						{this.state.graphicDesign ? (
 							<>
 								<Link to="/portfolio/solar-system">
@@ -148,13 +137,6 @@ export default class PortfolioHome extends Component {
 										className={styles.image}
 									/>
 								</Link>
-								<a className={styles.textDiv} href={Portfolio} download>
-									<h2>
-										Download my works
-										<br />
-										before 2017
-									</h2>
-								</a>
 							</>
 						) : null}
 					</div>

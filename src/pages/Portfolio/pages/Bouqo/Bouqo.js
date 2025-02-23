@@ -58,10 +58,10 @@ export default class Bouqo extends Component {
 								</div>
 							</div>
 							<p>
-								I led a website redesign project for Bouqo.co.nz., a flower delivery service in Auckland. 
-								I upgraded the whole site with elements aimed at increasing user engagement, such as animated tags, modified layouts, and a more consistent application of the brand identity. 
+								I led a website redesign project for Bouqo.co.nz., a flower delivery service in Auckland.
+								I upgraded the whole site with elements aimed at increasing user engagement, such as animated tags, modified layouts, and a more consistent application of the brand identity.
 								I increased the number of CTA elements in the website's navigation and footer areas. This increased customer click-through rates significantly (as reported by the owner).
-								For this front-end development project I used SCSS to improve CSS modularity and reduce repetition in the code. This included modifying and updating the pre-existing Vue JS project, an approach with which I am now proficient.
+								For this front-end development project, I used SCSS to improve CSS modularity and reduce repetition in the code. This included modifying and updating the pre-existing Vue JS project, an approach with which I am now proficient.
 							</p>
 						</div>
 					</Fade>

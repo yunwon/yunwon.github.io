@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Me from "../../assets/about/jeongyunwon.png";
 import CV from "../../assets/about/yunwon_cv.pdf";
@@ -31,7 +30,7 @@ export default class About extends Component {
           <div className={styles.hero}>
             <div className={styles.heroLeft}>
               <h1>About Me</h1>
-              <img src={Me} alt="Jeongyun Won" />
+              <img src={Me} alt="Yun Won" />
             </div>
             <div className={styles.heroRight}>
               <a href={CV} download>
@@ -58,7 +57,7 @@ export default class About extends Component {
                   </div>
                 </div>
                 <div className={styles.contents_right}>
-                  <h5>Web Develepment</h5>
+                  <h5>Web Development</h5>
                   <div className={styles.description}>
                     <ul>
                       <li>HTML5, CSS3 (SASS/SCSS)</li>
@@ -67,8 +66,7 @@ export default class About extends Component {
                       <li>Bootstrap, Tailwind CSS</li>
                       <li>HTML email</li>
                       <li>
-                        WordPress <br />
-                        (Have experiences in Divi / WooCommerce / Elementor)
+                        WordPress (Elementor, Divi, WooCommerce)
                       </li>
                     </ul>
                   </div>
@@ -83,6 +81,7 @@ export default class About extends Component {
                   <li>Google Analytics, Google Tag Manager</li>
                   <li>Webflow</li>
                   <li>Github / VSCode</li>
+                  <li>Blender</li>
                 </ul>
               </div>
             </this.renderSkills>
@@ -90,35 +89,55 @@ export default class About extends Component {
               <div className={styles.description}>
                 <div style={{ marginBottom: "2.5rem" }}>
                   <p className={styles.year}>
-                    <strong>May 2021 - Dec 2024</strong>
+                    <b>May 2021 - Dec 2024</b>
                   </p>
                   <p>
-                    <b>Ingram Micro (Agency Ingram Micro)</b>
+                    <b>Ingram Micro APAC</b>
                     <br />
-                    as a Graphic/Web designer<br />
-                    <small><i>Creating artwork for digital campaigns. UX/UI design and building front-end for HTML emails and websites</i></small>
+                    <i>as a Graphic/Web designer</i>
                   </p>
+                  <ul className={styles.subList}>
+                    <li>
+                      Collaborated with <b>clients and marketing managers across APAC countries</b> to deliver tailored digital solutions.</li>
+                    <li>Designed and executed <b>200+ digital campaigns</b> under tight deadlines, ensuring brand consistency and high engagement.</li>
+                    <li><b>Mentored and provided constructive feedback</b> to junior designers, improving team efficiency and design quality.</li>
+                    <li>Designed and developed <b>responsive landing pages, websites and emails</b> using <b>HTML, CSS, jQuery, React,</b> enhancing user experience and site performance.
+                    </li>
+                  </ul>
                 </div>
                 <div style={{ marginBottom: "2.5rem" }}>
                   <p className={styles.year}>
-                    <strong>Dec 2019 - Aug 2022</strong>
+                    <b>Dec 2019 - Present</b>
                   </p>
                   <p>
                     <b>Freelancing</b>
                     <br />
-                    as a graphic/UX/UI designer and front-end developer<br />
-                    <small><i>Main Client: Bouqo, History of Egypt Podcast</i></small>
+                    <i>as a UX/UI designer, Front-end developer, Web Producer</i>
                   </p>
+                  <ul className={styles.subList}>
+                    <li>
+                      Worked closely with clients and senior developers to define project scope and deliver tailored digital solutions.</li>
+                    <li>Designed and built <b>responsive websites</b> for web and mobile using <b>Figma, HTML, CSS, React, Vue.js, Next.js, and WordPress.</b></li>
+                    <li>Managed and maintained WordPress websites, ensuring <b>performance and security.</b></li>
+                    <li><b>Notable Clients:</b> The History of Egypt Podcast, Bouqo, LotsaGoodies.
+                    </li>
+                  </ul>
                 </div>
                 <div>
                   <p className={styles.year}>
                     <strong>Aug 2018 - Nov 2019</strong>
                   </p>
                   <p>
-                    <b>Toolbox Digital in Auckland, NZ</b>
+                    <b>Toolbox Digital in Auckland, New Zealand</b>
                     <br />
-                    as a UX/UI designer and front-end developer
+                    <i>as a UX/UI designer and front-end developer</i>
                   </p>
+                  <ul className={styles.subList}>
+                    <li>
+                      Designed <b>responsive websites and web apps</b> for desktop and mobile platforms using <b>Figma and UXPin.</b></li>
+                    <li>Developed and maintained front-end functionality using <b>HTML, CSS, and React</b>, ensuring responsive design and performance.</li>
+                    <li>Conducted <b>testing and optimisation</b>, resulting in improved site usability and reduced load times.</li>
+                  </ul>
                 </div>
               </div>
             </this.renderSkills>
@@ -129,9 +148,9 @@ export default class About extends Component {
                     <strong>Mar 2017 - Feb 2018</strong>
                   </p>
                   <p>
-                    Tasman International Academies in New Zealand
+                    <b>Tasman International Academies in New Zealand</b>
                     <br />
-                    <b>Graduate diploma in IT Multimedia</b>
+                    Graduate diploma in IT Multimedia
                   </p>
                 </div>
                 <div>
@@ -139,12 +158,10 @@ export default class About extends Component {
                     <strong>Mar 2008 - Feb 2014</strong>
                   </p>
                   <p>
-                    Kookmin University in South Korea
+                    <b>Kookmin University in South Korea</b>
                     <br />
-                    <b>
-                      Bachelor’s degree in Visual communication Design / Fine
-                      Art
-                    </b>
+                    Bachelor’s degree in Visual communication Design / Fine
+                    Art
                   </p>
                 </div>
               </div>
@@ -160,7 +177,7 @@ export default class About extends Component {
             </this.renderSkills>
           </article>
         </div>
-      </Layout>
+      </Layout >
     );
   }
 }

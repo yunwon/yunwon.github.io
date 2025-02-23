@@ -64,7 +64,7 @@ export default class Bouqo extends Component {
 									</h6>
 								</div>
 							</div>
-							<p>Ingram Micro Apple Portal is a platform where the partner resellers can customise the order of Apple product through Ingram Micro. The initial request that I was given to do was to simply redesign and develop the look and feel with some minor content update. However, I have identified a few more problems that can significantly improve the user experience when it's solved.</p>
+							<p>Ingram Micro Apple Portal is a platform where the partner resellers can customise the order of Apple products through Ingram Micro. The initial request that I was given to do was to simply redesign and develop the look and feel with some minor content updates. However, I have identified a few more problems that can significantly improve the user experience when they are solved.</p>
 						</div>
 					</Fade>
 					<div>
@@ -82,7 +82,7 @@ export default class Bouqo extends Component {
 										<figcaption>Before</figcaption>
 									</figure>
 									<p>Here are some key issues I identified:</p>
-									<h4>Unorganised navigation / user flow</h4>
+									<h4>Unorganised navigation/user flow</h4>
 									<ul>
 										<li>
 											The menu contained too many items with no clear hierarchy.
@@ -171,7 +171,7 @@ export default class Bouqo extends Component {
 						</Fade>
 						<Fade bottom cascade distance="3rem">
 							<div className={common.paragraph}>
-								<h3>Feedback & Final thought</h3>
+								<h3>Feedback & Final Thought</h3>
 								<p>My problem-solving approach and clean design received great feedback from the client. Although they made a few slight adjustments to my initial design a few months later, I was pleased with the outcome and gained valuable insights from the process.
 								</p>
 							</div>
