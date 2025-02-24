@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.76e06523.css",
-    "main.js": "/static/js/main.19cfa7e6.js",
+    "main.js": "/static/js/main.237ea777.js",
     "static/media/apple-portal-homepage.mov": "/static/media/apple-portal-homepage.e614c5d355ea7f665c7a.mov",
     "static/media/recording.mp4": "/static/media/recording.2ef95250cd70e0e6065c.mp4",
     "static/media/easyforms-video.mp4": "/static/media/easyforms-video.b26e57e3c6cfd17fffde.mp4",
@@ -44,6 +44,7 @@
     "static/media/dailyUI007-large.jpg": "/static/media/dailyUI007-large.dc6504d4e82abec87b2d.jpg",
     "static/media/dailyUI007.jpg": "/static/media/dailyUI007.dc6504d4e82abec87b2d.jpg",
     "static/media/microsoft-large.jpg": "/static/media/microsoft-large.76be93324d694b66b8b4.jpg",
+    "static/media/IngramMicro_HPE_01.webp": "/static/media/IngramMicro_HPE_01.d6191e965177dee5f7b0.webp",
     "static/media/aim-large.jpg": "/static/media/aim-large.c32acde3bf3decaa9957.jpg",
     "static/media/edm-ms-thumb.jpg": "/static/media/edm-ms-thumb.6f16faad1acee23dc140.jpg",
     "static/media/ingram-thumb.jpg": "/static/media/ingram-thumb.ad6177ebb6452a10530c.jpg",
@@ -53,6 +54,7 @@
     "static/media/microsoft-thumb.png": "/static/media/microsoft-thumb.8b4363dd712ff54edfde.png",
     "static/media/wcb-thumb.png": "/static/media/wcb-thumb.2b4bcd4c7d552a7de8b4.png",
     "static/media/IngramMicro_Microsoft_01.webp": "/static/media/IngramMicro_Microsoft_01.49a24bd95cbb0d0be854.webp",
+    "static/media/IngramMicro_HP-Microsoft_01.webp": "/static/media/IngramMicro_HP-Microsoft_01.1613932339092151ca4b.webp",
     "static/media/edm-dell-thumb.jpg": "/static/media/edm-dell-thumb.500d3dfe08069d97e82c.jpg",
     "static/media/ingramnz-CTO_home--before@2x.webp": "/static/media/ingramnz-CTO_home--before@2x.b7e850b5806f8aa71754.webp",
     "static/media/hep-old01.png": "/static/media/hep-old01.1970fd7812233d158e57.png",
@@ -75,10 +77,10 @@
     "index.html": "/index.html",
     "static/media/menuIcon.svg": "/static/media/menuIcon.3fc7127903b5de0c9f6bbd3065f2c8cb.svg",
     "main.76e06523.css.map": "/static/css/main.76e06523.css.map",
-    "main.19cfa7e6.js.map": "/static/js/main.19cfa7e6.js.map"
+    "main.237ea777.js.map": "/static/js/main.237ea777.js.map"
   },
   "entrypoints": [
     "static/css/main.76e06523.css",
-    "static/js/main.19cfa7e6.js"
+    "static/js/main.237ea777.js"
   ]
 }
