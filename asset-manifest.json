@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.76e06523.css",
-    "main.js": "/static/js/main.18581ee3.js",
+    "main.js": "/static/js/main.19cfa7e6.js",
     "static/media/apple-portal-homepage.mov": "/static/media/apple-portal-homepage.e614c5d355ea7f665c7a.mov",
     "static/media/recording.mp4": "/static/media/recording.2ef95250cd70e0e6065c.mp4",
     "static/media/easyforms-video.mp4": "/static/media/easyforms-video.b26e57e3c6cfd17fffde.mp4",
     "static/media/portfolio_JeongyunWon_2012-2018.pdf": "/static/media/portfolio_JeongyunWon_2012-2018.e3cb71ec250450f840cc.pdf",
     "static/media/toolbox-video.mp4": "/static/media/toolbox-video.3ca99a8a4e7ff2d2eab8.mp4",
     "static/media/theSolarSystem.mp4": "/static/media/theSolarSystem.41ef2b25f10e5e423ef9.mp4",
+    "static/media/IngramMicro_HP_02.mp4": "/static/media/IngramMicro_HP_02.52c493338f6f2b6ee0bc.mp4",
     "static/media/theSolarSystem.swf": "/static/media/theSolarSystem.1a4275f9c10d57aa5439.swf",
+    "static/media/IngramMicro_Microsoft_01.mp4": "/static/media/IngramMicro_Microsoft_01.83e118ea9e136907910d.mp4",
     "static/media/bg.png": "/static/media/bg.9421211c89a56cef9749.png",
     "static/media/bouqo-main.png": "/static/media/bouqo-main.7344db3fd5c3b1d15276.png",
     "static/media/cto_home-all.jpg": "/static/media/cto_home-all.3168fca568713c3a1cdb.jpg",
@@ -73,10 +75,10 @@
     "index.html": "/index.html",
     "static/media/menuIcon.svg": "/static/media/menuIcon.3fc7127903b5de0c9f6bbd3065f2c8cb.svg",
     "main.76e06523.css.map": "/static/css/main.76e06523.css.map",
-    "main.18581ee3.js.map": "/static/js/main.18581ee3.js.map"
+    "main.19cfa7e6.js.map": "/static/js/main.19cfa7e6.js.map"
   },
   "entrypoints": [
     "static/css/main.76e06523.css",
-    "static/js/main.18581ee3.js"
+    "static/js/main.19cfa7e6.js"
   ]
 }
