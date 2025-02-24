@@ -4,12 +4,11 @@ import { Link } from 'react-router-dom';
 import common from '../common.module.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Layout } from 'src/components/Layout/Layout';
-import 'reactjs-popup/dist/index.css';
 import classNames from 'classnames';
 import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import HP01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_01.webp';
-import HP02 from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_02.webp';
-import Microsoft01 from 'src/assets/portfolio/ingram-micro/IngramMicro_Microsoft_01.webp';
+import HP01Video from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_02.mp4';
+import Microsoft01Video from 'src/assets/portfolio/ingram-micro/IngramMicro_Microsoft_01.mp4';
 
 export default class IngramMicro extends Component {
 	componentDidMount() {
@@ -50,12 +49,14 @@ export default class IngramMicro extends Component {
 					<Fade bottom cascade distance="3rem">
 						<div className={classNames(common.paragraph)}>
 							<figure className={common.body__imgWrapper}>
-								<img
-									alt="Ingram Micro | HP Blitz Nike Shoes Promotion"
-									src={HP02}
-									loading="lazy"
-									className={classNames(common.body__img, common.noShadow)}
-								/>
+								<video
+									width="100%"
+									autoPlay="true"
+									loop="true"
+									controls="true"
+								>
+									<source src={HP01Video} type="video/mp4" />
+								</video>
 								<figcaption>Ingram Micro Australia | HP Blitz Nike Shoes Promotion</figcaption>
 							</figure>
 						</div>
@@ -63,12 +64,14 @@ export default class IngramMicro extends Component {
 					<Fade bottom cascade distance="3rem">
 						<div className={classNames(common.paragraph)}>
 							<figure className={common.body__imgWrapper}>
-								<img
-									alt="Ingram Micro | Microsoft Purchase, Earn, Redeem Promotion"
-									src={Microsoft01}
-									loading="lazy"
-									className={classNames(common.body__img, common.noShadow)}
-								/>
+								<video
+									width="100%"
+									autoPlay="true"
+									loop="true"
+									controls="true"
+								>
+									<source src={Microsoft01Video} type="video/mp4" />
+								</video>
 								<figcaption>Ingram Micro New Zealand | Microsoft Purchase, Earn, Redeem Promotion</figcaption>
 							</figure>
 						</div>
