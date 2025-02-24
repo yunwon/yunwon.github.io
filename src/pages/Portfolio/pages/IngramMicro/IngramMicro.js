@@ -9,6 +9,10 @@ import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import HP01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_01.webp';
 import HP01Video from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_02.mp4';
 import Microsoft01Video from 'src/assets/portfolio/ingram-micro/IngramMicro_Microsoft_01.mp4';
+import HEP01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HPE_01.webp';
+import HPMicrosoft01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HP-Microsoft_01.webp';
+
+
 
 export default class IngramMicro extends Component {
 	componentDidMount() {
@@ -73,6 +77,32 @@ export default class IngramMicro extends Component {
 									<source src={Microsoft01Video} type="video/mp4" />
 								</video>
 								<figcaption>Ingram Micro New Zealand | Microsoft Purchase, Earn, Redeem Promotion</figcaption>
+							</figure>
+						</div>
+					</Fade>
+					<Fade bottom cascade distance="3rem">
+						<div className={classNames(common.paragraph)}>
+							<figure className={common.body__imgWrapper}>
+								<img
+									alt="Ingram Micro | HEP PointNext Promotion"
+									src={HEP01}
+									loading="lazy"
+									className={classNames(common.body__img, common.noShadow)}
+								/>
+								<figcaption>Ingram Micro Australia | HEP PointNext Promotion</figcaption>
+							</figure>
+						</div>
+					</Fade>
+					<Fade bottom cascade distance="3rem">
+						<div className={classNames(common.paragraph)}>
+							<figure className={common.body__imgWrapper}>
+								<img
+									alt="Ingram Micro | Microsoft & HP Destination Fiji "
+									src={HPMicrosoft01}
+									loading="lazy"
+									className={classNames(common.body__img, common.noShadow)}
+								/>
+								<figcaption>Ingram Micro New Zealand | Microsoft & HP Destination Fiji Promotion</figcaption>
 							</figure>
 						</div>
 					</Fade>
