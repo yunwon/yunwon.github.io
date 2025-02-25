@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.76e06523.css",
-    "main.js": "/static/js/main.1a5490bc.js",
+    "main.js": "/static/js/main.bba3189f.js",
     "static/media/apple-portal-homepage.mov": "/static/media/apple-portal-homepage.e614c5d355ea7f665c7a.mov",
     "static/media/easyforms-video.mp4": "/static/media/easyforms-video.b26e57e3c6cfd17fffde.mp4",
     "static/media/recording.mp4": "/static/media/recording.57a6e3742f56a84f1b4f.mp4",
-    "static/media/portfolio_JeongyunWon_2012-2018.pdf": "/static/media/portfolio_JeongyunWon_2012-2018.e3cb71ec250450f840cc.pdf",
     "static/media/toolbox-video.mp4": "/static/media/toolbox-video.3ca99a8a4e7ff2d2eab8.mp4",
     "static/media/theSolarSystem.mp4": "/static/media/theSolarSystem.41ef2b25f10e5e423ef9.mp4",
     "static/media/IngramMicro_HP_02.mp4": "/static/media/IngramMicro_HP_02.52c493338f6f2b6ee0bc.mp4",
@@ -14,7 +13,7 @@
     "static/media/bg.png": "/static/media/bg.9421211c89a56cef9749.png",
     "static/media/bouqo-main.png": "/static/media/bouqo-main.7344db3fd5c3b1d15276.png",
     "static/media/cto_home-all.jpg": "/static/media/cto_home-all.3168fca568713c3a1cdb.jpg",
-    "static/media/yunwon_cv.pdf": "/static/media/yunwon_cv.bceb0d5fa9bdc402bd18.pdf",
+    "static/media/yunwon_cv.pdf": "/static/media/yunwon_cv.22b2d24e3140c701e60c.pdf",
     "static/media/hep-new.png": "/static/media/hep-new.c870fca2689dac018e87.png",
     "static/media/cto_wireframe.jpg": "/static/media/cto_wireframe.00fe3e4de9dd11d0a8d8.jpg",
     "static/media/hep-main.png": "/static/media/hep-main.a38e5ce380b34363ce71.png",
@@ -46,7 +45,6 @@
     "static/media/dailyUI007.jpg": "/static/media/dailyUI007.dc6504d4e82abec87b2d.jpg",
     "static/media/microsoft-large.jpg": "/static/media/microsoft-large.76be93324d694b66b8b4.jpg",
     "static/media/IngramMicro_HPE_01.webp": "/static/media/IngramMicro_HPE_01.d6191e965177dee5f7b0.webp",
-    "static/media/home.webp": "/static/media/home.c42b7d0182606a835471.webp",
     "static/media/aim-large.jpg": "/static/media/aim-large.c32acde3bf3decaa9957.jpg",
     "static/media/edm-ms-thumb.jpg": "/static/media/edm-ms-thumb.6f16faad1acee23dc140.jpg",
     "static/media/ingram-thumb.jpg": "/static/media/ingram-thumb.ad6177ebb6452a10530c.jpg",
@@ -82,10 +80,10 @@
     "index.html": "/index.html",
     "static/media/menuIcon.svg": "/static/media/menuIcon.3fc7127903b5de0c9f6bbd3065f2c8cb.svg",
     "main.76e06523.css.map": "/static/css/main.76e06523.css.map",
-    "main.1a5490bc.js.map": "/static/js/main.1a5490bc.js.map"
+    "main.bba3189f.js.map": "/static/js/main.bba3189f.js.map"
   },
   "entrypoints": [
     "static/css/main.76e06523.css",
-    "static/js/main.1a5490bc.js"
+    "static/js/main.bba3189f.js"
   ]
 }
