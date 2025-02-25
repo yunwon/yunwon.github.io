@@ -6,7 +6,6 @@ import Bouqo from "src/assets/portfolio/bouqo-thumb.jpg";
 import CTO from "src/assets/home/cto_thumb.webp";
 import { Layout } from "src/components/Layout/Layout";
 import GoToPortfolio from "src/components/GoToPortfolio/GoToPortfolio";
-import WCB from "src/assets/home/wcb-thumb.png";
 import HP01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_01.webp';
 
 export default class Home extends Component {
