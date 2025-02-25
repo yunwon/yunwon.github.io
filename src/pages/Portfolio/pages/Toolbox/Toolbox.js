@@ -41,7 +41,7 @@ export default class Toolbox extends Component {
 								</div>
 								<div>
 									<h6>Role</h6>
-									<p>UI design</p>
+									<p>UX/UI design</p>
 									<p>Front-end development</p>
 								</div>
 								<div>
