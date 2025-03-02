@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import styles from "./Day001.module.scss";
-import logo from "../../../../../assets/portfolio/daily-ui/001/logo.png";
-import close from "../../../../../assets/portfolio/daily-ui/001/close.png";
+import logo from "src/assets/portfolio/daily-ui/001/logo.png";
+import close from "src/assets/portfolio/daily-ui/001/close.png";
 
 export default class Day001 extends Component {
   render() {

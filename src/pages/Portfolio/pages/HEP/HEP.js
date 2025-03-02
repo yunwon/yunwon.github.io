@@ -7,7 +7,6 @@ import HEPMain from 'src/assets/portfolio/hep-main.png';
 import HEPOld from 'src/assets/portfolio/hep-old.png';
 import HEPResponsive from 'src/assets/portfolio/hep-responsive.png';
 import HEPNew from 'src/assets/portfolio/hep-new.png';
-import Description from '../../components/Description/Description';
 import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -19,7 +18,6 @@ export default class HEP extends Component {
 	}
 
 	render() {
-		const afterText = {};
 		return (
 			<Layout>
 				<Fade top cascade distance="3rem">

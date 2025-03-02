@@ -4,13 +4,13 @@ import Fade from 'react-reveal/Fade';
 import { Layout } from '../../../../components/Layout/Layout';
 import common from '../common.module.scss';
 import BouqoMain from 'src/assets/portfolio/bouqo-main.webp';
+import BouqoHomeVideo from 'src/assets/portfolio/bouqo/home_animation.mp4';
+import HowItWorksVideo from 'src/assets/portfolio/bouqo/howItWorks_animation.mp4';
+import GiftingTipsVideo from 'src/assets/portfolio/bouqo/giftingTips_animation.mp4';
+import OurStoryVideo from 'src/assets/portfolio/bouqo/ourStory_animation.mp4';
 import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import OurStory from 'src/assets/portfolio/bouqo/ourStory.webp';
-import HowItWorks from 'src/assets/portfolio/bouqo/howItWorks.webp';
-import Blog from 'src/assets/portfolio/bouqo/blog.webp';
-import GiftingTips from 'src/assets/portfolio/bouqo/giftingTips.webp';
 import classNames from 'classnames';
 
 export default class Bouqo extends Component {
@@ -62,48 +62,60 @@ export default class Bouqo extends Component {
 					<Fade bottom cascade distance="3rem">
 						<div className={classNames(common.paragraph)}>
 							<figure className={common.body__imgWrapper}>
-								<img
-									alt="Bouqo redesign - How it works page"
-									src={HowItWorks}
-									loading="lazy"
-									className={classNames(common.body__img)}
-								/>
+								<video
+									width="100%"
+									autoPlay="true"
+									loop="true"
+									controls="true"
+									className={common.noShadow}
+								>
+									<source src={BouqoHomeVideo} type="video/mp4" />
+								</video>
 							</figure>
 						</div>
 					</Fade>
 					<Fade bottom cascade distance="3rem">
 						<div className={classNames(common.paragraph)}>
 							<figure className={common.body__imgWrapper}>
-								<img
-									alt="Bouqo redesign - Our story page"
-									src={OurStory}
-									loading="lazy"
-									className={classNames(common.body__img)}
-								/>
+								<video
+									width="100%"
+									autoPlay="true"
+									loop="true"
+									controls="true"
+									className={common.noShadow}
+								>
+									<source src={HowItWorksVideo} type="video/mp4" />
+								</video>
 							</figure>
 						</div>
 					</Fade>
 					<Fade bottom cascade distance="3rem">
 						<div className={classNames(common.paragraph)}>
 							<figure className={common.body__imgWrapper}>
-								<img
-									alt="Bouqo redesign - Blog page"
-									src={Blog}
-									loading="lazy"
-									className={classNames(common.body__img)}
-								/>
+								<video
+									width="100%"
+									autoPlay="true"
+									loop="true"
+									controls="true"
+									className={common.noShadow}
+								>
+									<source src={OurStoryVideo} type="video/mp4" />
+								</video>
 							</figure>
 						</div>
 					</Fade>
 					<Fade bottom cascade distance="3rem">
 						<div className={classNames(common.paragraph)}>
 							<figure className={common.body__imgWrapper}>
-								<img
-									alt="Bouqo redesign - Gifting tips page"
-									src={GiftingTips}
-									loading="lazy"
-									className={classNames(common.body__img)}
-								/>
+								<video
+									width="100%"
+									autoPlay="true"
+									loop="true"
+									controls="true"
+									className={common.noShadow}
+								>
+									<source src={GiftingTipsVideo} type="video/mp4" />
+								</video>
 							</figure>
 						</div>
 					</Fade>

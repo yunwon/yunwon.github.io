@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styles from "./Day004.module.scss";
-import Fade from "react-reveal/Fade";
 import { FaQuestionCircle } from "react-icons/fa";
 
 export default class Day004 extends Component {

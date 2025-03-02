@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './PopupImg.module.scss';
 import Popup from 'reactjs-popup';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -60,13 +60,13 @@ const PopupImg = ({ thumbUrl, imageUrl, name, description, website }) => {
 							alt={name}
 							className={styles.image}
 						/>
-						{name && 
-						<div className={styles.description}>
-							<h3>{name}</h3>
-							{description &&<p>{description}</p>}
-							{website && <a href={website} target="_blank" rel="noopener">Visit website</a> }
-						</div>
-					}
+						{name &&
+							<div className={styles.description}>
+								<h3>{name}</h3>
+								{description && <p>{description}</p>}
+								{website && <a href={website} target="_blank" rel="noreferrer">Visit website</a>}
+							</div>
+						}
 					</div>
 				</div>
 			)}

@@ -5,7 +5,6 @@ import styles from '../../PortfolioHome.module.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Layout } from 'src/components/Layout/Layout';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import dailyUiStyles from './DailyUi.module.scss';
 import 'reactjs-popup/dist/index.css';
 import { DailyUIPopupImg } from '../../components/PopupImg/PopupImg.js';
 

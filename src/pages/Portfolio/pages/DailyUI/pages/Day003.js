@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import styles from "./Day003.module.scss";
 import Fade from "react-reveal/Fade";
-import logo from "../../../../../assets/portfolio/daily-ui/003/logo.png";
-import donut from "../../../../../assets/portfolio/daily-ui/003/donut.png";
-import menuIcon from "../../../../../assets/portfolio/daily-ui/003/menuIcon.svg";
+import logo from "src/assets/portfolio/daily-ui/003/logo.png";
+import donut from "src/assets/portfolio/daily-ui/003/donut.png";
+import menuIcon from "src/assets/portfolio/daily-ui/003/menuIcon.svg";
 
 export default class Day003 extends Component {
   render() {
