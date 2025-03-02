@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.76e06523.css",
-    "main.js": "/static/js/main.bba3189f.js",
+    "main.css": "/static/css/main.64efdf3c.css",
+    "main.js": "/static/js/main.20b9fe97.js",
     "static/media/apple-portal-homepage.mov": "/static/media/apple-portal-homepage.e614c5d355ea7f665c7a.mov",
+    "static/media/giftingTips_animation.mp4": "/static/media/giftingTips_animation.7c5cde9657a869f23a09.mp4",
     "static/media/easyforms-video.mp4": "/static/media/easyforms-video.b26e57e3c6cfd17fffde.mp4",
+    "static/media/howItWorks_animation.mp4": "/static/media/howItWorks_animation.1aec7a5936ef2be4255c.mp4",
+    "static/media/ourStory_animation.mp4": "/static/media/ourStory_animation.bca034e2da3242d18a58.mp4",
     "static/media/recording.mp4": "/static/media/recording.57a6e3742f56a84f1b4f.mp4",
     "static/media/toolbox-video.mp4": "/static/media/toolbox-video.3ca99a8a4e7ff2d2eab8.mp4",
     "static/media/theSolarSystem.mp4": "/static/media/theSolarSystem.41ef2b25f10e5e423ef9.mp4",
+    "static/media/home_animation.mp4": "/static/media/home_animation.7e1a5191bd0471687b8b.mp4",
     "static/media/IngramMicro_HP_02.mp4": "/static/media/IngramMicro_HP_02.52c493338f6f2b6ee0bc.mp4",
     "static/media/theSolarSystem.swf": "/static/media/theSolarSystem.1a4275f9c10d57aa5439.swf",
     "static/media/IngramMicro_Microsoft_01.mp4": "/static/media/IngramMicro_Microsoft_01.83e118ea9e136907910d.mp4",
@@ -32,7 +36,6 @@
     "static/media/responsive.png": "/static/media/responsive.f0c99a67ec678df153f3.png",
     "static/media/hep-responsive.png": "/static/media/hep-responsive.6eba857330734eeed941.png",
     "static/media/wcb_logo-screen.png": "/static/media/wcb_logo-screen.bb6a1ee9f27f9b795062.png",
-    "static/media/blog.webp": "/static/media/blog.3d52763a762173c0135c.webp",
     "static/media/toolbox.png": "/static/media/toolbox.98eb5e22b0f2e409fa6c.png",
     "static/media/dailyUI008-large.jpg": "/static/media/dailyUI008-large.7d36ead6387842123c93.jpg",
     "static/media/easyforms-main.png": "/static/media/easyforms-main.46ca894eed82bee3851f.png",
@@ -48,16 +51,13 @@
     "static/media/aim-large.jpg": "/static/media/aim-large.c32acde3bf3decaa9957.jpg",
     "static/media/edm-ms-thumb.jpg": "/static/media/edm-ms-thumb.6f16faad1acee23dc140.jpg",
     "static/media/ingram-thumb.jpg": "/static/media/ingram-thumb.ad6177ebb6452a10530c.jpg",
-    "static/media/ourStory.webp": "/static/media/ourStory.a9551929e1aef0fb636d.webp",
     "static/media/wcb-main.png": "/static/media/wcb-main.21642ac93b8cb0b92276.png",
     "static/media/dailyUI001.jpg": "/static/media/dailyUI001.530a7065b896e83ef164.jpg",
     "static/media/cto_home-all.webp": "/static/media/cto_home-all.e14ce8753c2f81a20452.webp",
     "static/media/microsoft-thumb.png": "/static/media/microsoft-thumb.8b4363dd712ff54edfde.png",
-    "static/media/howItWorks.webp": "/static/media/howItWorks.a65dfb079353ae2bc322.webp",
     "static/media/wcb-thumb.png": "/static/media/wcb-thumb.2b4bcd4c7d552a7de8b4.png",
     "static/media/IngramMicro_Microsoft_01.webp": "/static/media/IngramMicro_Microsoft_01.49a24bd95cbb0d0be854.webp",
     "static/media/IngramMicro_HP-Microsoft_01.webp": "/static/media/IngramMicro_HP-Microsoft_01.1613932339092151ca4b.webp",
-    "static/media/giftingTips.webp": "/static/media/giftingTips.5d2bd60e5d78a9cec300.webp",
     "static/media/edm-dell-thumb.jpg": "/static/media/edm-dell-thumb.500d3dfe08069d97e82c.jpg",
     "static/media/ingramnz-CTO_home--before@2x.webp": "/static/media/ingramnz-CTO_home--before@2x.b7e850b5806f8aa71754.webp",
     "static/media/hep-old01.png": "/static/media/hep-old01.1970fd7812233d158e57.png",
@@ -79,11 +79,11 @@
     "static/media/easyforms.png": "/static/media/easyforms.7c54d221cf9d54bf7bc3.png",
     "index.html": "/index.html",
     "static/media/menuIcon.svg": "/static/media/menuIcon.3fc7127903b5de0c9f6bbd3065f2c8cb.svg",
-    "main.76e06523.css.map": "/static/css/main.76e06523.css.map",
-    "main.bba3189f.js.map": "/static/js/main.bba3189f.js.map"
+    "main.64efdf3c.css.map": "/static/css/main.64efdf3c.css.map",
+    "main.20b9fe97.js.map": "/static/js/main.20b9fe97.js.map"
   },
   "entrypoints": [
-    "static/css/main.76e06523.css",
-    "static/js/main.bba3189f.js"
+    "static/css/main.64efdf3c.css",
+    "static/js/main.20b9fe97.js"
   ]
 }
