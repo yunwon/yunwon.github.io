@@ -5,9 +5,13 @@ import { Layout } from '../../../../components/Layout/Layout';
 import common from '../common.module.scss';
 import BouqoMain from 'src/assets/portfolio/bouqo-main.webp';
 import BouqoHomeVideo from 'src/assets/portfolio/bouqo/home_animation.mp4';
+import BouqoHomePoster from 'src/assets/portfolio/bouqo/home_poster.avif';
 import HowItWorksVideo from 'src/assets/portfolio/bouqo/howItWorks_animation.mp4';
+import HowItWorksPoster from 'src/assets/portfolio/bouqo/howItWorks_poster.avif';
 import GiftingTipsVideo from 'src/assets/portfolio/bouqo/giftingTips_animation.mp4';
+import GiftingTipsPoster from 'src/assets/portfolio/bouqo/giftingTips_poster.avif';
 import OurStoryVideo from 'src/assets/portfolio/bouqo/ourStory_animation.mp4';
+import OurStoryPoster from 'src/assets/portfolio/bouqo/ourStory_poster.avif';
 import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -30,6 +34,7 @@ export default class Bouqo extends Component {
 							alt="Bouqo website redesign"
 							effect="blur"
 							src={BouqoMain}
+							width="100%"
 						/>
 					</div>
 				</Fade>
@@ -68,8 +73,10 @@ export default class Bouqo extends Component {
 									loop="true"
 									controls="true"
 									className={common.noShadow}
+									poster={BouqoHomePoster}
 								>
 									<source src={BouqoHomeVideo} type="video/mp4" />
+									Your browser does not support the video tag.
 								</video>
 							</figure>
 						</div>
@@ -83,8 +90,10 @@ export default class Bouqo extends Component {
 									loop="true"
 									controls="true"
 									className={common.noShadow}
+									poster={HowItWorksPoster}
 								>
 									<source src={HowItWorksVideo} type="video/mp4" />
+									Your browser does not support the video tag.
 								</video>
 							</figure>
 						</div>
@@ -98,8 +107,10 @@ export default class Bouqo extends Component {
 									loop="true"
 									controls="true"
 									className={common.noShadow}
+									poster={OurStoryPoster}
 								>
 									<source src={OurStoryVideo} type="video/mp4" />
+									Your browser does not support the video tag.
 								</video>
 							</figure>
 						</div>
@@ -113,8 +124,10 @@ export default class Bouqo extends Component {
 									loop="true"
 									controls="true"
 									className={common.noShadow}
+									poster={GiftingTipsPoster}
 								>
 									<source src={GiftingTipsVideo} type="video/mp4" />
+									Your browser does not support the video tag.
 								</video>
 							</figure>
 						</div>
