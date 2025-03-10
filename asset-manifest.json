@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.64efdf3c.css",
-    "main.js": "/static/js/main.fc681181.js",
+    "main.css": "/static/css/main.e46391d9.css",
+    "main.js": "/static/js/main.00c53dc2.js",
     "static/media/apple-portal-homepage.mov": "/static/media/apple-portal-homepage.e614c5d355ea7f665c7a.mov",
     "static/media/giftingTips_animation.mp4": "/static/media/giftingTips_animation.7c5cde9657a869f23a09.mp4",
     "static/media/easyforms-video.mp4": "/static/media/easyforms-video.b26e57e3c6cfd17fffde.mp4",
@@ -66,10 +66,14 @@
     "static/media/microsoft-thumb.jpg": "/static/media/microsoft-thumb.efabf85db2f2d2c0ff16.jpg",
     "static/media/dailyUI008.jpg": "/static/media/dailyUI008.18f3c1c1677d5d51711c.jpg",
     "static/media/aim-thumb.jpg": "/static/media/aim-thumb.6907fc113c696e5bb007.jpg",
+    "static/media/home_poster.avif": "/static/media/home_poster.d825f7a5606eb6a74f8e.avif",
     "static/media/jeongyunwon.png": "/static/media/jeongyunwon.fb413303c357f5e1feec.png",
+    "static/media/howItWorks_poster.avif": "/static/media/howItWorks_poster.c71526cc36e1a40a9455.avif",
+    "static/media/ourStory_poster.avif": "/static/media/ourStory_poster.92fcbfd1fc8c5293c259.avif",
     "static/media/hep-thumb.png": "/static/media/hep-thumb.d73a4b4a84859d7e43c2.png",
     "static/media/dailyUI005.jpg": "/static/media/dailyUI005.6f9643c74126e87dc1c0.jpg",
     "static/media/yunwon_cv.pdf": "/static/media/yunwon_cv.5e6bb5d870b5b1593b75.pdf",
+    "static/media/giftingTips_poster.avif": "/static/media/giftingTips_poster.b0c22e386fbad0f1a89c.avif",
     "static/media/bg-image.jpg": "/static/media/bg-image.749778a7ed68eeb1a9c6.jpg",
     "static/media/solarSystemMain.png": "/static/media/solarSystemMain.8d94ba4f26a002dc2d04.png",
     "static/media/cto_style-guide.webp": "/static/media/cto_style-guide.7d376ccfd4a77dcb63cb.webp",
@@ -79,11 +83,11 @@
     "static/media/easyforms.png": "/static/media/easyforms.7c54d221cf9d54bf7bc3.png",
     "index.html": "/index.html",
     "static/media/menuIcon.svg": "/static/media/menuIcon.3fc7127903b5de0c9f6bbd3065f2c8cb.svg",
-    "main.64efdf3c.css.map": "/static/css/main.64efdf3c.css.map",
-    "main.fc681181.js.map": "/static/js/main.fc681181.js.map"
+    "main.e46391d9.css.map": "/static/css/main.e46391d9.css.map",
+    "main.00c53dc2.js.map": "/static/js/main.00c53dc2.js.map"
   },
   "entrypoints": [
-    "static/css/main.64efdf3c.css",
-    "static/js/main.fc681181.js"
+    "static/css/main.e46391d9.css",
+    "static/js/main.00c53dc2.js"
   ]
 }
