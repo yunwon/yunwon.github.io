@@ -51,18 +51,6 @@ export default class Bouqo extends Component {
 									<h6>Software & Technology</h6>
 									<p>Figma / HTML / CSS(SCSS)</p>
 								</div>
-								<div>
-									<h6>
-										<a
-											href="https://ingramnz.com/CTO"
-											target="_blank"
-											rel="noopener noreferrer"
-											className={common.visit}
-										>
-											Visit website
-										</a>
-									</h6>
-								</div>
 							</div>
 							<p>Ingram Micro Apple Portal is a platform where the partner resellers can customise the order of Apple products through Ingram Micro. The initial request that I was given to do was to simply redesign and develop the look and feel with some minor content updates. However, I have identified a few more problems that can significantly improve the user experience when they are solved.</p>
 						</div>

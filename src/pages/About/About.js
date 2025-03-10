@@ -107,7 +107,7 @@ export default class About extends Component {
                 </div>
                 <div style={{ marginBottom: "2.5rem" }}>
                   <p className={styles.year}>
-                    <b>Dec 2019 - Present</b>
+                    <b>Dec 2019 - May 2021</b>
                   </p>
                   <p>
                     <b>Freelancing</b>
@@ -119,8 +119,6 @@ export default class About extends Component {
                       Worked closely with clients and senior developers to define project scope and deliver tailored digital solutions.</li>
                     <li>Designed and built <b>responsive websites</b> for web and mobile using <b>Figma, HTML, CSS, React, Vue.js, Next.js, and WordPress.</b></li>
                     <li>Managed and maintained WordPress websites, ensuring <b>performance and security.</b></li>
-                    <li><b>Notable Clients:</b> The History of Egypt Podcast, Bouqo, LotsaGoodies.
-                    </li>
                   </ul>
                 </div>
                 <div>
@@ -143,10 +141,7 @@ export default class About extends Component {
             </this.renderSkills>
             <this.renderSkills title={`I studied at`}>
               <div className={styles.description}>
-                <div style={{ marginBottom: "2.5rem" }}>
-                  <p className={styles.year}>
-                    <strong>Mar 2017 - Feb 2018</strong>
-                  </p>
+                <div style={{ marginBottom: "1.5rem" }}>
                   <p>
                     <b>Tasman International Academies in New Zealand</b>
                     <br />
@@ -154,9 +149,6 @@ export default class About extends Component {
                   </p>
                 </div>
                 <div>
-                  <p className={styles.year}>
-                    <strong>Mar 2008 - Feb 2014</strong>
-                  </p>
                   <p>
                     <b>Kookmin University in South Korea</b>
                     <br />
@@ -170,8 +162,8 @@ export default class About extends Component {
               <div className={styles.description}>
                 <ul>
                   <li>Drawing</li>
+                  <li>Visiting art galleries</li>
                   <li>Cooking</li>
-                  <li>Playing video games</li>
                 </ul>
               </div>
             </this.renderSkills>
