@@ -69,10 +69,13 @@ export default class Bouqo extends Component {
 							<figure className={common.body__imgWrapper}>
 								<video
 									width="100%"
-									autoPlay="true"
 									loop="true"
 									className={common.noShadow}
 									poster={BouqoHomePoster}
+									onMouseOver={e => e.target.play()}
+									onMouseOut={e => e.target.pause()}
+									muted
+									controls
 								>
 									<source src={BouqoHomeVideo} type="video/mp4" />
 									Your browser does not support the video tag.
@@ -85,26 +88,13 @@ export default class Bouqo extends Component {
 							<figure className={common.body__imgWrapper}>
 								<video
 									width="100%"
-									autoPlay="true"
-									loop="true"
-									className={common.noShadow}
-									poster={HowItWorksPoster}
-								>
-									<source src={HowItWorksVideo} type="video/mp4" />
-									Your browser does not support the video tag.
-								</video>
-							</figure>
-						</div>
-					</Fade>
-					<Fade bottom cascade distance="3rem">
-						<div className={classNames(common.paragraph)}>
-							<figure className={common.body__imgWrapper}>
-								<video
-									width="100%"
-									autoPlay="true"
 									loop="true"
 									className={common.noShadow}
 									poster={OurStoryPoster}
+									onMouseOver={e => e.target.play()}
+									onMouseOut={e => e.target.pause()}
+									muted
+									controls
 								>
 									<source src={OurStoryVideo} type="video/mp4" />
 									Your browser does not support the video tag.
@@ -117,10 +107,13 @@ export default class Bouqo extends Component {
 							<figure className={common.body__imgWrapper}>
 								<video
 									width="100%"
-									autoPlay="true"
 									loop="true"
 									className={common.noShadow}
 									poster={GiftingTipsPoster}
+									onMouseOver={e => e.target.play()}
+									onMouseOut={e => e.target.pause()}
+									muted
+									controls
 								>
 									<source src={GiftingTipsVideo} type="video/mp4" />
 									Your browser does not support the video tag.
