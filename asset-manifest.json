@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e46391d9.css",
-    "main.js": "/static/js/main.00c53dc2.js",
+    "main.js": "/static/js/main.eb57e4ff.js",
     "static/media/apple-portal-homepage.mov": "/static/media/apple-portal-homepage.e614c5d355ea7f665c7a.mov",
     "static/media/giftingTips_animation.mp4": "/static/media/giftingTips_animation.7c5cde9657a869f23a09.mp4",
     "static/media/easyforms-video.mp4": "/static/media/easyforms-video.b26e57e3c6cfd17fffde.mp4",
@@ -9,7 +9,7 @@
     "static/media/ourStory_animation.mp4": "/static/media/ourStory_animation.bca034e2da3242d18a58.mp4",
     "static/media/toolbox-video.mp4": "/static/media/toolbox-video.3ca99a8a4e7ff2d2eab8.mp4",
     "static/media/theSolarSystem.mp4": "/static/media/theSolarSystem.41ef2b25f10e5e423ef9.mp4",
-    "static/media/home_animation.mp4": "/static/media/home_animation.7e1a5191bd0471687b8b.mp4",
+    "static/media/home_animation.mp4": "/static/media/home_animation.b1474c48cb1da26bc766.mp4",
     "static/media/IngramMicro_HP_02.mp4": "/static/media/IngramMicro_HP_02.52c493338f6f2b6ee0bc.mp4",
     "static/media/recording.mp4": "/static/media/recording.fcd25cce83619001e23e.mp4",
     "static/media/theSolarSystem.swf": "/static/media/theSolarSystem.1a4275f9c10d57aa5439.swf",
@@ -84,10 +84,10 @@
     "index.html": "/index.html",
     "static/media/menuIcon.svg": "/static/media/menuIcon.3fc7127903b5de0c9f6bbd3065f2c8cb.svg",
     "main.e46391d9.css.map": "/static/css/main.e46391d9.css.map",
-    "main.00c53dc2.js.map": "/static/js/main.00c53dc2.js.map"
+    "main.eb57e4ff.js.map": "/static/js/main.eb57e4ff.js.map"
   },
   "entrypoints": [
     "static/css/main.e46391d9.css",
-    "static/js/main.00c53dc2.js"
+    "static/js/main.eb57e4ff.js"
   ]
 }
