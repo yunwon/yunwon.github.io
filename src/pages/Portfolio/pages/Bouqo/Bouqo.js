@@ -6,8 +6,6 @@ import common from '../common.module.scss';
 import BouqoMain from 'src/assets/portfolio/bouqo-main.webp';
 import BouqoHomeVideo from 'src/assets/portfolio/bouqo/home_animation.mp4';
 import BouqoHomePoster from 'src/assets/portfolio/bouqo/home_poster.avif';
-import HowItWorksVideo from 'src/assets/portfolio/bouqo/howItWorks_animation.mp4';
-import HowItWorksPoster from 'src/assets/portfolio/bouqo/howItWorks_poster.avif';
 import GiftingTipsVideo from 'src/assets/portfolio/bouqo/giftingTips_animation.mp4';
 import GiftingTipsPoster from 'src/assets/portfolio/bouqo/giftingTips_poster.avif';
 import OurStoryVideo from 'src/assets/portfolio/bouqo/ourStory_animation.mp4';
