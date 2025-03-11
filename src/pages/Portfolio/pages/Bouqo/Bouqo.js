@@ -71,7 +71,6 @@ export default class Bouqo extends Component {
 									width="100%"
 									autoPlay="true"
 									loop="true"
-									controls="true"
 									className={common.noShadow}
 									poster={BouqoHomePoster}
 								>
@@ -88,7 +87,6 @@ export default class Bouqo extends Component {
 									width="100%"
 									autoPlay="true"
 									loop="true"
-									controls="true"
 									className={common.noShadow}
 									poster={HowItWorksPoster}
 								>
@@ -105,7 +103,6 @@ export default class Bouqo extends Component {
 									width="100%"
 									autoPlay="true"
 									loop="true"
-									controls="true"
 									className={common.noShadow}
 									poster={OurStoryPoster}
 								>
@@ -122,7 +119,6 @@ export default class Bouqo extends Component {
 									width="100%"
 									autoPlay="true"
 									loop="true"
-									controls="true"
 									className={common.noShadow}
 									poster={GiftingTipsPoster}
 								>
