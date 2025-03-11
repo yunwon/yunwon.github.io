@@ -11,8 +11,8 @@ import HP01Video from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_02.mp4';
 import Microsoft01Video from 'src/assets/portfolio/ingram-micro/IngramMicro_Microsoft_01.mp4';
 import HEP01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HPE_01.webp';
 import HPMicrosoft01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HP-Microsoft_01.webp';
-
-
+import MicrosoftMicrosite from 'src/assets/portfolio/ingram-micro/IngramMicro_MS-microsite.avif';
+import ExternalIcon from 'src/assets/portfolio/ingram-micro/icon_external-link.svg';
 
 export default class IngramMicro extends Component {
 	componentDidMount() {
@@ -105,6 +105,25 @@ export default class IngramMicro extends Component {
 								<figcaption>Ingram Micro New Zealand | Microsoft & HP Destination Fiji Promotion</figcaption>
 							</figure>
 						</div>
+					</Fade>
+					<Fade bottom cascade distance="3rem">
+						<div className={classNames(common.paragraph)}>
+							<figure className={common.body__imgWrapper}>
+								<img
+									alt="Ingram Micro | Microsoft Surface Microsite "
+									src={MicrosoftMicrosite}
+									loading="lazy"
+									className={classNames(common.body__img, common.noShadow)}
+								/>
+								<figcaption>
+									<a href="https://ingramnz.com/sites/microsoft/surface-home.html"
+										target="_blank"
+										rel="noopener noreferrer"
+										className={common.visit}>Ingram Micro New Zealand | Microsoft Surface Microsite Redesign <span><img src={ExternalIcon} className={common.icon} /></span></a>
+								</figcaption>
+							</figure>
+						</div>
+
 					</Fade>
 				</div>
 				<GoToPortfolio />
