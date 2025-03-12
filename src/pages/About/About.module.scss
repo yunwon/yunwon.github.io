@@ -16,31 +16,29 @@
 .hero {
     @include container-maxwidth();
 
+    h1 {
+        font-weight: normal;
+        font-size: 3.125rem;
+        margin: 2rem auto 1rem auto;
+    }
+    img {
+        border-radius: 10px;
+    }
+    p {
+        margin-bottom: 0;
+    }
+
     @media #{$break-md} {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         margin-bottom: 3rem;
-    }
-
-    h1 {
-        font-weight: normal;
-        font-size: 3.125rem;
-        margin: 1rem auto;
-    }
-
-    img {
-        border-radius: 10px;
-    }
-
-    .heroRight {
-
-        margin-top: 1rem;
-
-        a {
-            font-size: 1.875rem;
-            color: $pink;
-            text-decoration: underline;
+        gap: 7rem;
+        h1 {
+            margin-top: 1rem;
+        }
+        p {
+            padding-right:3rem;
         }
     }
 }

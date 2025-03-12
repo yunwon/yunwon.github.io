@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import Me from "../../assets/about/jeongyunwon.png";
-import CV from "../../assets/about/yunwon_cv.pdf";
 import styles from "./About.module.scss";
 import { Layout } from "../../components/Layout/Layout";
+
 
 export default class About extends Component {
   componentDidMount() {
@@ -29,13 +29,14 @@ export default class About extends Component {
         <Fade top cascade distance="3rem">
           <div className={styles.hero}>
             <div className={styles.heroLeft}>
-              <h1>About Me</h1>
               <img src={Me} alt="Yun Won" />
             </div>
             <div className={styles.heroRight}>
-              <a href={CV} download>
-                Download my CV
-              </a>
+              <h1>About Me</h1>
+              <p>Creative and detail-oriented web designer & front-end developer with
+                5+ years of experience crafting responsive, user-friendly digital experiences. Skilled in UX/UI design and modern front-end technologies,
+                I specialise in building functional, visually compelling solutions using Figma, Adobe Creative Suite, HTML, CSS, and JavaScript.
+              </p>
             </div>
           </div>
         </Fade>
@@ -60,7 +61,7 @@ export default class About extends Component {
                   <h5>Web Development</h5>
                   <div className={styles.description}>
                     <ul>
-                      <li>HTML5, CSS3 (SASS/SCSS)</li>
+                      <li>HTML5, CSS3 (SCSS)</li>
                       <li>Responsive Design</li>
                       <li>Javascript (React JS, jQuery)</li>
                       <li>Bootstrap, Tailwind CSS</li>
@@ -112,7 +113,7 @@ export default class About extends Component {
                   <p>
                     <b>Freelancing</b>
                     <br />
-                    <i>as a UX/UI designer, Front-end developer, Web Producer</i>
+                    <i>as a UX/UI designer & Front-end developer</i>
                   </p>
                   <ul className={styles.subList}>
                     <li>
@@ -128,7 +129,7 @@ export default class About extends Component {
                   <p>
                     <b>Toolbox Digital in Auckland, New Zealand</b>
                     <br />
-                    <i>as a UX/UI designer and front-end developer</i>
+                    <i>as a UX/UI designer & Front-end developer</i>
                   </p>
                   <ul className={styles.subList}>
                     <li>
