@@ -7,8 +7,10 @@ import { Layout } from 'src/components/Layout/Layout';
 import classNames from 'classnames';
 import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import HP01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_01.webp';
-import HP01Video from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_02.mp4';
+import HP02Video from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_02.mp4';
+import HP02Poster from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_02_poster.avif';
 import Microsoft01Video from 'src/assets/portfolio/ingram-micro/IngramMicro_Microsoft_01.mp4';
+import Microsoft01Poster from 'src/assets/portfolio/ingram-micro/IngramMicro_HP_02_poster.avif';
 import HEP01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HPE_01.webp';
 import HPMicrosoft01 from 'src/assets/portfolio/ingram-micro/IngramMicro_HP-Microsoft_01.webp';
 import MicrosoftMicrosite from 'src/assets/portfolio/ingram-micro/IngramMicro_MS-microsite.avif';
@@ -58,8 +60,10 @@ export default class IngramMicro extends Component {
 									autoPlay="true"
 									loop="true"
 									controls="true"
+									poster={HP02Poster}
+									muted
 								>
-									<source src={HP01Video} type="video/mp4" />
+									<source src={HP02Video} type="video/mp4" />
 								</video>
 								<figcaption>Ingram Micro Australia | HP Blitz Nike Shoes Promotion</figcaption>
 							</figure>
@@ -73,6 +77,8 @@ export default class IngramMicro extends Component {
 									autoPlay="true"
 									loop="true"
 									controls="true"
+									poster={Microsoft01Poster}
+									muted
 								>
 									<source src={Microsoft01Video} type="video/mp4" />
 								</video>
@@ -110,7 +116,7 @@ export default class IngramMicro extends Component {
 						<div className={classNames(common.paragraph)}>
 							<figure className={common.body__imgWrapper}>
 								<img
-									alt="Ingram Micro | Microsoft Surface Microsite "
+									alt="Ingram Micro | Microsoft Surface Microsite"
 									src={MicrosoftMicrosite}
 									loading="lazy"
 									className={classNames(common.body__img, common.noShadow)}
@@ -119,7 +125,7 @@ export default class IngramMicro extends Component {
 									<a href="https://ingramnz.com/sites/microsoft/surface-home.html"
 										target="_blank"
 										rel="noopener noreferrer"
-										className={common.visit}>Ingram Micro New Zealand | Microsoft Surface Microsite Redesign <span><img src={ExternalIcon} className={common.icon} /></span></a>
+										className={common.visit}>Ingram Micro New Zealand | Microsoft Surface Microsite Redesign <span><img src={ExternalIcon} alt='link' className={common.icon} /></span></a>
 								</figcaption>
 							</figure>
 						</div>

@@ -6,6 +6,7 @@ import common from '../common.module.scss';
 import ToolboxMain from 'src/assets/portfolio/toolbox.png';
 import ToolboxResponsive from 'src/assets/portfolio/responsive.png';
 import ToolboxVideo from 'src/assets/portfolio/toolbox-video.mp4';
+import ToolboxPoster from 'src/assets/portfolio/toolbox-poster.avif';
 import Description from '../../components/Description/Description';
 import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -76,6 +77,7 @@ export default class Toolbox extends Component {
             I integrated video and animations to the landing page and multiple design elements. 
             My work focussed on enhancing the user experience and the effectiveness of Toolbox's visual tools."
 						bgVideo={ToolboxVideo}
+						poster={ToolboxPoster}
 						imgPosition="right"
 					/>
 					<Description

@@ -46,6 +46,7 @@ export default class Description extends Component {
                 loop="true"
                 className={styles.video}
                 controls="true"
+                poster={this.props.poster}
               >
                 <source src={this.props.bgVideo} type="video/mp4" />
               </video>

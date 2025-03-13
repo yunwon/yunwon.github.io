@@ -6,11 +6,13 @@ import common from '../common.module.scss';
 import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Video from 'src/assets/portfolio/apple-portal/apple-portal-homepage.mov';
+import Poster from 'src/assets/portfolio/apple-portal/apple-portal-homepage_poster.avif';
 import classNames from 'classnames';
 import CTOBefore from 'src/assets/portfolio/apple-portal/ingramnz-CTO_home--before@2x.webp';
 import CTOWireframe from 'src/assets/portfolio/apple-portal/cto_wireframe.webp';
 import CTOStyleGuide from 'src/assets/portfolio/apple-portal/cto_style-guide.webp';
 import CTOFinal from 'src/assets/portfolio/apple-portal/cto_home-all.webp';
+
 
 export default class Bouqo extends Component {
 	componentDidMount() {
@@ -30,6 +32,8 @@ export default class Bouqo extends Component {
 							autoPlay="true"
 							loop="true"
 							controls="true"
+							poster={Poster}
+							muted
 						>
 							<source src={Video} type="video/mp4" />
 						</video>

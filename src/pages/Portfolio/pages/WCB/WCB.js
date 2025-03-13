@@ -10,7 +10,8 @@ import GoToPortfolio from 'src/components/GoToPortfolio/GoToPortfolio';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import classNames from 'classnames';
-import WCBVideo from 'src/assets/portfolio/wcb/recording.mp4';
+import WCBVideo from 'src/assets/portfolio/wcb/wcb-home.mp4';
+import WCBPoster from 'src/assets/portfolio/wcb/wcb-home.avif';
 
 export default class WCB extends Component {
 	componentDidMount() {
@@ -86,6 +87,7 @@ export default class WCB extends Component {
 								autoPlay="true"
 								loop="true"
 								controls="true"
+								poster={WCBPoster}
 							>
 								<source src={WCBVideo} type="video/mp4" />
 							</video>
