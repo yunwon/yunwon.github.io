@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d4bff299.css",
-    "main.js": "/static/js/main.5a4cdb9b.js",
+    "main.js": "/static/js/main.cbf107ee.js",
     "static/media/apple-portal-homepage.mov": "/static/media/apple-portal-homepage.e614c5d355ea7f665c7a.mov",
     "static/media/giftingTips_animation.mp4": "/static/media/giftingTips_animation.7c5cde9657a869f23a09.mp4",
     "static/media/easyforms-video.mp4": "/static/media/easyforms-video.b26e57e3c6cfd17fffde.mp4",
@@ -11,7 +11,7 @@
     "static/media/theSolarSystem.mp4": "/static/media/theSolarSystem.41ef2b25f10e5e423ef9.mp4",
     "static/media/home_animation.mp4": "/static/media/home_animation.b1474c48cb1da26bc766.mp4",
     "static/media/IngramMicro_HP_02.mp4": "/static/media/IngramMicro_HP_02.52c493338f6f2b6ee0bc.mp4",
-    "static/media/recording.mp4": "/static/media/recording.fcd25cce83619001e23e.mp4",
+    "static/media/wcb-home.mp4": "/static/media/wcb-home.fcd25cce83619001e23e.mp4",
     "static/media/theSolarSystem.swf": "/static/media/theSolarSystem.1a4275f9c10d57aa5439.swf",
     "static/media/IngramMicro_Microsoft_01.mp4": "/static/media/IngramMicro_Microsoft_01.83e118ea9e136907910d.mp4",
     "static/media/bg.png": "/static/media/bg.9421211c89a56cef9749.png",
@@ -58,14 +58,18 @@
     "static/media/IngramMicro_Microsoft_01.webp": "/static/media/IngramMicro_Microsoft_01.49a24bd95cbb0d0be854.webp",
     "static/media/IngramMicro_HP-Microsoft_01.webp": "/static/media/IngramMicro_HP-Microsoft_01.1613932339092151ca4b.webp",
     "static/media/edm-dell-thumb.jpg": "/static/media/edm-dell-thumb.500d3dfe08069d97e82c.jpg",
+    "static/media/IngramMicro_HP_02_poster.avif": "/static/media/IngramMicro_HP_02_poster.a6947302cbd47ba8327b.avif",
     "static/media/ingramnz-CTO_home--before@2x.webp": "/static/media/ingramnz-CTO_home--before@2x.b7e850b5806f8aa71754.webp",
     "static/media/hep-old01.png": "/static/media/hep-old01.1970fd7812233d158e57.png",
     "static/media/cto_wireframe.webp": "/static/media/cto_wireframe.91601ae2462876b74254.webp",
     "static/media/bouqo-thumb.jpg": "/static/media/bouqo-thumb.58a3c9ad8b1a77a26346.jpg",
     "static/media/hep-new01.png": "/static/media/hep-new01.8a7a8c821432b1d81284.png",
+    "static/media/wcb-home.avif": "/static/media/wcb-home.9531f0304476edc73482.avif",
     "static/media/microsoft-thumb.jpg": "/static/media/microsoft-thumb.efabf85db2f2d2c0ff16.jpg",
     "static/media/dailyUI008.jpg": "/static/media/dailyUI008.18f3c1c1677d5d51711c.jpg",
+    "static/media/IngramMicro_Microsoft_01_poster.avif": "/static/media/IngramMicro_Microsoft_01_poster.f61e4328ff7f139bbd9e.avif",
     "static/media/aim-thumb.jpg": "/static/media/aim-thumb.6907fc113c696e5bb007.jpg",
+    "static/media/apple-portal-homepage_poster.avif": "/static/media/apple-portal-homepage_poster.17a81dd1d40863ec6656.avif",
     "static/media/home_poster.avif": "/static/media/home_poster.d825f7a5606eb6a74f8e.avif",
     "static/media/IngramMicro_MS-microsite.avif": "/static/media/IngramMicro_MS-microsite.a2d4b88ed55c1f6f23b8.avif",
     "static/media/jeongyunwon.png": "/static/media/jeongyunwon.fb413303c357f5e1feec.png",
@@ -82,14 +86,15 @@
     "static/media/wcb_logo-screen.webp": "/static/media/wcb_logo-screen.42cb018cdd7f64393a14.webp",
     "static/media/dailyui003.webp": "/static/media/dailyui003.343e1c461627f006bc4c.webp",
     "static/media/easyforms.png": "/static/media/easyforms.7c54d221cf9d54bf7bc3.png",
+    "static/media/toolbox-poster.avif": "/static/media/toolbox-poster.f2b1ad1d0390badbccae.avif",
     "index.html": "/index.html",
     "static/media/icon_external-link.svg": "/static/media/icon_external-link.d0f8be2cdbbb39cc243af068812c232f.svg",
     "static/media/menuIcon.svg": "/static/media/menuIcon.3fc7127903b5de0c9f6bbd3065f2c8cb.svg",
     "main.d4bff299.css.map": "/static/css/main.d4bff299.css.map",
-    "main.5a4cdb9b.js.map": "/static/js/main.5a4cdb9b.js.map"
+    "main.cbf107ee.js.map": "/static/js/main.cbf107ee.js.map"
   },
   "entrypoints": [
     "static/css/main.d4bff299.css",
-    "static/js/main.5a4cdb9b.js"
+    "static/js/main.cbf107ee.js"
   ]
 }
