@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4bff299.css",
-    "main.js": "/static/js/main.cbf107ee.js",
+    "main.css": "/static/css/main.e1cb2544.css",
+    "main.js": "/static/js/main.3486bb7b.js",
     "static/media/apple-portal-homepage.mov": "/static/media/apple-portal-homepage.e614c5d355ea7f665c7a.mov",
     "static/media/giftingTips_animation.mp4": "/static/media/giftingTips_animation.7c5cde9657a869f23a09.mp4",
     "static/media/easyforms-video.mp4": "/static/media/easyforms-video.b26e57e3c6cfd17fffde.mp4",
@@ -90,11 +90,11 @@
     "index.html": "/index.html",
     "static/media/icon_external-link.svg": "/static/media/icon_external-link.d0f8be2cdbbb39cc243af068812c232f.svg",
     "static/media/menuIcon.svg": "/static/media/menuIcon.3fc7127903b5de0c9f6bbd3065f2c8cb.svg",
-    "main.d4bff299.css.map": "/static/css/main.d4bff299.css.map",
-    "main.cbf107ee.js.map": "/static/js/main.cbf107ee.js.map"
+    "main.e1cb2544.css.map": "/static/css/main.e1cb2544.css.map",
+    "main.3486bb7b.js.map": "/static/js/main.3486bb7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4bff299.css",
-    "static/js/main.cbf107ee.js"
+    "static/css/main.e1cb2544.css",
+    "static/js/main.3486bb7b.js"
   ]
 }
