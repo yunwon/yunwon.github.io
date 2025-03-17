@@ -33,7 +33,7 @@ export default class About extends Component {
             </div>
             <div className={styles.heroRight}>
               <h1>About Me</h1>
-              <p>Creative and detail-oriented web designer & front-end developer with
+              <p>Creative and detail-oriented graphic/web designer & front-end developer with
                 5+ years of experience crafting responsive, user-friendly digital experiences. Skilled in UX/UI design and modern front-end technologies,
                 I specialise in building functional, visually compelling solutions using Figma, Adobe Creative Suite, HTML, CSS, and JavaScript.
               </p>
@@ -78,7 +78,7 @@ export default class About extends Component {
               <div className={styles.description}>
                 <ul>
                   <li>Figma</li>
-                  <li>Adobe Illustrator, Photoshop, Indesign, After Effect, XD</li>
+                  <li>Adobe Illustrator, Photoshop, Indesign, Firefly, After Effect, XD</li>
                   <li>Google Analytics, Google Tag Manager</li>
                   <li>Webflow</li>
                   <li>Github / VSCode</li>
