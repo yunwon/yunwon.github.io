@@ -105,7 +105,7 @@ export default class PortfolioHome extends Component {
 									<LazyLoadImage
 										alt="DailyUI day 001"
 										effect="blur"
-										src={require('../../assets/portfolio/daily-ui/002/dailyUI002.jpg')}
+										src={require('../../assets/portfolio/daily-ui/009/dailyUI009.webp')}
 										className={styles.image}
 									/>
 								</Link>

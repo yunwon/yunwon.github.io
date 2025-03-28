@@ -4,11 +4,14 @@
     width: 96% !important;
     max-width: 900px;
     max-height: 90vh;
-    overflow-y: scroll;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
     img {
       width: 100%;
       height: auto;
       max-width: 900px;
+      border-radius: 4px;
     }
     @media #{$break-md} {
         width: 60% !important;

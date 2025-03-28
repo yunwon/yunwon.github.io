@@ -21,15 +21,24 @@ export default class DailyUi extends Component {
 				</Fade>
 				<Fade bottom distance="3rem">
 					<div className={styles.works}>
-						<Link to="/portfolio/dailyui/day1">
-							<LazyLoadImage
-								alt="DailyUI001"
-								effect="blur"
-								src={require('../../../../assets/portfolio/daily-ui/001/dailyUI001.jpg')}
-								className={styles.image}
-							/>
-						</Link>
-						<DailyUIPopupImg dayNumber="002" />
+						<DailyUIPopupImg dayNumber="009" />
+						<DailyUIPopupImg dayNumber="008" />
+						<DailyUIPopupImg dayNumber="007" />
+						<DailyUIPopupImg dayNumber="006" />
+
+						<LazyLoadImage
+							alt="DailyUI005"
+							effect="blur"
+							src={require('../../../../assets/portfolio/daily-ui/005/dailyUI005.jpg')}
+							className={styles.image}
+						/>
+
+						<LazyLoadImage
+							alt="DailyUI004"
+							effect="blur"
+							src={require('../../../../assets/portfolio/daily-ui/004/dailyUI004.png')}
+							className={styles.image}
+						/>
 						<Link to="/portfolio/dailyui/day3">
 							<LazyLoadImage
 								alt="DailyUI003"
@@ -38,21 +47,17 @@ export default class DailyUi extends Component {
 								className={styles.image}
 							/>
 						</Link>
-						<LazyLoadImage
-							alt="DailyUI004"
-							effect="blur"
-							src={require('../../../../assets/portfolio/daily-ui/004/dailyUI004.png')}
-							className={styles.image}
-						/>
-						<LazyLoadImage
-							alt="DailyUI005"
-							effect="blur"
-							src={require('../../../../assets/portfolio/daily-ui/005/dailyUI005.jpg')}
-							className={styles.image}
-						/>
-						<DailyUIPopupImg dayNumber="006" />
-						<DailyUIPopupImg dayNumber="007" />
-						<DailyUIPopupImg dayNumber="008" />
+
+						<DailyUIPopupImg dayNumber="002" />
+
+						<Link to="/portfolio/dailyui/day1">
+							<LazyLoadImage
+								alt="DailyUI001"
+								effect="blur"
+								src={require('../../../../assets/portfolio/daily-ui/001/dailyUI001.jpg')}
+								className={styles.image}
+							/>
+						</Link>
 					</div>
 				</Fade>
 			</Layout>

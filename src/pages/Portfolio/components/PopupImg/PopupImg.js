@@ -10,7 +10,7 @@ const DailyUIPopupImg = ({ dayNumber }) => {
 				<LazyLoadImage
 					alt={`DailyUI ${dayNumber}`}
 					effect="blur"
-					src={require(`../../../../assets/portfolio/daily-ui/${dayNumber}/dailyUI${dayNumber}.jpg`)}
+					src={require(`../../../../assets/portfolio/daily-ui/${dayNumber}/dailyUI${dayNumber}.webp`)}
 				/>
 			}
 			modal
@@ -24,7 +24,7 @@ const DailyUIPopupImg = ({ dayNumber }) => {
 					</button>
 					<div>
 						<img
-							src={require(`../../../../assets/portfolio/daily-ui/${dayNumber}/dailyUI${dayNumber}-large.jpg`)}
+							src={require(`../../../../assets/portfolio/daily-ui/${dayNumber}/dailyUI${dayNumber}-large.webp`)}
 							alt={`DailyUI ${dayNumber}`}
 							className={styles.image}
 						/>
